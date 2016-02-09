@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ivy-module version="2.0" xmlns:m="http://ant.apache.org/ivy/maven">
-  <info organisation="com.github.grzesiek-galezowski" module="tdd-toolkit-java" revision="1.0-SNAPSHOT" status="integration" publication="20160209001204">
+  <info organisation="com.github.grzesiek-galezowski" module="tdd-toolkit-java" revision="1.0-SNAPSHOT" status="integration" publication="20160209001422">
     <description/>
   </info>
   <configurations>

@@ -19,8 +19,6 @@ workspace.xml
 /target
 .idea
 .idea/*
+gradle.properties
+test-output/*
 .gradle/2.5/taskArtifacts/*
-.gradle/2.5/taskArtifacts
-gradle.properties
-gradle.properties
-gradle.properties

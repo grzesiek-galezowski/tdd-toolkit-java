@@ -22,3 +22,5 @@ workspace.xml
 gradle.properties
 test-output/*
 .gradle/2.5/taskArtifacts/*
+.gradle/2.5/taskArtifacts/taskArtifacts.bin
+*.bin

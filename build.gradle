@@ -14,8 +14,8 @@ apply plugin: 'java'
 apply plugin: 'maven'
 
 group 'com.github.grzesiek-galezowski'
-version '1.0.3-SNAPSHOT'
-description = """Test Environment"""
+version '1.0.4-SNAPSHOT'
+description = """TDD Toolkit"""
 
 test {
     useTestNG()

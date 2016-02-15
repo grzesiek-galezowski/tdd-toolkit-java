@@ -36,7 +36,8 @@ public class XAssertAlikeSpecification {
         assertThat(new User(12, "Lolek")).is(like(new User(12, "Lolek"))));
 
     Assertions.assertThatThrownBy(() ->
-        assertThat(new User(13, "Lolek")).is(like(new User(12, "Lolek"))))
+        assertThat(new User(13, "Lolek"))
+            .is(like(new User(12, "Lolek"))))
     .hasMessageContaining(
         "<like {\"age\":[12,12,12],\"name\":\"Lolek\"} but was {\"age\":[13,13,13],\"name\":\"Lolek\"}>")
     ;
@@ -55,7 +56,7 @@ public class XAssertAlikeSpecification {
   }
 
   class User {
-    private List<Integer> age = new ArrayList<Integer>();
+    private List<Integer> age = new ArrayList<>();
 
     private String name;
 

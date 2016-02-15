@@ -8,12 +8,12 @@ import org.assertj.core.api.Condition;
 public class XJAssertConditions {
 
   public static <T> Condition<T> like(T other) {
-    return new AreAlikeCondition<T>(other);
+    return new AreAlikeCondition<>(other);
   }
 
   public static <T> Condition<T> notLike(T other) {
 
-    return new AreNotAlikeCondition<T>(other);
+    return new AreNotAlikeCondition<>(other);
   }
 
 

@@ -24,14 +24,9 @@ test {
 sourceCompatibility = 1.8
 targetCompatibility = 1.8
 
-configurations.all {
-
-}
-
-
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
-    threads = 4
+    threads = 8
     outputFormats = ['XML', 'HTML']
 }
 
@@ -61,4 +56,5 @@ uploadArchives {
         }
     }
 }
+
 uploadArchives.dependsOn([jar, test])

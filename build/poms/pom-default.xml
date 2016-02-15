@@ -4,7 +4,28 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>com.github.grzesiek-galezowski</groupId>
   <artifactId>tdd-toolkit-java</artifactId>
-  <version>1.0.4-SNAPSHOT</version>
+  <version>1.0.5</version>
+  <name>tdd-toolkit-java</name>
+  <description>TDD Toolkit</description>
+  <url>https://github.com/grzesiek-galezowski/tdd-toolkit-java</url>
+  <licenses>
+    <license>
+      <name>The MIT License (MIT)</name>
+      <url>http://opensource.org/licenses/MIT</url>
+      <distribution>repo</distribution>
+    </license>
+  </licenses>
+  <developers>
+    <developer>
+      <id>grzesiek-galezowski</id>
+      <name>Grzegorz Gałęzowski</name>
+    </developer>
+  </developers>
+  <scm>
+    <connection>scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git</connection>
+    <developerConnection>scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git</developerConnection>
+    <url>scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git</url>
+  </scm>
   <dependencies>
     <dependency>
       <groupId>org.mockito</groupId>

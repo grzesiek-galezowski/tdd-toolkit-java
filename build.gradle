@@ -15,7 +15,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 group 'com.github.grzesiek-galezowski'
-version '1.0.4-SNAPSHOT'
+version '1.0.5'
 description = """TDD Toolkit"""
 
 sourceCompatibility = 1.8
@@ -68,27 +68,13 @@ signing {
     sign configurations.archives
 }
 
-/*
-uploadArchives {
-    repositories {
-        mavenDeployer {
-            repository(url: "${nexusUrl}/content/repositories/releases") {
-                authentication(userName: nexusUsername, password: nexusPassword)
-            }
-            snapshotRepository(url: "${nexusUrl}/content/repositories/snapshots") {
-                authentication(userName: nexusUsername, password: nexusPassword)
-            }
-        }
-    }
-}
-*/
-
 uploadArchives {
     repositories {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
             repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+            //repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
                 authentication(userName: nexusUsername, password: nexusPassword)
             }
 

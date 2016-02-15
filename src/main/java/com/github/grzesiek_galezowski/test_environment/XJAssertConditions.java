@@ -7,7 +7,6 @@ import org.assertj.core.api.Condition;
  */
 public class XJAssertConditions {
 
-
   public static <T> Condition<T> like(T other) {
     return new AreAlikeCondition<T>(other);
   }

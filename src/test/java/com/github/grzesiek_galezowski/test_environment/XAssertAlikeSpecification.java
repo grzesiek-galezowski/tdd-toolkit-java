@@ -1,4 +1,5 @@
-import com.github.grzesiek_galezowski.test_environment.XAssert;
+package com.github.grzesiek_galezowski.test_environment;
+
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
@@ -10,8 +11,6 @@ import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAlikeSpecification {
-  public XAssertAlikeSpecification() {
-  }
 
   @Test
   public void shouldCorrectlyAssertOnObjectsLikeness() {

@@ -1,3 +1,5 @@
+package com.github.grzesiek_galezowski.test_environment;
+
 import org.testng.annotations.Test;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.*;

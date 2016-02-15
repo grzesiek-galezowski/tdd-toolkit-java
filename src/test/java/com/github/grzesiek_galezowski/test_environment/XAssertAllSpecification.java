@@ -1,4 +1,5 @@
-import com.github.grzesiek_galezowski.test_environment.XAssert;
+package com.github.grzesiek_galezowski.test_environment;
+
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 

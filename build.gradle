@@ -12,17 +12,34 @@ buildscript {
 apply plugin: "info.solidsoft.pitest"
 apply plugin: 'java'
 apply plugin: 'maven'
+apply plugin: 'signing'
 
 group 'com.github.grzesiek-galezowski'
 version '1.0.4-SNAPSHOT'
 description = """TDD Toolkit"""
 
+sourceCompatibility = 1.8
+targetCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+
+task javadocJar(type: Jar, dependsOn: javadoc) {
+    classifier = 'javadoc'
+    from 'build/docs/javadoc'
+}
+
+task sourcesJar(type: Jar) {
+    from sourceSets.main.allSource
+    classifier = 'sources'
+}
+
 test {
     useTestNG()
 }
 
-sourceCompatibility = 1.8
-targetCompatibility = 1.8
 
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
@@ -30,9 +47,6 @@ pitest {
     outputFormats = ['XML', 'HTML']
 }
 
-repositories {
-    mavenCentral()
-}
 
 dependencies {
     compile "com.google.guava:guava:19.+"
@@ -44,6 +58,17 @@ dependencies {
 
 }
 
+artifacts {
+    archives jar
+    archives javadocJar
+    archives sourcesJar
+}
+
+signing {
+    sign configurations.archives
+}
+
+/*
 uploadArchives {
     repositories {
         mavenDeployer {
@@ -52,6 +77,47 @@ uploadArchives {
             }
             snapshotRepository(url: "${nexusUrl}/content/repositories/snapshots") {
                 authentication(userName: nexusUsername, password: nexusPassword)
+            }
+        }
+    }
+}
+*/
+
+uploadArchives {
+    repositories {
+        mavenDeployer {
+            beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
+
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+                authentication(userName: nexusUsername, password: nexusPassword)
+            }
+
+            pom.project {
+                name 'tdd-toolkit-java'
+                packaging 'jar'
+                description 'TDD Toolkit'
+                url 'https://github.com/grzesiek-galezowski/tdd-toolkit-java'
+
+                scm {
+                    url 'scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git'
+                    connection 'scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git'
+                    developerConnection 'scm:git@github.com:grzesiek-galezowski/tdd-toolkit-java.git'
+                }
+
+                licenses {
+                    license {
+                        name 'The MIT License (MIT)'
+                        url 'http://opensource.org/licenses/MIT'
+                        distribution 'repo'
+                    }
+                }
+
+                developers {
+                    developer {
+                        id 'grzesiek-galezowski'
+                        name 'Grzegorz Gałęzowski'
+                    }
+                }
             }
         }
     }

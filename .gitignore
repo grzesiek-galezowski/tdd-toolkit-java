@@ -80,3 +80,5 @@ gradle-app.setting
 hs_err_pid*
 gradle.properties
 test-output/*
+
+gradle.properties

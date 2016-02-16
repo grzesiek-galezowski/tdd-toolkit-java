@@ -9,10 +9,15 @@ buildscript {
     }
 }
 
+plugins {
+    id 'net.researchgate.release' version '2.3.5'
+}
+
 apply plugin: "info.solidsoft.pitest"
 apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
+
 
 group 'com.github.grzesiek-galezowski'
 version '1.0.6-SNAPSHOT'

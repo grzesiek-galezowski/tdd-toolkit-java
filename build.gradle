@@ -131,3 +131,4 @@ uploadArchives {
 }
 
 uploadArchives.dependsOn([jar, test])
+afterReleaseBuild.dependsOn uploadArchives

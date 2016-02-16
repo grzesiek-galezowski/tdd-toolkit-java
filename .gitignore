@@ -80,3 +80,6 @@ gradle-app.setting
 hs_err_pid*
 test-output/*
 
+.gradle/2.5/taskArtifacts/cache.properties.lock
+
+

@@ -23,8 +23,6 @@ gradle.taskGraph.whenReady { taskGraph ->
 
         def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
         allprojects { ext."signing.password" = password }
-
-        console.printf "\nThanks.\n\n"
     }
 }
 

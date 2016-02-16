@@ -18,10 +18,10 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
 
+def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
+
 gradle.taskGraph.whenReady { taskGraph ->
     if (taskGraph.allTasks.any { it instanceof Sign }) {
-
-        def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
         allprojects {
             ext."signing.password" = password
             ext."signing.keyId"= '214AA4AD'
@@ -89,10 +89,10 @@ uploadArchives {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
-            //repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
             //repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
-                //authentication(userName: nexusUsername, password: nexusPassword)
-            //}
+                authentication(userName: "grzesiek-galezowski", password: password)
+            }
 
             pom.project {
                 name 'tdd-toolkit-java'

@@ -20,7 +20,6 @@ apply plugin: 'signing'
 
 
 group 'com.github.grzesiek-galezowski'
-version properties.version
 description = """TDD Toolkit"""
 
 sourceCompatibility = 1.8

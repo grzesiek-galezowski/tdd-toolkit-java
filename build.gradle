@@ -15,7 +15,7 @@ apply plugin: 'maven'
 apply plugin: 'signing'
 
 group 'com.github.grzesiek-galezowski'
-version '1.0.5'
+version '1.0.6-SNAPSHOT'
 description = """TDD Toolkit"""
 
 sourceCompatibility = 1.8
@@ -49,12 +49,12 @@ pitest {
 
 
 dependencies {
-    compile "com.google.guava:guava:19.+"
-    compile "org.assertj:assertj-core:3.+"
-    compile "org.testng:testng:6.+"
-    compile "org.mockito:mockito-core:1.+"
-    compile "com.github.autofixture:autofixturegenerator:1.+"
-    compile "com.google.code.gson:gson:2.5"
+    compile "com.google.guava:guava:19.0"
+    compile "org.assertj:assertj-core:3.3.0"
+    compile "org.testng:testng:6.9.10"
+    compile "org.mockito:mockito-core:1.10.19"
+    compile "com.github.autofixture:autofixturegenerator:1.0.5"
+    compile "com.google.code.gson:gson:2.6.1"
 
 }
 
@@ -73,8 +73,8 @@ uploadArchives {
         mavenDeployer {
             beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
-            repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-            //repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
+            //repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
+            repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
                 authentication(userName: nexusUsername, password: nexusPassword)
             }
 

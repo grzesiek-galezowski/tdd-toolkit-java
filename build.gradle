@@ -22,7 +22,11 @@ gradle.taskGraph.whenReady { taskGraph ->
     if (taskGraph.allTasks.any { it instanceof Sign }) {
 
         def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
-        allprojects { ext."signing.password" = password }
+        allprojects {
+            ext."signing.password" = password
+            ext."signing.keyId"= '214AA4AD'
+            ext."signing.secretKeyRingFile"='C:/Users/astral/AppData/Roaming/gnupg/secring.gpg'
+        }
     }
 }
 

@@ -1,6 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import com.google.gson.Gson;
+import nl.jqno.equalsverifier.EqualsVerifier;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert;
 
@@ -14,25 +15,28 @@ import static org.assertj.core.api.Assertions.catchThrowable;
  */
 public class XAssert {
 
-  private static final Gson gson = new Gson();
+  private static final Gson GSON = new Gson();
 
-  public static void assertAll(Consumer<SoftAssertions> assertions) {
+  public static void assertAll(final Consumer<SoftAssertions> assertions) {
     SoftAssertions softAssertions = new SoftAssertions();
     assertions.accept(softAssertions);
     softAssertions.assertAll();
   }
 
-  public static void assertThatNotThrownBy(ThrowableAssert.ThrowingCallable callable) {
+  public static void assertThatNotThrownBy(final ThrowableAssert.ThrowingCallable callable) {
     Throwable exception = catchThrowable(callable);
     assertThat(exception).isEqualTo(null);
   }
 
-  public static <T> void assertThatAreAlike(T obj1, T obj2) {
-    assertThat(gson.toJson(obj1)).isEqualTo(gson.toJson(obj2));
+  public static <T> void assertThatAreAlike(final T obj1, final T obj2) {
+    assertThat(GSON.toJson(obj1)).isEqualTo(GSON.toJson(obj2));
   }
 
-  public static <T> void assertThatAreNotAlike(T obj1, T obj2) {
-    assertThat(gson.toJson(obj1)).isNotEqualTo(gson.toJson(obj2));
+  public static <T> void assertThatAreNotAlike(final T obj1, final T obj2) {
+    assertThat(GSON.toJson(obj1)).isNotEqualTo(GSON.toJson(obj2));
   }
 
+  public static <T> void assertValueObject(final Class<T> clazz) {
+    EqualsVerifier.forClass(clazz).verify();
+  }
 }

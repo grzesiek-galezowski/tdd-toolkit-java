@@ -3,6 +3,8 @@ package com.github.grzesiek_galezowski.test_environment;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
+import static org.assertj.core.api.Assertions.assertThat;
+
 public class XAssertAllSpecification {
 
   @Test
@@ -27,7 +29,8 @@ public class XAssertAllSpecification {
           softly.assertThat("Johnny").isEqualTo("Johnny");
         }));
 
-    Assertions.assertThat(exception).isEqualTo(null);
+    assertThat(exception).isEqualTo(null);
 
   }
+
 }

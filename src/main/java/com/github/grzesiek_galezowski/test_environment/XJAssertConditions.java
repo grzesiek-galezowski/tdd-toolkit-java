@@ -7,14 +7,16 @@ import org.assertj.core.api.Condition;
  */
 public class XJAssertConditions {
 
-  public static <T> Condition<T> like(T other) {
+  public static <T> Condition<T> like(final T other) {
     return new AreAlikeCondition<>(other);
   }
 
-  public static <T> Condition<T> notLike(T other) {
-
+  public static <T> Condition<T> notLike(final T other) {
     return new AreNotAlikeCondition<>(other);
   }
 
+  public static <T extends Class<?>> Condition<T> valueObjectBehavior() {
 
+    return new ValueObjectBehaviorCondition<>();
+  }
 }

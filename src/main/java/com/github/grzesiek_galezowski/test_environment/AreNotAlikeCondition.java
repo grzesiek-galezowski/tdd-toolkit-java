@@ -7,7 +7,7 @@ import org.assertj.core.api.Condition;
  * Created by astral on 14.02.2016.
  */
 public class AreNotAlikeCondition<T> extends Condition<T> {
-  private static final Gson gson = new Gson();
+  private static final Gson GSON = new Gson();
   private final T other;
 
   public AreNotAlikeCondition(final T other) {
@@ -16,11 +16,12 @@ public class AreNotAlikeCondition<T> extends Condition<T> {
 
   @Override
   public boolean matches(final T t) {
-    String expected = gson.toJson(other);
-    String actual = gson.toJson(t);
+    String expected = GSON.toJson(other);
+    String actual = GSON.toJson(t);
     describedAs("not like " + expected + " but was " + actual);
     return !expected.equals(actual);
   }
+
 
 
 }

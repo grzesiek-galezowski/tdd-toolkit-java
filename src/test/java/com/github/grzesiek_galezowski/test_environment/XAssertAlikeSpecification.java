@@ -12,55 +12,64 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAlikeSpecification {
 
+  public static final int AGE = 12;
+
   @Test
   public void shouldCorrectlyAssertOnObjectsLikeness() {
     XAssert.assertThatNotThrownBy(() ->
-        XAssert.assertThatAreAlike(new User(12, "Lolek"), new User(12, "Lolek")));
+        XAssert.assertThatAreAlike(lolek12(), lolek12()));
 
     Assertions.assertThatThrownBy(() ->
-        XAssert.assertThatAreAlike(new User(13, "Lolek"), new User(12, "Lolek")));
+        XAssert.assertThatAreAlike(lolek13(), lolek12()));
   }
 
   @Test
   public void shouldCorrectlyAssertOnObjectsUnlikeness() {
     Assertions.assertThatThrownBy(() ->
-        XAssert.assertThatAreNotAlike(new User(12, "Lolek"), new User(12, "Lolek")));
+        XAssert.assertThatAreNotAlike(lolek12(), lolek12()));
 
     XAssert.assertThatNotThrownBy(() ->
-        XAssert.assertThatAreNotAlike(new User(13, "Lolek"), new User(12, "Lolek")));
+        XAssert.assertThatAreNotAlike(lolek13(), lolek12()));
   }
 
   @Test
   public void shouldCorrectlyAssertOnObjectsLikenessUsingConditions() {
     XAssert.assertThatNotThrownBy(() ->
-        assertThat(new User(12, "Lolek")).is(like(new User(12, "Lolek"))));
+        assertThat(lolek12()).is(like(lolek12())));
 
     Assertions.assertThatThrownBy(() ->
-        assertThat(new User(13, "Lolek"))
-            .is(like(new User(12, "Lolek"))))
-    .hasMessageContaining(
-        "<like {\"age\":[12,12,12],\"name\":\"Lolek\"} but was {\"age\":[13,13,13],\"name\":\"Lolek\"}>")
-    ;
+        assertThat(lolek13()).is(like(lolek12()))).hasMessageContaining(
+        "<like {\"age\":[12,12,12],\"name\":\"Lolek\"}" +
+            " but was {\"age\":[13,13,13],\"name\":\"Lolek\"}>");
   }
 
   @Test
   public void shouldCorrectlyAssertOnObjectsUnlikenessUsingConditions() {
 
     Assertions.assertThatThrownBy(() ->
-        assertThat(new User(12, "Lolek")).is(notLike(new User(12, "Lolek"))))
+        assertThat(lolek12()).is(notLike(lolek12())))
         .hasMessageContaining(
-            "<not like {\"age\":[12,12,12],\"name\":\"Lolek\"} but was {\"age\":[12,12,12],\"name\":\"Lolek\"}>");
+            "<not like {\"age\":[12,12,12],\"name\":\"Lolek\"}" +
+                " but was {\"age\":[12,12,12],\"name\":\"Lolek\"}>");
 
     XAssert.assertThatNotThrownBy(() ->
-        assertThat(new User(13, "Lolek")).is(notLike(new User(12, "Lolek"))));
+        assertThat(lolek13()).is(notLike(lolek12())));
   }
 
-  class User {
-    private List<Integer> age = new ArrayList<>();
+  private User lolek13() {
+    return new User(AGE+1, "Lolek");
+  }
 
-    private String name;
+  private User lolek12() {
+    return new User(AGE, "Lolek");
+  }
 
-    public User(int age, String name) {
+  public class User {
+    private final List<Integer> age = new ArrayList<>();
+
+    private final String name;
+
+    public User(final int age, final String name) {
       this.age.add(age);
       this.age.add(age);
       this.age.add(age);

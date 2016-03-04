@@ -39,8 +39,8 @@ public class XAssertAlikeSpecification {
 
     Assertions.assertThatThrownBy(() ->
         assertThat(lolek13()).is(like(lolek12()))).hasMessageContaining(
-        "<like {\"age\":[12,12,12],\"name\":\"Lolek\"}" +
-            " but was {\"age\":[13,13,13],\"name\":\"Lolek\"}>");
+        "<like {\"age\":[12,12,12],\"name\":\"Lolek\"}"
+            + " but was {\"age\":[13,13,13],\"name\":\"Lolek\"}>");
   }
 
   @Test
@@ -49,15 +49,15 @@ public class XAssertAlikeSpecification {
     Assertions.assertThatThrownBy(() ->
         assertThat(lolek12()).is(notLike(lolek12())))
         .hasMessageContaining(
-            "<not like {\"age\":[12,12,12],\"name\":\"Lolek\"}" +
-                " but was {\"age\":[12,12,12],\"name\":\"Lolek\"}>");
+            "<not like {\"age\":[12,12,12],\"name\":\"Lolek\"}"
+                + " but was {\"age\":[12,12,12],\"name\":\"Lolek\"}>");
 
     XAssert.assertThatNotThrownBy(() ->
         assertThat(lolek13()).is(notLike(lolek12())));
   }
 
   private User lolek13() {
-    return new User(AGE+1, "Lolek");
+    return new User(AGE + 1, "Lolek");
   }
 
   private User lolek12() {

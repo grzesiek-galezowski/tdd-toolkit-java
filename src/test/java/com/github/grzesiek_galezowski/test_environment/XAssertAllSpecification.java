@@ -7,12 +7,14 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAllSpecification {
 
+  public static final int ARBITRARY_NUMBER = 12;
+
   @Test
   public void shouldAllowMakingSoftAssertionsAndThrowAtTheEnd() {
 
     Assertions.assertThatThrownBy(() ->
         XAssert.assertAll(softly -> {
-          softly.assertThat(12).isEqualTo(13);
+          softly.assertThat(ARBITRARY_NUMBER).isEqualTo(ARBITRARY_NUMBER+1);
           softly.assertThat(true).isEqualTo(false);
           softly.assertThat("Johnny").isEqualTo("Johnny");
         }))
@@ -24,7 +26,7 @@ public class XAssertAllSpecification {
 
     Throwable exception = Assertions.catchThrowable(() ->
         XAssert.assertAll(softly -> {
-          softly.assertThat(12).isEqualTo(12);
+          softly.assertThat(ARBITRARY_NUMBER).isEqualTo(ARBITRARY_NUMBER);
           softly.assertThat(true).isEqualTo(true);
           softly.assertThat("Johnny").isEqualTo("Johnny");
         }));

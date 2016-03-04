@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0db1a05d-4738-42be-a07e-587e52cde7f4" name="Default" comment="before release">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/outputFileStates.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/taskArtifacts.bin" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" afterPath="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
     </list>
     <ignored path="tdd-toolkit-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -120,11 +116,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="ValueObjectWithoutFinalFields.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java">
+      <file leaf-file-name=".gitignore" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="167">
-              <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+            <state relative-caret-position="238">
+              <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -602,6 +598,7 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" />
         <option value="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -782,7 +779,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -859,28 +856,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="checkstyle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -897,7 +876,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalDependencies" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
     <property name="extract.method.default.visibility" value="private" />
@@ -1340,7 +1319,6 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46638656" sideWeight="0.113790974" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46638656" sideWeight="0.886209" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2603587" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1350,16 +1328,17 @@
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3451883" sideWeight="0.5071119" order="12" side_tool="false" content_ui="tabs" x="82" y="486" width="1633" height="352" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39853558" sideWeight="0.49412492" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46638656" sideWeight="0.886209" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25973305" sideWeight="0.5126706" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845187" sideWeight="0.4935065" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32983193" sideWeight="0.37353122" order="1" side_tool="false" content_ui="tabs" />
@@ -1392,13 +1371,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="61" column="17" selection-start-line="61" selection-start-column="17" selection-end-line="61" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.3.0/48ec0fdd34206703c4e3af9fbecea59f76038cec/assertj-core-3.3.0-sources.jar!/org/assertj/core/api/AbstractObjectAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1704,15 +1676,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="49" selection-start-line="25" selection-start-column="49" selection-end-line="25" selection-end-column="49" />
-          <folding>
-            <marker date="1457036966829" expanded="false" signature="65:396" placeholder="..." />
-            <marker date="1457036966829" expanded="true" signature="398:441" placeholder="/**...*/" />
-            <marker date="1457036966829" expanded="true" signature="588:722" placeholder="{...}" />
-            <marker date="1457036966829" expanded="true" signature="800:900" placeholder="{...}" />
-            <marker date="1457036966829" expanded="true" signature="974:1043" placeholder="{...}" />
-            <marker date="1457036966829" expanded="true" signature="1120:1192" placeholder="{...}" />
-            <marker date="1457036966829" expanded="true" signature="1259:1309" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1734,44 +1697,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="68" column="1" selection-start-line="68" selection-start-column="1" selection-end-line="68" selection-end-column="1" />
-          <folding>
-            <marker date="1457031853341" expanded="true" signature="12:216" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="31:113" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="47:61" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="97:107" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="131:141" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="208:214" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="226:232" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="277:279" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="525:822" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="595:820" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="617:814" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="963:969" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="983:985" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="1035:1095" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1124:1189" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1196:1202" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="1213:1215" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="1225:1389" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1402:1408" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="1430:1432" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="1447:1791" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1803:1871" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1881:1887" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="1915:1917" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="1927:1933" placeholder="{" />
-            <marker date="1457031853341" expanded="true" signature="1959:1961" placeholder="}" />
-            <marker date="1457031853341" expanded="true" signature="1978:3433" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="1997:3431" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2021:3425" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2208:2398" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2424:3415" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2639:2939" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2966:3199" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="2996:3181" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="3228:3401" placeholder="{...}" />
-            <marker date="1457031853341" expanded="true" signature="3260:3383" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1779,11 +1704,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="169">
           <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding>
-            <marker date="1457071441079" expanded="false" signature="65:192" placeholder="..." />
-            <marker date="1457071441079" expanded="true" signature="356:709" placeholder="{...}" />
-            <marker date="1457071441079" expanded="true" signature="806:1151" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1791,21 +1711,26 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="118" column="34" selection-start-line="118" selection-start-column="34" selection-end-line="118" selection-end-column="34" />
-          <folding>
-            <marker date="1457123804305" expanded="true" signature="173:981" placeholder="..." />
-            <marker date="1457123804305" expanded="true" signature="1008:5759" placeholder="..." />
-            <marker date="1457123804305" expanded="true" signature="1018:1277" placeholder="..." />
-            <marker date="1457123804305" expanded="true" signature="1933:2153" placeholder="..." />
-            <marker date="1457123804305" expanded="true" signature="2512:5748" placeholder="..." />
-            <marker date="1457123804305" expanded="true" signature="3283:3361" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="167">
-          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
+        <state relative-caret-position="340">
+          <caret line="20" column="26" selection-start-line="20" selection-start-column="26" selection-end-line="20" selection-end-column="26" />
+          <folding>
+            <marker date="1457124456238" expanded="true" signature="67:110" placeholder="/**...*/" />
+            <marker date="1457124456238" expanded="true" signature="233:254" placeholder="{...}" />
+            <marker date="1457124456238" expanded="true" signature="314:532" placeholder="{...}" />
+            <marker date="1457124456238" expanded="true" signature="576:600" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="26" column="0" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding />
         </state>
       </provider>

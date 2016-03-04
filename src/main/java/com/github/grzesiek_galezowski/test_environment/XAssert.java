@@ -3,7 +3,7 @@ package com.github.grzesiek_galezowski.test_environment;
 import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.assertj.core.api.SoftAssertions;
-import org.assertj.core.api.ThrowableAssert;
+import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 
 import java.util.function.Consumer;
 
@@ -23,7 +23,7 @@ public class XAssert {
     softAssertions.assertAll();
   }
 
-  public static void assertThatNotThrownBy(final ThrowableAssert.ThrowingCallable callable) {
+  public static void assertThatNotThrownBy(final ThrowingCallable callable) {
     Throwable exception = catchThrowable(callable);
     assertThat(exception).isEqualTo(null);
   }

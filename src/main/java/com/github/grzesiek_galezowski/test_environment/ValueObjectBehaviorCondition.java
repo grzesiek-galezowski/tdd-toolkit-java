@@ -5,10 +5,10 @@ import org.assertj.core.api.Condition;
 /**
  * Created by astral on 22.02.2016.
  */
-public class ValueObjectBehaviorCondition<T extends Class<?>> extends Condition<T> {
+public class ValueObjectBehaviorCondition extends Condition<Class<?>> {
 
   @Override
-  public boolean matches(final T clazz) {
+  public boolean matches(final Class<?> clazz) {
     try {
       XAssert.assertValueObject((Class<?>) clazz);
     } catch (Throwable e) {

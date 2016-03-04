@@ -15,8 +15,8 @@ public class XJAssertConditions {
     return new AreNotAlikeCondition<>(other);
   }
 
-  public static <T extends Class<?>> Condition<T> valueObjectBehavior() {
+  public static Condition<Class<?>> valueObjectBehavior() {
 
-    return new ValueObjectBehaviorCondition<>();
+    return new ValueObjectBehaviorCondition();
   }
 }

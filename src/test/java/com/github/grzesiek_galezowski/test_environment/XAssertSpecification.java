@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment;
 
+import com.github.grzesiek_galezowski.test_environment.fixtures.ValueObjectWithoutFinalFields;
 import org.testng.annotations.Test;
 
 import java.time.Period;
@@ -46,9 +47,9 @@ public class XAssertSpecification {
   public void shouldAssertOnValueObjectBehaviorWithFluentSyntax() {
     assertThat(Period.class).has(valueObjectBehavior());
     assertThat(Optional.class).has(valueObjectBehavior());
+    assertThat(ValueObjectWithoutFinalFields.class).has(valueObjectBehavior());
     assertThatThrownBy(() -> assertThat(XAssertAlikeSpecification.User.class).has(valueObjectBehavior()));
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));
   }
-
 
 }

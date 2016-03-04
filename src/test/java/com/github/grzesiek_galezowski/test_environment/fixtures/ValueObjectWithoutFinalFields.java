@@ -13,8 +13,12 @@ public class ValueObjectWithoutFinalFields {
 
   @Override
   public final boolean equals(final Object o) {
-    if (this == o) {return true;}
-    if (!(o instanceof ValueObjectWithoutFinalFields)) {return false;}
+    if (this == o) {
+      return true;
+    }
+    if (!(o instanceof ValueObjectWithoutFinalFields)) {
+      return false;
+    }
 
     ValueObjectWithoutFinalFields that = (ValueObjectWithoutFinalFields) o;
 

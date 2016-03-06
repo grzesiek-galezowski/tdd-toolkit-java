@@ -1,11 +1,14 @@
 package com.github.grzesiek_galezowski.test_environment;
 
+import autofixture.publicinterface.Any;
+import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 
 import java.util.function.Consumer;
+import java.util.function.Function;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
@@ -39,4 +42,38 @@ public class XAssert {
   public static <T> void assertValueObject(final Class<T> clazz) {
     EqualsVerifier.forClass(clazz).verify();
   }
+
+  public static <T> void assertSynchronized(
+      final T wrappedInterfaceMock,
+      final T synchronizedProxy,
+      final Consumer<T> methodCallToVerify) {
+
+    new AssertSynchronizedPrivateWithNoReturnValue<>(
+        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify).invoke();
+  }
+
+  public static <T, TReturn> void assertSynchronized(
+      final T wrappedInterfaceMock,
+      final T synchronizedProxy,
+      final Function<T,TReturn> methodCallToVerify,
+      final Class<TReturn> clazz) {
+
+    TReturn retVal = Any.anonymous(clazz);
+    new AssertSynchronizedPrivateWithReturnValue<>(
+        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify, retVal).invoke();
+  }
+
+  public static <T, TReturn> void assertSynchronized(
+      final T wrappedInterfaceMock,
+      final T synchronizedProxy,
+      final Function<T,TReturn> methodCallToVerify,
+      final TypeToken<TReturn> clazz) {
+
+    TReturn retVal = Any.anonymous(clazz);
+    new AssertSynchronizedPrivateWithReturnValue<>(
+        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify, retVal).invoke();
+  }
+
+
 }
+

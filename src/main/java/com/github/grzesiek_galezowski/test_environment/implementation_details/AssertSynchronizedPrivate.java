@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment;
+package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.reset;

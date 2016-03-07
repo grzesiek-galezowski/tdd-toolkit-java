@@ -1,6 +1,8 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import autofixture.publicinterface.Any;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivateWithNoReturnValue;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivateWithReturnValue;
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;

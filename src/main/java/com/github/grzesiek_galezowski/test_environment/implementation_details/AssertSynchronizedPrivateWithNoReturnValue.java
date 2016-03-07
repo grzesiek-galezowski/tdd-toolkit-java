@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment;
+package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import org.mockito.Mockito;
 import org.mockito.stubbing.Answer;

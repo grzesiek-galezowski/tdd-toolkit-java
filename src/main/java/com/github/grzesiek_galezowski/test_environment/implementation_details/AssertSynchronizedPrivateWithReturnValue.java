@@ -11,15 +11,15 @@ import static org.mockito.Mockito.when;
  * Created by astral on 07.03.2016.
  */
 public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends AssertSynchronizedPrivate<T> {
-  protected TReturn retVal;
-  protected TReturn resultFromWrapper = null;
-  protected Function<T, TReturn> methodCallToVerify;
+  private final TReturn retVal;
+  private TReturn resultFromWrapper = null;
+  private final Function<T, TReturn> methodCallToVerify;
 
   public AssertSynchronizedPrivateWithReturnValue(
-      T wrappedInterfaceMock,
-      T synchronizedProxy,
-      Function<T, TReturn> methodCallToVerify,
-      TReturn retVal) {
+      final T wrappedInterfaceMock,
+      final T synchronizedProxy,
+      final Function<T, TReturn> methodCallToVerify,
+      final TReturn retVal) {
     super(wrappedInterfaceMock, synchronizedProxy);
     this.methodCallToVerify = methodCallToVerify;
     this.retVal = retVal;
@@ -31,7 +31,7 @@ public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends Assert
   }
 
   @Override
-  protected void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy) {
+  protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
     when(methodCallToVerify.apply(wrappedInterfaceMock))
         .then((Answer<TReturn>) invocation -> {
           assertThat(Thread.holdsLock(synchronizedProxy)).isTrue();
@@ -40,7 +40,7 @@ public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends Assert
   }
 
   @Override
-  protected void callMethodOnProxy(T synchronizedProxy) {
+  protected void callMethodOnProxy(final T synchronizedProxy) {
     resultFromWrapper = methodCallToVerify.apply(synchronizedProxy);
   }
 }

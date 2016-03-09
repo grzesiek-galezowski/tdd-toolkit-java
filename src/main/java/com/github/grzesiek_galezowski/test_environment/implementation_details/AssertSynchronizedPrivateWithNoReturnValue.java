@@ -22,7 +22,7 @@ public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchro
 
   @Override
   protected void assertMethodResult() {
-    methodCallToVerify.accept(verify(wrappedInterfaceMock));
+    methodCallToVerify.accept(verify(getWrappedInterfaceMock()));
   }
 
   @Override

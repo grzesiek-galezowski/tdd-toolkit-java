@@ -4,24 +4,24 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.reset;
 
 public abstract class AssertSynchronizedPrivate<T> {
-  protected T wrappedInterfaceMock;
-  protected T synchronizedProxy;
+  private T wrappedInterfaceMock;
+  private T synchronizedProxy;
 
   public AssertSynchronizedPrivate(
-      T wrappedInterfaceMock,
-      T synchronizedProxy) {
+      final T wrappedInterfaceMock,
+      final T synchronizedProxy) {
 
-    this.wrappedInterfaceMock = wrappedInterfaceMock;
-    this.synchronizedProxy = synchronizedProxy;
+    this.setWrappedInterfaceMock(wrappedInterfaceMock);
+    this.setSynchronizedProxy(synchronizedProxy);
   }
 
   public void invoke() {
     try {
       assertLockNotHeld();
-      prepareMockForCall(wrappedInterfaceMock, synchronizedProxy);
+      prepareMockForCall(getWrappedInterfaceMock(), getSynchronizedProxy());
 
       //WHEN
-      callMethodOnProxy(synchronizedProxy);
+      callMethodOnProxy(getSynchronizedProxy());
 
       //THEN
       assertMethodResult();
@@ -32,20 +32,37 @@ public abstract class AssertSynchronizedPrivate<T> {
   }
 
   private void resetMock() {
-    reset(wrappedInterfaceMock);
+    reset(getWrappedInterfaceMock());
   }
 
   private void assertLockNotHeld() {
-    assertLockNotHeldOn(synchronizedProxy);
+    assertLockNotHeldOn(getSynchronizedProxy());
   }
 
-  private static <T> void assertLockNotHeldOn(T synchronizedProxy) {
+  private static <T> void assertLockNotHeldOn(final T synchronizedProxy) {
     assertThat(Thread.holdsLock(synchronizedProxy)).isFalse();
   }
 
   protected abstract void assertMethodResult();
+
   protected abstract void callMethodOnProxy(T synchronizedProxy);
+
   protected abstract void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy);
 
 
+  protected T getWrappedInterfaceMock() {
+    return wrappedInterfaceMock;
+  }
+
+  protected void setWrappedInterfaceMock(final T wrappedInterfaceMock) {
+    this.wrappedInterfaceMock = wrappedInterfaceMock;
+  }
+
+  protected T getSynchronizedProxy() {
+    return synchronizedProxy;
+  }
+
+  protected void setSynchronizedProxy(final T synchronizedProxy) {
+    this.synchronizedProxy = synchronizedProxy;
+  }
 }

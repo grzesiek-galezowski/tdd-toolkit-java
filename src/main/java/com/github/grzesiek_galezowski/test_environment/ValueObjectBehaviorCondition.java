@@ -10,8 +10,8 @@ public class ValueObjectBehaviorCondition extends Condition<Class<?>> {
   @Override
   public boolean matches(final Class<?> clazz) {
     try {
-      XAssert.assertValueObject((Class<?>) clazz);
-    } catch (Throwable e) {
+      XAssert.assertValueObject(clazz);
+    } catch (final Throwable e) {
       describedAs(e.toString());
       return false;
     }

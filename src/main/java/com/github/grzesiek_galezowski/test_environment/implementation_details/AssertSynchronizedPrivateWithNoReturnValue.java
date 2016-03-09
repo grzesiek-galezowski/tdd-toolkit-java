@@ -12,10 +12,10 @@ import static org.mockito.Mockito.verify;
  * Created by astral on 07.03.2016.
  */
 public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchronizedPrivate<T> {
-  private Consumer<T> methodCallToVerify;
+  private final Consumer<T> methodCallToVerify;
 
   public AssertSynchronizedPrivateWithNoReturnValue(
-      T wrappedInterfaceMock, T synchronizedProxy, final Consumer<T> methodCallToVerify) {
+      final T wrappedInterfaceMock, final T synchronizedProxy, final Consumer<T> methodCallToVerify) {
     super(wrappedInterfaceMock, synchronizedProxy);
     this.methodCallToVerify = methodCallToVerify;
   }
@@ -26,17 +26,21 @@ public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchro
   }
 
   @Override
-  protected void callMethodOnProxy(T synchronizedProxy) {
+  protected void callMethodOnProxy(final T synchronizedProxy) {
     methodCallToVerify.accept(synchronizedProxy);
   }
 
   @Override
-  protected void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy) {
+  protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
     methodCallToVerify.accept(
         Mockito.doAnswer((Answer<Void>) invocation -> {
-          assertThat(Thread.holdsLock(synchronizedProxy)).isTrue();
+          assertThreadHoldsALockOn(synchronizedProxy);
           return null;
         }).when(wrappedInterfaceMock)
     );
+  }
+
+  private Object assertThreadHoldsALockOn(final T synchronizedProxy) {
+    return assertThat(Thread.holdsLock(synchronizedProxy)).withFailMessage("Expected this thread to hold a lock on " + synchronizedProxy + " during a call to wrapped method, but it didn't").isTrue();
   }
 }

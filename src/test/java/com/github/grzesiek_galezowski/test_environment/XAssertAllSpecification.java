@@ -14,7 +14,7 @@ public class XAssertAllSpecification {
 
     Assertions.assertThatThrownBy(() ->
         XAssert.assertAll(softly -> {
-          softly.assertThat(ARBITRARY_NUMBER).isEqualTo(ARBITRARY_NUMBER+1);
+          softly.assertThat(ARBITRARY_NUMBER).isEqualTo(ARBITRARY_NUMBER + 1);
           softly.assertThat(true).isEqualTo(false);
           softly.assertThat("Johnny").isEqualTo("Johnny");
         }))
@@ -24,7 +24,7 @@ public class XAssertAllSpecification {
   @Test
   public void shouldAllowMakingSoftAssertionsAndNotThrowAtTheEndWhenNoAssertionsFail() {
 
-    Throwable exception = Assertions.catchThrowable(() ->
+    final Throwable exception = Assertions.catchThrowable(() ->
         XAssert.assertAll(softly -> {
           softly.assertThat(ARBITRARY_NUMBER).isEqualTo(ARBITRARY_NUMBER);
           softly.assertThat(true).isEqualTo(true);
@@ -32,7 +32,6 @@ public class XAssertAllSpecification {
         }));
 
     assertThat(exception).isEqualTo(null);
-
   }
 
 }

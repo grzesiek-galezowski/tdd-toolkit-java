@@ -7,10 +7,16 @@ import java.util.List;
  */
 public interface InterfaceToBeSynchronized {
 
-  void voidMethod(int a, int b);
+  void correctlyWrappedVoidMethod(int a, int b);
 
   int methodWithReturn(int a, int b);
   List<Integer> methodWithGenericReturn(int a, int b);
+
+  void correctlyCalledButNotSynchronizedVoidMethod(Integer a, Integer b);
+
+  void voidMethodNotCalledAtAll(Integer a, Integer b);
+
+  void voidMethodCalledWithWrongArguments(Integer a, Integer b);
 
   //TODO for methods with return values
 }

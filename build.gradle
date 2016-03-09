@@ -18,6 +18,7 @@ apply plugin: 'java'
 apply plugin: 'maven'
 apply plugin: 'signing'
 apply plugin: 'checkstyle'
+apply plugin: 'findbugs'
 
 def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
 

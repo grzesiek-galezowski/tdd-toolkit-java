@@ -58,60 +58,112 @@ public class XAssertSpecification {
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));
   }
 
-  @Test
-  public void shouldLockBlaBlaBla() {
-    //GIVEN
-    final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
-    final Integer a = Any.intValue();
-    final Integer b = Any.intValue();
+  public class LockingAssertionsSpecification {
 
-    XAssert.assertSynchronized(mock, realThing, instance -> {
-      instance.voidMethod(a, b);
-    });
+    @Test
+    public void shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      XAssert.assertSynchronized(mock, realThing, instance -> {
+        instance.correctlyWrappedVoidMethod(a, b);
+      });
+      assertThat(Thread.holdsLock(realThing)).isFalse();
+    }
+
+    @Test
+    public void shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      assertThatThrownBy(() ->
+          XAssert.assertSynchronized(mock, realThing, instance -> {
+            instance.correctlyCalledButNotSynchronizedVoidMethod(a, b);
+          })
+      ).isInstanceOf(AssertionError.class);
+      assertThat(Thread.holdsLock(realThing)).isFalse();
+    }
+
+    @Test
+    public void shouldFailWhenVoidMethodIsNotCalledAtAll() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      assertThatThrownBy(() ->
+          XAssert.assertSynchronized(mock, realThing, instance -> {
+            instance.voidMethodNotCalledAtAll(a, b);
+          })
+      ).isInstanceOf(AssertionError.class);
+      assertThat(Thread.holdsLock(realThing)).isFalse();
+    }
+
+    @Test
+    public void shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      assertThatThrownBy(() ->
+          XAssert.assertSynchronized(mock, realThing, instance -> {
+            instance.voidMethodCalledWithWrongArguments(a, b);
+          })
+      ).isInstanceOf(AssertionError.class);
+      assertThat(Thread.holdsLock(realThing)).isFalse();
+    }
+
+    //TODO tests for:
+    //4. release on throwing exception
+
+
+    @Test
+    public void shouldLockBlaBlaBla2() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      XAssert.assertSynchronized(mock, realThing,
+          instance -> instance.methodWithReturn(a, b),
+          Integer.class);
+      assertThat(Thread.holdsLock(realThing)).isFalse();
+    }
+
+    //TODO tests for:
+    //1. not calling the method
+    //2. not synchronizing the method
+    //3. calling the method and synchronizing, but in the wrong order
+    //4. release on throwing exception
+
+    @Test
+    public void shouldLockBlaBlaBla3() {
+      //GIVEN
+      final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
+      final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+      final Integer a = Any.intValue();
+      final Integer b = Any.intValue();
+
+      XAssert.assertSynchronized(mock, realThing,
+          instance -> instance.methodWithGenericReturn(a, b),
+          new InstanceOf<List<Integer>>() {
+          });
+    }
+
+    //TODO tests for:
+    //1. not calling the method
+    //2. not synchronizing the method
+    //3. calling the method and synchronizing, but in the wrong order
+    //4. release on throwing exception
   }
-  //TODO tests for:
-  //1. not calling the method
-  //2. not synchronizing the method
-  //3. calling the method and synchronizing, but in the wrong order
-  //4. release on throwing exception
-
-  @Test
-  public void shouldLockBlaBlaBla2() {
-    //GIVEN
-    final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
-    final Integer a = Any.intValue();
-    final Integer b = Any.intValue();
-
-    XAssert.assertSynchronized(mock, realThing,
-        instance -> instance.methodWithReturn(a, b),
-        Integer.class);
-  }
-
-  //TODO tests for:
-  //1. not calling the method
-  //2. not synchronizing the method
-  //3. calling the method and synchronizing, but in the wrong order
-  //4. release on throwing exception
-
-  @Test
-  public void shouldLockBlaBlaBla3() {
-    //GIVEN
-    final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
-    final Integer a = Any.intValue();
-    final Integer b = Any.intValue();
-
-    XAssert.assertSynchronized(mock, realThing,
-        instance -> instance.methodWithGenericReturn(a, b),
-        new InstanceOf<List<Integer>>() {});
-  }
-
-  //TODO tests for:
-  //1. not calling the method
-  //2. not synchronizing the method
-  //3. calling the method and synchronizing, but in the wrong order
-  //4. release on throwing exception
-
 }

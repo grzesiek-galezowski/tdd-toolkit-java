@@ -7,31 +7,50 @@ import java.util.List;
  */
 public class SynchronizedWrapperOverInterfaceToBeSynchronized implements InterfaceToBeSynchronized {
 
-  private InterfaceToBeSynchronized iface;
+  private final InterfaceToBeSynchronized iface;
 
-  public SynchronizedWrapperOverInterfaceToBeSynchronized(InterfaceToBeSynchronized iface) {
+  public SynchronizedWrapperOverInterfaceToBeSynchronized(final InterfaceToBeSynchronized iface) {
 
     this.iface = iface;
   }
 
   @Override
-  public void voidMethod(int a, int b) {
-    synchronized(this) {
-      iface.voidMethod(a,b);
+  public void correctlyWrappedVoidMethod(final int a, final int b) {
+    synchronized (this) {
+      iface.correctlyWrappedVoidMethod(a, b);
     }
   }
 
   @Override
-  public int methodWithReturn(int a, int b) {
-    synchronized(this) {
-      return iface.methodWithReturn(a,b);
+  public int methodWithReturn(final int a, final int b) {
+    synchronized (this) {
+      return iface.methodWithReturn(a, b);
     }
   }
 
   @Override
-  public List<Integer> methodWithGenericReturn(int a, int b) {
-    synchronized(this) {
-      return iface.methodWithGenericReturn(a,b);
+  public List<Integer> methodWithGenericReturn(final int a, final int b) {
+    synchronized (this) {
+      return iface.methodWithGenericReturn(a, b);
+    }
+  }
+
+  @Override
+  public void correctlyCalledButNotSynchronizedVoidMethod(final Integer a, final Integer b) {
+    iface.correctlyCalledButNotSynchronizedVoidMethod(a, b);
+  }
+
+  @Override
+  public void voidMethodNotCalledAtAll(final Integer a, final Integer b) {
+    synchronized (this) {
+      final int x = 1;
+    }
+  }
+
+  @Override
+  public void voidMethodCalledWithWrongArguments(final Integer a, final Integer b) {
+    synchronized (this) {
+      iface.voidMethodCalledWithWrongArguments(b, a);
     }
   }
 }

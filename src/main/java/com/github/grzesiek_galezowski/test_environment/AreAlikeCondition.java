@@ -17,8 +17,8 @@ public class AreAlikeCondition<T> extends Condition<T> {
 
   @Override
   public boolean matches(final T t) {
-    String expected = GSON.toJson(other);
-    String actual = GSON.toJson(t);
+    final String expected = GSON.toJson(other);
+    final String actual = GSON.toJson(t);
     describedAs("like " + expected + " but was " + actual);
     return expected.equals(actual);
   }

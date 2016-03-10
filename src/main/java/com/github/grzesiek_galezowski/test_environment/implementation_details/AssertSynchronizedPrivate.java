@@ -1,5 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
+import javax.annotation.Nonnull;
+
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.reset;
 
@@ -39,15 +41,16 @@ public abstract class AssertSynchronizedPrivate<T> {
     assertLockNotHeldOn(getSynchronizedProxy());
   }
 
-  private static <T> void assertLockNotHeldOn(final T synchronizedProxy) {
+
+  private static <T> void assertLockNotHeldOn(@Nonnull final T synchronizedProxy) {
     assertThat(Thread.holdsLock(synchronizedProxy)).isFalse();
   }
 
   protected abstract void assertMethodResult();
 
-  protected abstract void callMethodOnProxy(T synchronizedProxy);
+  protected abstract void callMethodOnProxy(@Nonnull T synchronizedProxy);
 
-  protected abstract void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy);
+  protected abstract void prepareMockForCall(@Nonnull T wrappedInterfaceMock, T synchronizedProxy);
 
 
   protected T getWrappedInterfaceMock() {

@@ -58,7 +58,7 @@ public class XAssertSpecification {
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));
   }
 
-  public class LockingAssertionsSpecification {
+  public static class LockingAssertionsSpecification {
 
     @Test
     public void shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock() {

@@ -70,6 +70,12 @@ checkstyle {
     ignoreFailures = false
 }
 
+findbugs {
+    effort = "max"
+    reportLevel = "high"
+    ignoreFailures = false
+}
+
 dependencies {
     compile "com.google.guava:guava:19.0"
     compile "org.assertj:assertj-core:3.3.0"
@@ -136,4 +142,12 @@ uploadArchives {
 }
 
 uploadArchives.dependsOn([jar, test])
+check.dependsOn("pitest")
+
 afterReleaseBuild.dependsOn uploadArchives
+tasks.withType(FindBugs) {
+    reports {
+        xml.enabled = false
+        html.enabled = true
+    }
+}

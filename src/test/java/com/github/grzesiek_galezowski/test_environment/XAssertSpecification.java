@@ -68,6 +68,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       XAssert.assertSynchronized(mock, realThing, instance -> {
         instance.correctlyWrappedVoidMethod(a, b);
       });
@@ -82,6 +83,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       assertThatThrownBy(() ->
           XAssert.assertSynchronized(mock, realThing, instance -> {
             instance.correctlyCalledButNotSynchronizedVoidMethod(a, b);
@@ -98,6 +100,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       assertThatThrownBy(() ->
           XAssert.assertSynchronized(mock, realThing, instance -> {
             instance.voidMethodNotCalledAtAll(a, b);
@@ -114,6 +117,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       assertThatThrownBy(() ->
           XAssert.assertSynchronized(mock, realThing, instance -> {
             instance.voidMethodCalledWithWrongArguments(a, b);
@@ -134,6 +138,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       XAssert.assertSynchronized(mock, realThing,
           instance -> instance.methodWithReturn(a, b),
           Integer.class);
@@ -154,6 +159,7 @@ public class XAssertSpecification {
       final Integer a = Any.intValue();
       final Integer b = Any.intValue();
 
+      //WHEN-THEN
       XAssert.assertSynchronized(mock, realThing,
           instance -> instance.methodWithGenericReturn(a, b),
           new InstanceOf<List<Integer>>() {

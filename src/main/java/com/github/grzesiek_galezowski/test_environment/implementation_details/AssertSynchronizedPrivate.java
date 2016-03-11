@@ -6,15 +6,15 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.reset;
 
 public abstract class AssertSynchronizedPrivate<T> {
-  private T wrappedInterfaceMock;
-  private T synchronizedProxy;
+  private final T wrappedInterfaceMock;
+  private final T synchronizedProxy;
 
   public AssertSynchronizedPrivate(
       final T wrappedInterfaceMock,
       final T synchronizedProxy) {
 
-    this.setWrappedInterfaceMock(wrappedInterfaceMock);
-    this.setSynchronizedProxy(synchronizedProxy);
+    this.wrappedInterfaceMock = wrappedInterfaceMock;
+    this.synchronizedProxy = synchronizedProxy;
   }
 
   public void invoke() {
@@ -57,15 +57,8 @@ public abstract class AssertSynchronizedPrivate<T> {
     return wrappedInterfaceMock;
   }
 
-  protected void setWrappedInterfaceMock(final T wrappedInterfaceMock) {
-    this.wrappedInterfaceMock = wrappedInterfaceMock;
-  }
-
   protected T getSynchronizedProxy() {
     return synchronizedProxy;
   }
 
-  protected void setSynchronizedProxy(final T synchronizedProxy) {
-    this.synchronizedProxy = synchronizedProxy;
-  }
 }

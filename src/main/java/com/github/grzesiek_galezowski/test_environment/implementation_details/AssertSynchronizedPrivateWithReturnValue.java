@@ -2,6 +2,7 @@ package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import org.mockito.stubbing.Answer;
 
+import javax.annotation.Nullable;
 import java.util.function.Function;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -12,7 +13,8 @@ import static org.mockito.Mockito.when;
  */
 public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends AssertSynchronizedPrivate<T> {
   private final TReturn retVal;
-  private TReturn resultFromWrapper = null;
+  @Nullable
+  private TReturn resultFromWrapper;
   private final Function<T, TReturn> methodCallToVerify;
 
   public AssertSynchronizedPrivateWithReturnValue(

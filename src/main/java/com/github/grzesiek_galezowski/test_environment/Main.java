@@ -4,5 +4,4 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 public class Main {
-
 }

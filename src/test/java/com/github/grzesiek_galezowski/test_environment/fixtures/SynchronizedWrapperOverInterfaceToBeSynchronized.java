@@ -1,5 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.fixtures;
 
+import autofixture.publicinterface.Any;
+
 import java.util.List;
 
 /**
@@ -22,9 +24,9 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   }
 
   @Override
-  public int methodWithReturn(final int a, final int b) {
+  public int correctlyWrappedFunction(final int a, final int b) {
     synchronized (this) {
-      return iface.methodWithReturn(a, b);
+      return iface.correctlyWrappedFunction(a, b);
     }
   }
 
@@ -51,6 +53,33 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   public void voidMethodCalledWithWrongArguments(final Integer a, final Integer b) {
     synchronized (this) {
       iface.voidMethodCalledWithWrongArguments(b, a);
+    }
+  }
+
+  @Override
+  public int correctlyCalledButNotSynchronizedFunction(final int a, final int b) {
+    return iface.correctlyCalledButNotSynchronizedFunction(a, b);
+  }
+
+  @Override
+  public int functionNotCalledAtAll(final int a, final int b) {
+    synchronized (this) {
+      return 1;
+    }
+  }
+
+  @Override
+  public int functionCalledWithWrongArguments(final int a, final int b) {
+    synchronized (this) {
+      return iface.functionCalledWithWrongArguments(b, a);
+    }
+  }
+
+  @Override
+  public int functionWithNonPropagatedReturnValue(final int a, final int b) {
+    synchronized (this) {
+      final int x = iface.functionWithNonPropagatedReturnValue(a, b);
+      return Any.intOtherThan(x);
     }
   }
 }

@@ -45,7 +45,7 @@ public class XAssert {
     EqualsVerifier.forClass(clazz).verify();
   }
 
-  public static <T> void assertSynchronized(
+  public static <T> void assertSynchronizedVoidMethod(
       final T wrappedInterfaceMock,
       final T synchronizedProxy,
       final Consumer<T> methodCallToVerify) {
@@ -54,7 +54,7 @@ public class XAssert {
         wrappedInterfaceMock, synchronizedProxy, methodCallToVerify).invoke();
   }
 
-  public static <T, TReturn> void assertSynchronized(
+  public static <T, TReturn> void assertSynchronizedFunction(
       final T wrappedInterfaceMock,
       final T synchronizedProxy,
       final Function<T,TReturn> methodCallToVerify,
@@ -65,7 +65,7 @@ public class XAssert {
         wrappedInterfaceMock, synchronizedProxy, methodCallToVerify, retVal).invoke();
   }
 
-  public static <T, TReturn> void assertSynchronized(
+  public static <T, TReturn> void assertSynchronizedFunction(
       final T wrappedInterfaceMock,
       final T synchronizedProxy,
       final Function<T,TReturn> methodCallToVerify,

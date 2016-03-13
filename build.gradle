@@ -20,6 +20,7 @@ apply plugin: 'signing'
 apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
+apply plugin: "jacoco"
 
 def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
 
@@ -58,7 +59,6 @@ task sourcesJar(type: Jar) {
 test {
     useTestNG()
 }
-
 
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"

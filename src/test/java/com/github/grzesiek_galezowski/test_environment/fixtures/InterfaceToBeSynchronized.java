@@ -11,7 +11,7 @@ public interface InterfaceToBeSynchronized {
 
   int correctlyWrappedFunction(int a, int b);
 
-  List<Integer> methodWithGenericReturn(int a, int b);
+  List<Integer> genericCorrectlySynchronizedFunction(int a, int b);
 
   void correctlyCalledButNotSynchronizedVoidMethod(Integer a, Integer b);
 
@@ -26,6 +26,14 @@ public interface InterfaceToBeSynchronized {
   int functionCalledWithWrongArguments(int a, int b);
 
   int functionWithNonPropagatedReturnValue(int a, int b);
+
+  List<Integer> genericCorrectlyCalledButNotSynchronizedFunction(int a, int b);
+
+  List<Integer> genericFunctionNotCalledAtAll(int a, int b);
+
+  List<Integer> genericFunctionCalledWithWrongArguments(int a, int b);
+
+  List<Integer> genericFunctionWithNonPropagatedReturnValue(Integer a, Integer b);
 
   //TODO for methods with return values
 }

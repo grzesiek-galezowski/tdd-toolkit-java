@@ -2,6 +2,7 @@ package com.github.grzesiek_galezowski.test_environment.fixtures;
 
 import autofixture.publicinterface.Any;
 
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -31,9 +32,9 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   }
 
   @Override
-  public List<Integer> methodWithGenericReturn(final int a, final int b) {
+  public List<Integer> genericCorrectlySynchronizedFunction(final int a, final int b) {
     synchronized (this) {
-      return iface.methodWithGenericReturn(a, b);
+      return iface.genericCorrectlySynchronizedFunction(a, b);
     }
   }
 
@@ -80,6 +81,32 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
     synchronized (this) {
       final int x = iface.functionWithNonPropagatedReturnValue(a, b);
       return Any.intOtherThan(x);
+    }
+  }
+
+  @Override
+  public List<Integer> genericCorrectlyCalledButNotSynchronizedFunction(final int a, final int b) {
+    return iface.genericCorrectlyCalledButNotSynchronizedFunction(a, b);
+  }
+
+  @Override
+  public List<Integer> genericFunctionNotCalledAtAll(final int a, final int b) {
+    return new ArrayList<>();
+  }
+
+  @Override
+  public List<Integer> genericFunctionCalledWithWrongArguments(final int a, final int b) {
+    synchronized (this) {
+      return iface.genericFunctionCalledWithWrongArguments(b, a);
+    }
+
+  }
+
+  @Override
+  public List<Integer> genericFunctionWithNonPropagatedReturnValue(final Integer a, final Integer b) {
+    synchronized (this) {
+      iface.genericFunctionWithNonPropagatedReturnValue(a, b);
+      return new ArrayList<>();
     }
   }
 }

@@ -1,9 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment;
 
-import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivateWithNoReturnValue;
-import com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivateWithReturnValue;
-import com.google.common.reflect.TypeToken;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl;
 import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;
 import org.assertj.core.api.SoftAssertions;
@@ -12,8 +10,8 @@ import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 import java.util.function.Consumer;
 import java.util.function.Function;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.catchThrowable;
+import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 /**
  * Created by astral on 09.02.2016.
@@ -23,13 +21,13 @@ public class XAssert {
   private static final Gson GSON = new Gson();
 
   public static void assertAll(final Consumer<SoftAssertions> assertions) {
-    SoftAssertions softAssertions = new SoftAssertions();
+    final SoftAssertions softAssertions = new SoftAssertions();
     assertions.accept(softAssertions);
     softAssertions.assertAll();
   }
 
   public static void assertThatNotThrownBy(final ThrowingCallable callable) {
-    Throwable exception = catchThrowable(callable);
+    final Throwable exception = catchThrowable(callable);
     assertThat(exception).isEqualTo(null);
   }
 
@@ -57,23 +55,14 @@ public class XAssert {
   public static <T, TReturn> void assertSynchronizedFunction(
       final T wrappedInterfaceMock,
       final T synchronizedProxy,
-      final Function<T,TReturn> methodCallToVerify,
+      final Function<T, TReturn> methodCallToVerify,
       final Class<TReturn> clazz) {
 
-    TReturn retVal = Any.anonymous(clazz);
-    new AssertSynchronizedPrivateWithReturnValue<>(
-        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify, retVal).invoke();
+    new SynchronizationAssertDsl<T>(wrappedInterfaceMock, synchronizedProxy).locksMonitorOn(methodCallToVerify, clazz);
   }
 
-  public static <T, TReturn> void assertSynchronizedFunction(
-      final T wrappedInterfaceMock,
-      final T synchronizedProxy,
-      final Function<T,TReturn> methodCallToVerify,
-      final TypeToken<TReturn> clazz) {
-
-    TReturn retVal = Any.anonymous(clazz);
-    new AssertSynchronizedPrivateWithReturnValue<>(
-        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify, retVal).invoke();
+  public static <T> SynchronizationAssertDsl<T> assertThatProxyTo(final T wrappedMock, final T realThing) {
+    return new SynchronizationAssertDsl<>(wrappedMock, realThing);
   }
 
 

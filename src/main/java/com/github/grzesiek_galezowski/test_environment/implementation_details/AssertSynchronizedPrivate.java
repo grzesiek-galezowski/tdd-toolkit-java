@@ -8,13 +8,15 @@ import static org.mockito.Mockito.reset;
 public abstract class AssertSynchronizedPrivate<T> {
   private final T wrappedInterfaceMock;
   private final T synchronizedProxy;
+  private final Object monitorObject;
 
   public AssertSynchronizedPrivate(
       final T wrappedInterfaceMock,
-      final T synchronizedProxy) {
+      final T synchronizedProxy, final Object monitorObject) {
 
     this.wrappedInterfaceMock = wrappedInterfaceMock;
     this.synchronizedProxy = synchronizedProxy;
+    this.monitorObject = monitorObject;
   }
 
   public void invoke() {
@@ -37,21 +39,29 @@ public abstract class AssertSynchronizedPrivate<T> {
     reset(getWrappedInterfaceMock());
   }
 
-  private void assertLockNotHeld() {
-    assertLockNotHeldOn(getSynchronizedProxy());
+  protected void assertLockNotHeld() {
+    assertLockNotHeldOn(getMonitorObject());
+  }
+
+  protected void assertLockHeld() {
+    assertThreadHoldsALockOn(getMonitorObject());
   }
 
 
-  private static <T> void assertLockNotHeldOn(@Nonnull final T synchronizedProxy) {
-    assertThat(Thread.holdsLock(synchronizedProxy)).isFalse();
+  private static <T> void assertLockNotHeldOn(@Nonnull final Object monitor) {
+    assertThat(Thread.holdsLock(monitor)).isFalse();
+  }
+
+  private void assertThreadHoldsALockOn(final Object monitor) {
+    assertThat(Thread.holdsLock(monitor)).withFailMessage("Expected this thread to hold a lock whenReceives " + monitor + " during a call to wrapped method, but it didn't").isTrue();
   }
 
   protected abstract void assertMethodResult();
 
   protected abstract void callMethodOnProxy(@Nonnull T synchronizedProxy);
 
-  protected abstract void prepareMockForCall(@Nonnull T wrappedInterfaceMock, T synchronizedProxy);
 
+  protected abstract void prepareMockForCall(@Nonnull T wrappedInterfaceMock, T synchronizedProxy);
 
   protected T getWrappedInterfaceMock() {
     return wrappedInterfaceMock;
@@ -61,4 +71,7 @@ public abstract class AssertSynchronizedPrivate<T> {
     return synchronizedProxy;
   }
 
+  protected Object getMonitorObject() {
+    return monitorObject;
+  }
 }

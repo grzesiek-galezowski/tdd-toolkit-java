@@ -5,18 +5,17 @@ import org.mockito.stubbing.Answer;
 
 import java.util.function.Consumer;
 
-import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.verify;
 
 /**
- * Created by astral on 07.03.2016.
+ * Created by astral whenReceives 07.03.2016.
  */
 public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchronizedPrivate<T> {
   private final Consumer<T> methodCallToVerify;
 
   public AssertSynchronizedPrivateWithNoReturnValue(
-      final T wrappedInterfaceMock, final T synchronizedProxy, final Consumer<T> methodCallToVerify) {
-    super(wrappedInterfaceMock, synchronizedProxy);
+      final T wrappedInterfaceMock, final T synchronizedProxy, final Consumer<T> methodCallToVerify, final Object monitorObject) {
+    super(wrappedInterfaceMock, synchronizedProxy, monitorObject);
     this.methodCallToVerify = methodCallToVerify;
   }
 
@@ -34,13 +33,10 @@ public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchro
   protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
     methodCallToVerify.accept(
         Mockito.doAnswer((Answer<Void>) invocation -> {
-          assertThreadHoldsALockOn(synchronizedProxy);
+          assertLockHeld();
           return null;
         }).when(wrappedInterfaceMock)
     );
   }
 
-  private Object assertThreadHoldsALockOn(final T synchronizedProxy) {
-    return assertThat(Thread.holdsLock(synchronizedProxy)).withFailMessage("Expected this thread to hold a lock on " + synchronizedProxy + " during a call to wrapped method, but it didn't").isTrue();
-  }
 }

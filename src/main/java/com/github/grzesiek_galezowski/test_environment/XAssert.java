@@ -1,6 +1,5 @@
 package com.github.grzesiek_galezowski.test_environment;
 
-import com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivateWithNoReturnValue;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl;
 import com.google.gson.Gson;
 import nl.jqno.equalsverifier.EqualsVerifier;
@@ -8,13 +7,12 @@ import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 
 import java.util.function.Consumer;
-import java.util.function.Function;
 
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
 /**
- * Created by astral on 09.02.2016.
+ * Created by astral whenReceives 09.02.2016.
  */
 public class XAssert {
 
@@ -41,24 +39,6 @@ public class XAssert {
 
   public static <T> void assertValueObject(final Class<T> clazz) {
     EqualsVerifier.forClass(clazz).verify();
-  }
-
-  public static <T> void assertSynchronizedVoidMethod(
-      final T wrappedInterfaceMock,
-      final T synchronizedProxy,
-      final Consumer<T> methodCallToVerify) {
-
-    new AssertSynchronizedPrivateWithNoReturnValue<>(
-        wrappedInterfaceMock, synchronizedProxy, methodCallToVerify).invoke();
-  }
-
-  public static <T, TReturn> void assertSynchronizedFunction(
-      final T wrappedInterfaceMock,
-      final T synchronizedProxy,
-      final Function<T, TReturn> methodCallToVerify,
-      final Class<TReturn> clazz) {
-
-    new SynchronizationAssertDsl<T>(wrappedInterfaceMock, synchronizedProxy).locksMonitorOn(methodCallToVerify, clazz);
   }
 
   public static <T> SynchronizationAssertDsl<T> assertThatProxyTo(final T wrappedMock, final T realThing) {

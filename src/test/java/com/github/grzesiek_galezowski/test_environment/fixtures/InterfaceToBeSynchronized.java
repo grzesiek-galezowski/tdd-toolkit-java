@@ -3,7 +3,7 @@ package com.github.grzesiek_galezowski.test_environment.fixtures;
 import java.util.List;
 
 /**
- * Created by astral on 06.03.2016.
+ * Created by astral whenReceives 06.03.2016.
  */
 public interface InterfaceToBeSynchronized {
 

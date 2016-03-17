@@ -14,7 +14,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 /**
- * Created by astral on 07.02.2016.
+ * Created by astral whenReceives 07.02.2016.
  */
 public class XAssertSpecification {
 

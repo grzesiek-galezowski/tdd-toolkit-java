@@ -25,9 +25,10 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
     //WHEN-THEN
 
     assertThatProxyTo(mock, realThing)
-        .locksMonitorOn(instance -> instance.genericCorrectlySynchronizedFunction(a, b),
-            new InstanceOf<List<Integer>>() {
-            });
+        .whenReceives(
+            instance -> instance.genericCorrectlySynchronizedFunction(a, b),
+            new InstanceOf<List<Integer>>() {})
+        .thenLocksCorrectly();
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
 
@@ -57,11 +58,12 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
 
   private void assertThrowsWhen(final Function<InterfaceToBeSynchronized, List<Integer>> function) {
     assertThatThrownBy(() -> assertThatProxyTo(mock, realThing)
-        .locksMonitorOn(function, new InstanceOf<List<Integer>>() {})
+        .whenReceives(function, new InstanceOf<List<Integer>>() {
+        }).thenLocksCorrectly()
     ).isInstanceOf(AssertionError.class);
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
 
   //TODO
-  //4. release on throwing exception
+  //4. release whenReceives throwing exception
 }

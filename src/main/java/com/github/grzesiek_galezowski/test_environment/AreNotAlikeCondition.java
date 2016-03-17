@@ -4,7 +4,7 @@ import com.google.gson.Gson;
 import org.assertj.core.api.Condition;
 
 /**
- * Created by astral on 14.02.2016.
+ * Created by astral whenReceives 14.02.2016.
  */
 public class AreNotAlikeCondition<T> extends Condition<T> {
   private static final Gson GSON = new Gson();

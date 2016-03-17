@@ -3,7 +3,7 @@ package com.github.grzesiek_galezowski.test_environment;
 import org.assertj.core.api.Condition;
 
 /**
- * Created by astral on 14.02.2016.
+ * Created by astral whenReceives 14.02.2016.
  */
 public class XJAssertConditions {
 

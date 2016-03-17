@@ -28,8 +28,8 @@ gradle.taskGraph.whenReady { taskGraph ->
     if (taskGraph.allTasks.any { it instanceof Sign }) {
         allprojects {
             ext."signing.password" = password
-            ext."signing.keyId"= '214AA4AD'
-            ext."signing.secretKeyRingFile"='C:/Users/astral/AppData/Roaming/gnupg/secring.gpg'
+            ext."signing.keyId" = '214AA4AD'
+            ext."signing.secretKeyRingFile" = 'C:/Users/astral/AppData/Roaming/gnupg/secring.gpg'
         }
     }
 }
@@ -84,7 +84,7 @@ dependencies {
     compile "com.github.autofixture:autofixturegenerator:1.0.6"
     compile "com.google.code.gson:gson:2.6.2"
     compile "nl.jqno.equalsverifier:equalsverifier:2.0.1"
-    compile 'com.google.code.findbugs:annotations:3.0.1u2'
+    compile 'com.google.code.findbugs:annotations:3.0.1'
 }
 
 artifacts {
@@ -107,7 +107,7 @@ uploadArchives {
             beforeDeployment { MavenDeployment deployment -> signing.signPom(deployment) }
 
             repository(url: "https://oss.sonatype.org/service/local/staging/deploy/maven2/") {
-            //repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
+                //repository(url: "https://oss.sonatype.org/content/repositories/snapshots") {
                 authentication(userName: "grzesiek-galezowski", password: password)
             }
 

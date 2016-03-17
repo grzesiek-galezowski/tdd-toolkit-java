@@ -1,7 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.fixtures;
 
 /**
- * Created by astral on 28.02.2016.
+ * Created by astral whenReceives 28.02.2016.
  */
 public class ValueObjectWithoutFinalFields {
 

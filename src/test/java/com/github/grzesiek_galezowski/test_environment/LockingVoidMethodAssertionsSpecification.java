@@ -7,6 +7,7 @@ import org.testng.annotations.Test;
 
 import java.util.function.Consumer;
 
+import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatProxyTo;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
@@ -21,8 +22,10 @@ public class LockingVoidMethodAssertionsSpecification {
   @Test
   public void shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock() {
     //WHEN-THEN
-    XAssert.assertSynchronizedVoidMethod(mock, realThing,
-        instance -> instance.correctlyWrappedVoidMethod(a, b));
+
+    assertThatProxyTo(mock, realThing)
+        .whenReceives(instance -> instance.correctlyWrappedVoidMethod(a, b))
+        .thenLocksCorrectly();
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
 
@@ -48,13 +51,13 @@ public class LockingVoidMethodAssertionsSpecification {
   }
 
   private void assertExceptionIsThrownOn(final Consumer<InterfaceToBeSynchronized> consumer) {
-    assertThatThrownBy(() ->
-        XAssert.assertSynchronizedVoidMethod(mock, realThing, consumer)
+    assertThatThrownBy(() -> assertThatProxyTo(
+        mock, realThing).whenReceives(consumer).thenLocksCorrectly()
     ).isInstanceOf(AssertionError.class);
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
 
 
   //TODO tests for:
-  //4. release on throwing exception
+  //4. release whenReceives throwing exception
 }

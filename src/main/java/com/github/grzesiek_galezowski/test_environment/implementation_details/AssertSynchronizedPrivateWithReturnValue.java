@@ -9,10 +9,11 @@ import static org.assertj.core.api.Assertions.assertThat;
 import static org.mockito.Mockito.when;
 
 /**
- * Created by astral on 07.03.2016.
+ * Created by astral whenReceives 07.03.2016.
  */
 public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends AssertSynchronizedPrivate<T> {
   private final TReturn retVal;
+
   @Nullable
   private TReturn resultFromWrapper;
   private final Function<T, TReturn> methodCallToVerify;
@@ -21,8 +22,8 @@ public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends Assert
       final T wrappedInterfaceMock,
       final T synchronizedProxy,
       final Function<T, TReturn> methodCallToVerify,
-      final TReturn retVal) {
-    super(wrappedInterfaceMock, synchronizedProxy);
+      final TReturn retVal, final Object monitorObject) {
+    super(wrappedInterfaceMock, synchronizedProxy, monitorObject);
     this.methodCallToVerify = methodCallToVerify;
     this.retVal = retVal;
   }
@@ -36,7 +37,7 @@ public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends Assert
   protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
     when(methodCallToVerify.apply(wrappedInterfaceMock))
         .then((Answer<TReturn>) invocation -> {
-          assertThat(Thread.holdsLock(synchronizedProxy)).isTrue();
+          assertLockHeld();
           return retVal;
         });
   }

@@ -1,5 +1,5 @@
 /**
- * Created by astral on 07.02.2016.
+ * Created by astral whenReceives 07.02.2016.
  */
 package com.github.grzesiek_galezowski.test_environment;
 

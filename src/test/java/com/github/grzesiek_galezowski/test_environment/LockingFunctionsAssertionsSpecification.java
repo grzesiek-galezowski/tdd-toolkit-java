@@ -21,9 +21,10 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock() {
     //WHEN-THEN
-    XAssert.assertSynchronizedFunction(mock, realThing, instance -> {
-      return instance.correctlyWrappedFunction(a, b);
-    }, Integer.class);
+    final Function<InterfaceToBeSynchronized, Integer> methodCallToVerify = instance -> instance.correctlyWrappedFunction(a, b);
+
+    XAssert.assertThatProxyTo(mock, realThing)
+        .whenReceives(methodCallToVerify, Integer.class).thenLocksCorrectly();
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
 
@@ -52,10 +53,10 @@ public class LockingFunctionsAssertionsSpecification {
   }
 
   private void assertThrowsWhen(final Function<InterfaceToBeSynchronized, Integer> function) {
-    assertThatThrownBy(() ->
-        XAssert.assertSynchronizedFunction(mock, realThing, function, Integer.class)
+    assertThatThrownBy(() -> XAssert.assertThatProxyTo(mock, realThing)
+        .whenReceives(function, Integer.class).thenLocksCorrectly()
     ).isInstanceOf(AssertionError.class);
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }
-  //4. release on throwing exception
+  //4. release whenReceives throwing exception
 }

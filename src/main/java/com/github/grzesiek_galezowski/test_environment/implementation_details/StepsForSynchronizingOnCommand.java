@@ -10,30 +10,30 @@ import static org.mockito.Mockito.verify;
 /**
  * Created by astral whenReceives 07.03.2016.
  */
-public class AssertSynchronizedPrivateWithNoReturnValue<T> extends AssertSynchronizedPrivate<T> {
+public class StepsForSynchronizingOnCommand<T>
+    implements SynchronizationAssertionSteps<T> {
   private final Consumer<T> methodCallToVerify;
 
-  public AssertSynchronizedPrivateWithNoReturnValue(
-      final T wrappedInterfaceMock, final T synchronizedProxy, final Consumer<T> methodCallToVerify, final Object monitorObject) {
-    super(wrappedInterfaceMock, synchronizedProxy, monitorObject);
+  public StepsForSynchronizingOnCommand(
+      final Consumer<T> methodCallToVerify) {
     this.methodCallToVerify = methodCallToVerify;
   }
 
   @Override
-  protected void assertMethodResult() {
-    methodCallToVerify.accept(verify(getWrappedInterfaceMock()));
+  public void assertMethodResult(final T wrappedInterfaceMock) {
+    methodCallToVerify.accept(verify(wrappedInterfaceMock));
   }
 
   @Override
-  protected void callMethodOnProxy(final T synchronizedProxy) {
+  public void callMethodOnProxy(final T synchronizedProxy) {
     methodCallToVerify.accept(synchronizedProxy);
   }
 
   @Override
-  protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
+  public void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy, LockAssertions<T> lockAssertions) {
     methodCallToVerify.accept(
         Mockito.doAnswer((Answer<Void>) invocation -> {
-          assertLockHeld();
+          lockAssertions.assertLockHeld();
           return null;
         }).when(wrappedInterfaceMock)
     );

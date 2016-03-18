@@ -19,21 +19,40 @@ public class SynchronizationAssertDsl<T> {
     this.realThing = realThing;
   }
 
-  public <TReturn> SynchronizationAssertDsl2<T, TReturn> whenReceives(final Function<T, TReturn> methodCallToVerify,
-                                                                      final Class<TReturn> clazz) {
-    final TReturn retVal = Any.anonymous(clazz);
-    return new SynchronizationAssertDsl2<>(
-        wrappedMock, realThing, methodCallToVerify, retVal);
-  }
-
-  public <TReturn> SynchronizationAssertDsl2<T, TReturn> whenReceives(
-      final Function<T, TReturn> methodCallToVerify, final TypeToken<TReturn> clazz) {
+  public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
+      final Function<T, TReturn> methodCallToVerify,
+      final Class<TReturn> clazz) {
 
     final TReturn retVal = Any.anonymous(clazz);
-    return new SynchronizationAssertDsl2<>(this.wrappedMock, realThing, methodCallToVerify, retVal);
+    return dslOver(workflow(forCheckingSynchronizationOf(methodCallToVerify, retVal)));
   }
 
-  public SynchronizationAssertDsl3<T> whenReceives(Consumer<T> consumer) {
-    return new SynchronizationAssertDsl3<>(this.wrappedMock, realThing, consumer);
+  public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
+      final Function<T, TReturn> methodCallToVerify,
+      final TypeToken<TReturn> clazz) {
+    final TReturn retVal = Any.anonymous(clazz);
+    return dslOver(workflow(forCheckingSynchronizationOf(methodCallToVerify, retVal)));
+  }
+
+  public SynchronizationAssertDsl2<T> whenReceives(final Consumer<T> consumer) {
+    return dslOver(workflow(forCheckingSynchronizationOf(consumer)));
+  }
+
+  private SynchronizationAssertDsl2<T> dslOver(final SynchronizationAssertionWorkflow<T> workflow) {
+    return new SynchronizationAssertDsl2<>(realThing,
+        workflow);
+  }
+
+  private <TReturn> StepsForSynchronizingOnFunction<T, TReturn> forCheckingSynchronizationOf(final Function<T, TReturn> methodCallToVerify, final TReturn retVal) {
+    return new StepsForSynchronizingOnFunction<>(methodCallToVerify, retVal);
+  }
+
+  private StepsForSynchronizingOnCommand<T> forCheckingSynchronizationOf(final Consumer<T> consumer) {
+    return new StepsForSynchronizingOnCommand<>(consumer);
+  }
+
+  private SynchronizationAssertionWorkflow<T> workflow(final SynchronizationAssertionSteps<T> stepsForSynchronizingOnCommand) {
+    return new SynchronizationAssertionWorkflow<>(this.wrappedMock, realThing,
+        stepsForSynchronizingOnCommand);
   }
 }

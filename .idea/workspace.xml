@@ -2,31 +2,17 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0db1a05d-4738-42be-a07e-587e52cde7f4" name="Default" comment="before release">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertions.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionSteps.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflow.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnCommand.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnFunction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreAlikeCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreAlikeCondition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreNotAlikeCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreNotAlikeCondition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Main.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ValueObjectBehaviorCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ValueObjectBehaviorCondition.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssert.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XJAssertConditions.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XJAssertConditions.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/annotations/package-info.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/annotations/package-info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsAssertionsSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsAssertionsSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsWithGenericReturnTypeAssertionsSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsWithGenericReturnTypeAssertionsSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/package-info.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/package-info.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/package-info.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/package-info.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java" />
     </list>
     <ignored path="tdd-toolkit-java.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -230,11 +216,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="LockingVoidMethodAssertionsSpecification.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java">
+      <file leaf-file-name="SynchronizationAssertionWorkflow.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
-              <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+            <state relative-caret-position="204">
+              <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -245,9 +231,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -708,13 +694,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/MainSpecification.java" />
-        <option value="$PROJECT_DIR$/settings.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/AreAlikeCondition.java" />
-        <option value="C:/Program Files/Java/jdk1.8.0_31/jre/lib/rt.jar!/java/util/function/Predicate.class" />
-        <option value="$PROJECT_DIR$/src/test/java/lolek.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/asdad.feature" />
-        <option value="$PROJECT_DIR$/src/test/java/XAssertAlikeSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/XAssertAllSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/XAssertSpecification.java" />
         <option value="$PROJECT_DIR$/gradle.properties" />
@@ -749,16 +728,23 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/SynchronizationAssertDsl.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsWithGenericReturnTypeAssertionsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsAssertionsSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssert.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionSteps.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertions.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSettingMonitorOnFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSettingMonitorOnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnCommand.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnFunction.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflow.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" />
       </list>
     </option>
   </component>
@@ -939,7 +925,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
@@ -974,36 +959,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_environment" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1081,119 +1036,10 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pitest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="201603180040" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="pitest" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="build" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="reports" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="jacoco" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="html" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
         </subPane>
       </pane>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1210,13 +1056,17 @@
     <property name="project.structure.last.edited" value="Problems" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.32413793" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Java" />
+    <property name="settings.editor.selected.configurable" value="project.propCompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/build/reports/findbugs" />
     <property name="extract.method.default.visibility" value="private" />
     <property name="SearchEverywhereHistoryKey" value="locksCorre&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl2#thenLocksCorrectly&#10;getMonitor&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivate#getMonitorObject&#10;locking&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.XAssertSpecification.LockingAssertionsSpecification&#10;interfacetobe&#9;FILE&#9;file://C:/Users/astral/Documents/GitHub/tdd-toolkit-java/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java&#10;checkstyle&#9;ACTION&#9;CheckStylePluginActions&#10;blabl&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.XAssertSpecification#shouldLockBlaBlaBla&#10;build.&#9;FILE&#9;file://C:/Users/astral/Documents/GitHub/tdd-toolkit-java/build.gradle" />
+    <property name="extractMethod.generateAnnotations" value="false" />
   </component>
   <component name="RecentsManager">
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\test\java\com\github\grzesiek_galezowski\test_environment" />
       <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\implementation_details" />
@@ -1238,7 +1088,7 @@
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [pitest]">
+  <component name="RunManager" selected="Gradle.tdd-toolkit-java [test]">
     <configuration default="false" name="tdd-toolkit-java [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1255,72 +1105,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="XAssertSpecification" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.implementation_details.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tdd-toolkit-java_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment" />
-      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.XAssertSpecification" />
-      <option name="METHOD_NAME" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="XAssertSpecification$LockingFunctionsWithGenericReturnTypeAssertionsSpecification.shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.implementation_details.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tdd-toolkit-java_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment" />
-      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.XAssertSpecification$LockingFunctionsWithGenericReturnTypeAssertionsSpecification" />
-      <option name="METHOD_NAME" value="shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
       <method />
     </configuration>
     <configuration default="false" name="&lt;default&gt;" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
@@ -1363,6 +1147,52 @@
         <option name="taskNames">
           <list>
             <option value="pitest" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="&lt;default&gt; (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="tdd-toolkit-java_main" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+      <method />
+    </configuration>
+    <configuration default="false" name="tdd-toolkit-java [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="test" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1619,18 +1449,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.XAssertSpecification" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.XAssertSpecification$LockingFunctionsWithGenericReturnTypeAssertionsSpecification.shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [pitest]" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [pitest]" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.&lt;default&gt; (1)" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [pitest]" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.XAssertSpecification" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.XAssertSpecification$LockingFunctionsWithGenericReturnTypeAssertionsSpecification.shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.&lt;default&gt; (1)" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [pitest]" />
+        <item index="3" class="java.lang.String" itemvalue="TestNG.&lt;default&gt;" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
       </list>
     </recent_temporary>
   </component>
@@ -1672,23 +1502,14 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XAssertSpecification - 2016.03.17 at 22h 58m 01s.xml">
-      <configuration name="XAssertSpecification" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification - 2016.03.18 at 00h 20m 09s.xml">
-      <configuration name="XAssertSpecification" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2016.03.18 at 00h 20m 26s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2016.03.18 at 00h 22m 17s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2016.03.18 at 00h 23m 25s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
     <history-entry file="_default_ - 2016.03.18 at 00h 39m 47s.xml">
       <configuration name="&lt;default&gt;" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_default__(1) - 2016.03.19 at 00h 06m 00s.xml">
+      <configuration name="&lt;default&gt; (1)" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="_default__(1) - 2016.03.19 at 00h 06m 07s.xml">
+      <configuration name="&lt;default&gt; (1)" configurationId="TestNG" />
     </history-entry>
     <history-entry file="tdd-toolkit-java_[check] - 2016.03.18 at 00h 23m 46s.xml">
       <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
@@ -1702,28 +1523,35 @@
     <history-entry file="tdd-toolkit-java_[check] - 2016.03.18 at 00h 32m 04s.xml">
       <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2016.03.19 at 00h 06m 57s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2016.03.19 at 00h 41m 04s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2016.03.19 at 00h 55m 30s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="1" width="1629" height="1055" extended-state="0" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35449734" sideWeight="0.49783012" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698414" sideWeight="0.49039057" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.35873017" sideWeight="0.49783012" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.50898945" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34497353" sideWeight="0.49721017" order="12" side_tool="false" content_ui="tabs" x="82" y="486" width="1633" height="352" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46560848" sideWeight="0.83384997" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.46560848" sideWeight="0.83384997" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49101055" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26038438" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2417855" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.3713577" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21946684" sideWeight="0.48732942" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1737,8 +1565,10 @@
       <window_info id="tdd-toolkit-java_main" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49101055" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698414" sideWeight="0.49039057" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39853558" sideWeight="0.49412492" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25973305" sideWeight="0.5126706" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.3713577" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1768,21 +1598,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/reports/pitest/201602220008/index.html" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/8269667b73d9616600359a9b0ba1b1c7d0cf7a97/mockito-core-1.10.19-sources.jar!/org/mockito/internal/creation/MockSettingsImpl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.3.0/48ec0fdd34206703c4e3af9fbecea59f76038cec/assertj-core-3.3.0-sources.jar!/org/assertj/core/api/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="322">
-          <caret line="145" column="11" selection-start-line="145" selection-start-column="11" selection-end-line="145" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreNotAlikeCondition.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -1982,7 +1797,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1990,7 +1804,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="17">
           <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1998,47 +1811,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="505">
           <caret line="86" column="55" selection-start-line="86" selection-start-column="55" selection-end-line="86" selection-end-column="55" />
-          <folding>
-            <marker date="1458246204952" expanded="true" signature="12:216" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="31:113" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="47:61" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="97:107" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="131:141" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="208:214" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="226:232" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="277:279" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="593:893" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="663:891" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="685:885" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="1034:1040" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="1054:1056" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="1106:1166" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="1195:1260" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="1267:1273" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="1284:1286" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="1295:1459" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="1472:1478" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="1500:1502" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="1513:1587" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="1602:2003" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2015:2083" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2093:2099" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="2127:2129" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="2139:2145" placeholder="{" />
-            <marker date="1458246204952" expanded="true" signature="2171:2173" placeholder="}" />
-            <marker date="1458246204952" expanded="true" signature="2190:3649" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2209:3647" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2233:3641" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2420:2614" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2640:3631" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="2855:3155" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3182:3415" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3212:3397" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3444:3617" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3476:3599" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3784:3863" placeholder="{...}" />
-            <marker date="1458246204952" expanded="true" signature="3798:3861" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2046,281 +1818,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="193" column="41" selection-start-line="193" selection-start-column="41" selection-end-line="193" selection-end-column="41" />
-          <folding>
-            <marker date="1454860859976" expanded="false" signature="0:607" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="false" signature="646:2346" placeholder="..." />
-            <marker date="1454860859976" expanded="true" signature="2348:4164" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="4194:4470" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="4558:4618" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="4622:4860" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="4930:4990" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="4994:5161" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="5233:5293" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="5297:5458" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="5524:5584" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="5588:5750" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="5818:5878" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="5882:6046" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="6121:6181" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="6185:6342" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="6403:6463" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="6467:6624" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="6685:6745" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="6749:6910" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="6979:7039" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="7043:7204" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="7273:7333" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="7337:7503" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="7579:7639" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="7643:7801" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="7864:7924" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="7928:8086" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="8149:8209" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="8213:8376" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="8446:8506" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="8510:8673" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="8741:8801" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="8805:8968" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="9038:9098" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="9102:9265" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="9338:9398" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="9402:9560" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="9628:9688" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="9692:9852" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="9919:9979" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="9983:10143" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="10210:10270" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="10274:10439" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="10513:10573" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="10577:10735" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="10798:10858" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="10862:11027" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="11127:11187" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="11191:11350" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="11415:11475" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="11479:11638" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="11703:11763" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="11767:11931" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="12003:12063" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="12067:12228" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="12293:12353" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="12357:12519" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="12587:12647" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="12651:12812" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="12881:12941" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="12945:13103" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="13166:13226" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="13230:13388" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="13451:13511" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="13515:13678" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="13748:13808" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="13812:13972" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="14041:14101" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="14105:14270" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="14346:14406" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="14410:14569" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="14634:14694" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="14698:14857" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="14922:14982" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="14986:15150" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="15222:15282" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="15286:15446" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="15527:15587" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="15591:15749" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="15812:15872" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="15876:16043" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="16124:16184" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="16188:16355" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="16436:16496" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="16500:16672" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="16755:16815" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="16819:16969" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="17044:17104" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="17108:17271" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="17344:17404" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="17408:17574" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="17647:17707" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="17711:17881" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="17975:18035" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="18039:19494" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="19617:19699" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="19703:20445" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="20526:20604" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="20608:21216" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="21344:21426" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="21430:21731" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="21735:21969" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="22089:22194" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="22198:22382" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="22432:22468" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="22472:22660" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="22731:22778" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="22782:23069" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="23167:23215" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="23219:23407" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="23489:23537" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="23541:24637" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="24735:24833" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="24837:25154" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="25158:26374" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="26469:26541" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="26545:27986" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="28059:28117" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="28121:28401" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="28448:28485" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="28489:28982" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="29074:29167" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="29171:29849" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="29939:30031" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="30035:30354" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="30358:30905" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="30966:31010" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="31014:31458" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="31500:31538" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="31542:31730" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="31783:31821" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="31825:32015" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="32066:32104" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="32108:32314" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="32367:32405" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="32409:32619" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="32679:32717" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="32723:32931" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="32982:33020" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="33024:33236" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="33294:33332" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="33336:33602" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="33663:33701" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="33705:33938" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="33987:34025" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="34029:34247" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="34302:34340" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="34344:34560" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="34611:34649" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="34653:34869" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="34918:34956" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="34960:35241" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="35300:35339" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="35343:35619" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="35679:35718" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="35722:35998" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="36055:36094" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="36098:36414" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="36418:36795" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="36886:36927" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="36931:37314" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="37407:37448" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="37452:37853" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="37944:37985" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="37989:38372" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="38465:38506" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="38510:38666" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="38746:38798" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="38802:38950" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="39014:39050" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="39054:39359" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="39363:40179" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="40229:40268" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="40272:41069" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="41138:41188" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="41192:42129" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="42176:42213" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="42217:43182" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="43245:43298" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="43302:44227" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="44282:44330" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="44334:44637" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="44641:45169" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="45231:45279" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="45283:45855" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="45920:45972" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="45976:46422" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="46467:46532" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="46536:46925" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="46974:47037" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="47041:47446" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="47512:47558" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="47562:47983" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="48052:48102" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="48106:48417" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="48421:48850" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="48910:48956" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="48960:49433" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="49496:49546" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="49550:49912" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="49955:50018" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="50022:50408" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="50455:50516" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="50520:50922" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="50986:51030" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="51034:51452" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="51519:51567" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="51571:51885" placeholder="//..." />
-            <marker date="1454860859976" expanded="true" signature="51889:53296" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="53355:53413" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="53417:55488" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="55568:55644" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="55648:57656" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="57739:57822" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="57826:58613" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="58663:58720" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="58724:59103" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="59172:59239" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="59243:59409" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="59512:59576" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="59580:59742" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="59866:59930" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="59934:60408" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="60532:60596" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="60600:60795" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="60907:60971" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="60975:61477" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="61591:61655" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="61661:61803" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="61866:61930" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="61934:62239" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="62308:62372" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="62376:62587" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="62690:62754" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="62758:64675" placeholder="/**...*/" />
-            <marker date="1454860859976" expanded="true" signature="64751:64778" placeholder="{...}" />
-            <marker date="1454860859976" expanded="true" signature="64782:64844" placeholder="/**...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="607">
-          <caret line="36" column="9" selection-start-line="36" selection-start-column="9" selection-end-line="36" selection-end-column="9" />
-          <folding>
-            <marker date="1458255304358" expanded="true" signature="88:286" placeholder="..." />
-            <marker date="1458255304358" expanded="true" signature="288:341" placeholder="/**...*/" />
-            <marker date="1458255304358" expanded="true" signature="816:964" placeholder="{...}" />
-            <marker date="1458255304358" expanded="true" signature="1016:1074" placeholder="{...}" />
-            <marker date="1458255304358" expanded="true" signature="1181:1356" placeholder="{...}" />
-            <marker date="1458255304358" expanded="true" signature="1432:1506" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
-          <caret line="21" column="21" selection-start-line="21" selection-start-column="21" selection-end-line="21" selection-end-column="21" />
-          <folding>
-            <marker date="1458255306808" expanded="false" signature="88:213" placeholder="..." />
-            <marker date="1458255306808" expanded="true" signature="517:665" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="690:982" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1011:1054" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1093:1143" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1179:1234" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1314:1372" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1436:1624" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1893:1931" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="1970:2005" placeholder="{...}" />
-            <marker date="1458255306808" expanded="true" signature="2045:2076" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2328,9 +1825,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="203">
           <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
-          <folding>
-            <marker date="1458255306162" expanded="true" signature="91:144" placeholder="/**...*/" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2338,73 +1832,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="269">
           <caret line="43" column="2" selection-start-line="43" selection-start-column="2" selection-end-line="43" selection-end-column="2" />
-          <folding>
-            <marker date="1458256949668" expanded="false" signature="65:517" placeholder="..." />
-            <marker date="1458256949668" expanded="true" signature="519:572" placeholder="/**...*/" />
-            <marker date="1458256949668" expanded="true" signature="719:859" placeholder="{...}" />
-            <marker date="1458256949668" expanded="true" signature="937:1043" placeholder="{...}" />
-            <marker date="1458256949668" expanded="true" signature="1117:1186" placeholder="{...}" />
-            <marker date="1458256949668" expanded="true" signature="1263:1335" placeholder="{...}" />
-            <marker date="1458256949668" expanded="true" signature="1402:1452" placeholder="{...}" />
-            <marker date="1458256949668" expanded="true" signature="1560:1632" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="236">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding>
-            <marker date="1458257474036" expanded="false" signature="88:224" placeholder="..." />
-            <marker date="1458257474036" expanded="true" signature="226:279" placeholder="/**...*/" />
-            <marker date="1458257474036" expanded="true" signature="609:731" placeholder="{...}" />
-            <marker date="1458257474036" expanded="true" signature="783:854" placeholder="{...}" />
-            <marker date="1458257474036" expanded="true" signature="930:985" placeholder="{...}" />
-            <marker date="1458257474036" expanded="true" signature="1092:1280" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="21" column="14" selection-start-line="21" selection-start-column="14" selection-end-line="21" selection-end-column="14" />
-          <folding>
-            <marker date="1458257484233" expanded="true" signature="118:171" placeholder="/**...*/" />
-            <marker date="1458257484233" expanded="true" signature="519:669" placeholder="{...}" />
-            <marker date="1458257484233" expanded="true" signature="706:748" placeholder="{...}" />
-            <marker date="1458257484233" expanded="true" signature="813:955" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="527">
-          <caret line="35" column="42" selection-start-line="35" selection-start-column="42" selection-end-line="35" selection-end-column="42" />
-          <folding>
-            <marker date="1458257812659" expanded="false" signature="88:237" placeholder="..." />
-            <marker date="1458257812659" expanded="true" signature="239:292" placeholder="/**...*/" />
-            <marker date="1458257812659" expanded="true" signature="471:545" placeholder="{...}" />
-            <marker date="1458257812659" expanded="true" signature="762:921" placeholder="{...}" />
-            <marker date="1458257812659" expanded="true" signature="1079:1235" placeholder="{...}" />
-            <marker date="1458257812659" expanded="true" signature="1310:1398" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="21" column="25" selection-start-line="21" selection-start-column="25" selection-end-line="21" selection-end-column="25" />
-          <folding>
-            <marker date="1458257977518" expanded="true" signature="88:149" placeholder="..." />
-            <marker date="1458257977518" expanded="true" signature="151:194" placeholder="/**...*/" />
-            <marker date="1458257977518" expanded="true" signature="441:557" placeholder="{...}" />
-            <marker date="1458257977518" expanded="true" signature="594:636" placeholder="{...}" />
-            <marker date="1458257977518" expanded="true" signature="712:838" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2412,7 +1839,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2420,29 +1846,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="10" column="11" selection-start-line="10" selection-start-column="11" selection-end-line="10" selection-end-column="11" />
-          <folding>
-            <marker date="1458258016475" expanded="true" signature="5:3116" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="12:910" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="43:899" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="917:3108" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="986:1546" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="998:1151" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1011:1138" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1163:1537" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1176:1524" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="1286:1295" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="1442:1451" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1586:3021" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1598:1777" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1611:1764" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1789:3012" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="1803:2370" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="2094:2103" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="2287:2297" placeholder="..." />
-            <marker date="1458258016475" expanded="true" signature="2384:2997" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="2722:2732" placeholder="..." />
-            <marker date="1458258016475" expanded="false" signature="2915:2924" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2450,15 +1853,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
           <caret line="53" column="0" selection-start-line="53" selection-start-column="0" selection-end-line="53" selection-end-column="0" />
-          <folding>
-            <marker date="1458256927893" expanded="false" signature="65:540" placeholder="..." />
-            <marker date="1458256927893" expanded="true" signature="972:1304" placeholder="{...}" />
-            <marker date="1458256927893" expanded="true" signature="1397:1510" placeholder="{...}" />
-            <marker date="1458256927893" expanded="true" signature="1575:1669" placeholder="{...}" />
-            <marker date="1458256927893" expanded="true" signature="1759:1863" placeholder="{...}" />
-            <marker date="1458256927893" expanded="true" signature="1962:2070" placeholder="{...}" />
-            <marker date="1458256927893" expanded="true" signature="2165:2407" placeholder="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2466,24 +1860,171 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-187">
           <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
-          <folding>
-            <marker date="1458256854869" expanded="false" signature="65:699" placeholder="..." />
-            <marker date="1458256854869" expanded="true" signature="1151:1446" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="1539:1659" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="1724:1825" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="1915:2026" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="2125:2240" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="2341:2605" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="2471:2482" placeholder="{...}" />
-            <marker date="1458256854869" expanded="true" signature="2609:2662" placeholder="//..." />
-          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="27" column="8" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="8" />
+        <state relative-caret-position="748">
+          <caret line="54" column="58" selection-start-line="54" selection-start-column="58" selection-end-line="54" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mockito/mockito-core/1.10.19/8269667b73d9616600359a9b0ba1b1c7d0cf7a97/mockito-core-1.10.19-sources.jar!/org/mockito/Mockito.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="203">
+          <caret line="1609" column="27" selection-start-line="1609" selection-start-column="27" selection-end-line="1609" selection-end-column="27" />
+          <folding>
+            <marker date="1454861596892" expanded="false" signature="0:119" placeholder="/.../" />
+            <marker date="1454861596892" expanded="false" signature="149:699" placeholder="..." />
+            <marker date="1454861596892" expanded="true" signature="701:42671" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="false" signature="42672:42702" placeholder="/unchecked/" />
+            <marker date="1454861596892" expanded="true" signature="42812:43269" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="43365:44935" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="45037:45562" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="45652:49585" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="49685:51322" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="51422:51644" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="51696:51785" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="51791:52553" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="52618:52752" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="52758:53332" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="53399:53461" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="53467:54775" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="54870:54986" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="54992:55772" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="55846:55932" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="55938:56993" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="57072:57140" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="57146:60782" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="60821:60998" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="61004:62255" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="62321:62475" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="62481:64725" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="64796:64849" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="64855:67712" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="67773:67826" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="67832:69105" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="69145:69204" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="69210:70096" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="70159:70214" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="70220:71704" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="71751:71793" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="71799:73618" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="73684:73745" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="73751:74421" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="74485:74546" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="74552:75737" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="75800:75851" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="75857:76427" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="76484:76562" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="76568:77265" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="77339:77422" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="77429:79112" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="79158:79227" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="79233:80087" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="80138:80191" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="80197:81438" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="81477:81541" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="81547:83493" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="83550:83622" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="83628:84864" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="84916:84967" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="84973:87971" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="88028:88083" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="88089:88460" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="88533:88613" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="88619:89201" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="89245:89277" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="89283:89617" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="89667:89728" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="89734:90091" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="90163:90242" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="90248:90599" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="90670:90748" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="90754:91332" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="91406:91488" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="91494:92018" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="92061:92112" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="92118:94094" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="94158:94235" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="94241:96154" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="96214:96289" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="96295:99423" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="99470:99522" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="99528:100888" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="100935:101013" placeholder="{...}" />
+            <marker date="1454861596892" expanded="true" signature="101019:101160" placeholder="/**...*/" />
+            <marker date="1454861596892" expanded="true" signature="101212:101261" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertions.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnFunction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="26" selection-start-line="21" selection-start-column="26" selection-end-line="21" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="35" selection-start-line="10" selection-start-column="35" selection-end-line="10" selection-end-column="35" />
+          <folding>
+            <marker date="1458344426486" expanded="true" signature="81:134" placeholder="/**...*/" />
+            <marker date="1458344426486" expanded="true" signature="430:516" placeholder="{...}" />
+            <marker date="1458344426486" expanded="true" signature="553:595" placeholder="{...}" />
+            <marker date="1458344426486" expanded="true" signature="660:793" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="31" column="6" selection-start-line="31" selection-start-column="6" selection-end-line="31" selection-end-column="6" />
+          <folding>
+            <marker date="1458345183800" expanded="false" signature="88:237" placeholder="..." />
+            <marker date="1458345183800" expanded="true" signature="239:292" placeholder="/**...*/" />
+            <marker date="1458345183800" expanded="true" signature="471:545" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="696:839" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="994:1136" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="1217:1292" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="1393:1471" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="1635:1718" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="1821:1885" placeholder="{...}" />
+            <marker date="1458345183800" expanded="true" signature="2013:2138" placeholder="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionSteps.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="7" selection-start-line="6" selection-start-column="7" selection-end-line="6" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="21" column="12" selection-start-line="21" selection-start-column="12" selection-end-line="21" selection-end-column="12" />
           <folding />
         </state>
       </provider>

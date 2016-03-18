@@ -11,39 +11,37 @@ import static org.mockito.Mockito.when;
 /**
  * Created by astral whenReceives 07.03.2016.
  */
-public class AssertSynchronizedPrivateWithReturnValue<T, TReturn> extends AssertSynchronizedPrivate<T> {
+public class StepsForSynchronizingOnFunction<T, TReturn>
+    implements SynchronizationAssertionSteps<T> {
   private final TReturn retVal;
 
   @Nullable
   private TReturn resultFromWrapper;
   private final Function<T, TReturn> methodCallToVerify;
 
-  public AssertSynchronizedPrivateWithReturnValue(
-      final T wrappedInterfaceMock,
-      final T synchronizedProxy,
+  public StepsForSynchronizingOnFunction(
       final Function<T, TReturn> methodCallToVerify,
-      final TReturn retVal, final Object monitorObject) {
-    super(wrappedInterfaceMock, synchronizedProxy, monitorObject);
+      final TReturn retVal) {
     this.methodCallToVerify = methodCallToVerify;
     this.retVal = retVal;
   }
 
   @Override
-  protected void assertMethodResult() {
+  public void assertMethodResult(final T wrappedInterfaceMock) {
     assertThat(resultFromWrapper).isEqualTo(retVal);
   }
 
   @Override
-  protected void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy) {
+  public void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy, final LockAssertions<T> lockAssertions) {
     when(methodCallToVerify.apply(wrappedInterfaceMock))
         .then((Answer<TReturn>) invocation -> {
-          assertLockHeld();
+          lockAssertions.assertLockHeld();
           return retVal;
         });
   }
 
   @Override
-  protected void callMethodOnProxy(final T synchronizedProxy) {
+  public void callMethodOnProxy(final T synchronizedProxy) {
     resultFromWrapper = methodCallToVerify.apply(synchronizedProxy);
   }
 }

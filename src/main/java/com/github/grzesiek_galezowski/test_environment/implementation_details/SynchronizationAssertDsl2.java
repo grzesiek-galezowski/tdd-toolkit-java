@@ -19,7 +19,7 @@ public class SynchronizationAssertDsl2<T> {
   }
 
   public void thenLocksCorrectlyOn(final Object monitorObject) {
-    final LockAssertions<T> lockAssertions = new LockAssertions<>(monitorObject);
+    final LockAssertionsForMonitor lockAssertions = new LockAssertionsForMonitor(monitorObject);
     assertionWorkflow.invoke(lockAssertions);
   }
 

@@ -17,9 +17,9 @@ public class SynchronizationAssertionWorkflow<T> {
     this.steps = steps;
   }
 
-  public void invoke(final LockAssertions<T> lockAssertions) {
+  public void invoke(final LockAssertions lockAssertions) {
     try {
-      lockAssertions.assertLockNotHeld();
+      lockAssertions.assertUnlocked();
       steps.prepareMockForCall(wrappedInterfaceMock, synchronizedProxy, lockAssertions);
 
       //WHEN
@@ -27,7 +27,7 @@ public class SynchronizationAssertionWorkflow<T> {
 
       //THEN
       steps.assertMethodResult(wrappedInterfaceMock);
-      lockAssertions.assertLockNotHeld();
+      lockAssertions.assertUnlocked();
     } finally {
       reset(wrappedInterfaceMock);
     }

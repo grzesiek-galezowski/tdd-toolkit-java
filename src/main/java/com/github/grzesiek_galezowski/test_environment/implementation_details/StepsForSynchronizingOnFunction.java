@@ -32,10 +32,10 @@ public class StepsForSynchronizingOnFunction<T, TReturn>
   }
 
   @Override
-  public void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy, final LockAssertions<T> lockAssertions) {
+  public void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy, final LockAssertions lockAssertions) {
     when(methodCallToVerify.apply(wrappedInterfaceMock))
         .then((Answer<TReturn>) invocation -> {
-          lockAssertions.assertLockHeld();
+          lockAssertions.assertLocked();
           return retVal;
         });
   }

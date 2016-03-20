@@ -6,7 +6,7 @@ package com.github.grzesiek_galezowski.test_environment.implementation_details;
 public interface SynchronizationAssertionSteps<T> {
   void assertMethodResult(T wrappedInterfaceMock);
 
-  void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy, LockAssertions<T> lockAssertions);
+  void prepareMockForCall(T wrappedInterfaceMock, T synchronizedProxy, LockAssertions lockAssertions);
 
   void callMethodOnProxy(T synchronizedProxy);
 }

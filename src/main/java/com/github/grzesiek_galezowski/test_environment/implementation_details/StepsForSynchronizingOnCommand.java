@@ -30,7 +30,9 @@ public class StepsForSynchronizingOnCommand<T>
   }
 
   @Override
-  public void prepareMockForCall(final T wrappedInterfaceMock, final T synchronizedProxy, LockAssertions lockAssertions) {
+  public void prepareMockForCall(final T wrappedInterfaceMock,
+                                 final T synchronizedProxy,
+                                 final LockAssertions lockAssertions) {
     methodCallToVerify.accept(
         Mockito.doAnswer((Answer<Void>) invocation -> {
           lockAssertions.assertLocked();

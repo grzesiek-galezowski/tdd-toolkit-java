@@ -84,7 +84,7 @@ public class SynchronizationAssertionWorkflowSpecification {
       workflow.invoke(assertions);
       assertTrue(false);
     } catch (final Throwable t) {
-
+      assertTrue(true);
     }
 
     //THEN

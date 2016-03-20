@@ -1,11 +1,5 @@
-@ParametersAreNonnullByDefault
-@ReturnTypesAreNonNullByDefault
-@FieldsAreNonNullByDefault
+@NonnullByDefault
 package com.github.grzesiek_galezowski.test_environment;
 
-import com.github.grzesiek_galezowski.test_environment.annotations.FieldsAreNonNullByDefault;
-import com.github.grzesiek_galezowski.test_environment.annotations.ReturnTypesAreNonNullByDefault;
 
-import javax.annotation.ParametersAreNonnullByDefault;
-
-
+import com.sharneng.annotation.NonnullByDefault;

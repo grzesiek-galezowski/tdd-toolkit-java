@@ -1,14 +1,8 @@
 /**
- * Created by astral whenReceives 11.03.2016.
+ * Created by astral on 20.03.2016.
  */
-@ParametersAreNonnullByDefault
-@ReturnTypesAreNonNullByDefault
-@FieldsAreNonNullByDefault
+
+@NonnullByDefault
 package com.github.grzesiek_galezowski.test_environment;
 
-import com.github.grzesiek_galezowski.test_environment.annotations.FieldsAreNonNullByDefault;
-import com.github.grzesiek_galezowski.test_environment.annotations.ReturnTypesAreNonNullByDefault;
-
-import javax.annotation.ParametersAreNonnullByDefault;
-
-
+import com.sharneng.annotation.NonnullByDefault;

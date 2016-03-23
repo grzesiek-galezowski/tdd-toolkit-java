@@ -20,10 +20,13 @@ public class LockAssertionsForMonitor implements LockAssertions {
   }
 
   private static void assertLockNotHeldOn(final Object monitor) {
-    Assertions.assertThat(Thread.holdsLock(monitor)).withFailMessage("Expected this thread to not hold a lock on " + monitor + " during a call to wrapped method, but it did").isFalse();
+    Assertions.assertThat(Thread.holdsLock(monitor)).withFailMessage(
+        LockAssertionsErrorMessages.lockHeldWhileExpectedNotHeld(monitor)).isFalse();
   }
 
   private void assertThreadHoldsALockOn(final Object monitor) {
-    Assertions.assertThat(Thread.holdsLock(monitor)).withFailMessage("Expected this thread to hold a lock on " + monitor + " during a call to wrapped method, but it didn't").isTrue();
+    Assertions.assertThat(Thread.holdsLock(monitor)).withFailMessage(
+        LockAssertionsErrorMessages.lockNotHeldWhileExpectedHeld(monitor)).isTrue();
   }
+
 }

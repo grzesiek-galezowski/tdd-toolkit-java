@@ -4,6 +4,7 @@ import autofixture.publicinterface.Any;
 import autofixture.publicinterface.InstanceOf;
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import com.github.grzesiek_galezowski.test_environment.fixtures.SynchronizedWrapperOverInterfaceToBeSynchronized;
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -15,10 +16,18 @@ import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.mockito.Mockito.mock;
 
 public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
-  private final InterfaceToBeSynchronized mock = mock(InterfaceToBeSynchronized.class);
-  private final InterfaceToBeSynchronized realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
-  private final Integer a = Any.intValue();
-  private final Integer b = Any.intValue();
+  private InterfaceToBeSynchronized mock;
+  private InterfaceToBeSynchronized realThing;
+  private Integer a;
+  private Integer b;
+
+  @BeforeMethod
+  public void initialize() {
+    mock = mock(InterfaceToBeSynchronized.class);
+    realThing = new SynchronizedWrapperOverInterfaceToBeSynchronized(mock);
+    a = Any.intValue();
+    b = Any.intValue();
+  }
 
   @Test
   public void shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock() {
@@ -27,7 +36,8 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
     assertThatProxyTo(mock, realThing)
         .whenReceives(
             instance -> instance.genericCorrectlySynchronizedFunction(a, b),
-            new InstanceOf<List<Integer>>() {})
+            new InstanceOf<List<Integer>>() {
+            })
         .thenLocksCorrectly();
     assertThat(Thread.holdsLock(realThing)).isFalse();
   }

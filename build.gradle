@@ -10,7 +10,7 @@ buildscript {
 }
 
 plugins {
-    id 'net.researchgate.release' version '2.3.5'
+    id 'net.researchgate.release' version "2.3.5"
 }
 
 apply plugin: "info.solidsoft.pitest"
@@ -33,7 +33,6 @@ gradle.taskGraph.whenReady { taskGraph ->
         }
     }
 }
-
 
 group 'com.github.grzesiek-galezowski'
 description = """TDD Toolkit"""
@@ -85,6 +84,8 @@ dependencies {
     compile "com.google.code.gson:gson:2.6.2"
     compile "nl.jqno.equalsverifier:equalsverifier:2.0.1"
     compile 'com.sharneng:jsr305defaults:2.0.3'
+    compile 'org.reflections:reflections:0.9.10'
+    compile 'org.mutabilitydetector:MutabilityDetector:0.9.5'
 }
 
 artifacts {

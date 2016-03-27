@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="466" started-at="2016-03-27T21:48:44Z" finished-at="2016-03-27T21:48:45Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="466" started-at="2016-03-27T21:48:44Z" finished-at="2016-03-27T21:48:45Z">
+      <class name="com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification">
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="initialize" is-config="true" duration-ms="237" started-at="2016-03-27T23:48:44Z" finished-at="2016-03-27T23:48:44Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock" duration-ms="199" started-at="2016-03-27T23:48:44Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock -->
+        <test-method status="PASS" signature="shouldFailWhenVoidMethodIsNotCalledAtAll()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="shouldFailWhenVoidMethodIsNotCalledAtAll" duration-ms="8" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailWhenVoidMethodIsNotCalledAtAll -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="initialize" is-config="true" duration-ms="0" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="initialize" is-config="true" duration-ms="1" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments" duration-ms="5" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments -->
+        <test-method status="PASS" signature="initialize()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="initialize" is-config="true" duration-ms="1" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- initialize -->
+        <test-method status="PASS" signature="shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification@4c3e4790]" name="shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock" duration-ms="1" started-at="2016-03-27T23:48:45Z" finished-at="2016-03-27T23:48:45Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldPassWhenVoidMethodIsCalledCorrectlyInSynchronizedBlock -->
+      </class> <!-- com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

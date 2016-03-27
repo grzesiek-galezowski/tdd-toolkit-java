@@ -1,6 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.fixtures;
 
 import autofixture.publicinterface.Any;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -102,6 +103,7 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
 
   }
 
+  @SuppressFBWarnings("RV_RETURN_VALUE_IGNORED_NO_SIDE_EFFECT")
   @Override
   public List<Integer> genericFunctionWithNonPropagatedReturnValue(final Integer a, final Integer b) {
     synchronized (this) {

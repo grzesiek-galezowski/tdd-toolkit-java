@@ -12,16 +12,16 @@ public class AreNotAlikeCondition<T> extends Condition<T> {
 
   public AreNotAlikeCondition(final T other) {
     this.other = other;
+    final int i = 0;
   }
 
   @Override
   public boolean matches(final T t) {
-    String expected = GSON.toJson(other);
-    String actual = GSON.toJson(t);
+    final String expected = GSON.toJson(other);
+    final String actual = GSON.toJson(t);
     describedAs("not like " + expected + " but was " + actual);
     return !expected.equals(actual);
   }
-
 
 
 }

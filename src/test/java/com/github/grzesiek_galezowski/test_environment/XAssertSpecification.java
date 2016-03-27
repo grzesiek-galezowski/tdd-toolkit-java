@@ -9,9 +9,12 @@ import java.util.Optional;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertValueObject;
+import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.effectivelyImmutable;
+import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.immutable;
 import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.valueObjectBehavior;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
+import static org.assertj.core.api.Assertions.not;
 
 /**
  * Created by astral whenReceives 07.02.2016.
@@ -50,6 +53,47 @@ public class XAssertSpecification {
     assertThat(ValueObjectWithoutFinalFields.class).has(valueObjectBehavior());
     assertThatThrownBy(() -> assertThat(XAssertAlikeSpecification.User.class).has(valueObjectBehavior()));
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));
+  }
+
+  @Test
+  public void shouldPerformMutabilityChecksCorrectly() {
+    assertThat(Immutable1.class).is(immutable());
+    assertThat(Immutable2.class).is(immutable());
+    assertThat(Mutable.class).is(not(immutable()));
+
+    assertThat(EffectivelyImmutable.class).is(effectivelyImmutable());
+    assertThat(EffectivelyImmutable.class).is(effectivelyImmutable());
+    assertThat(Mutable.class).is(not(effectivelyImmutable()));
+  }
+
+}
+
+
+final class Immutable1 {
+
+}
+
+final class Immutable2 {
+  private final int x = Integer.MAX_VALUE;
+}
+
+class Mutable {
+  private final int[] array = new int[]{Integer.MIN_VALUE};
+}
+
+final class EffectivelyImmutable {
+  private int effectivelyFinal;
+
+  EffectivelyImmutable(final int x) {
+    initialize(x);
+  }
+
+  private void initialize(final int x) {
+    this.effectivelyFinal = x;
+  }
+
+  public int getEffectivelyFinal() {
+    return effectivelyFinal;
   }
 }
 

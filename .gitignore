@@ -83,3 +83,5 @@ test-output/*
 .gradle/2.5/taskArtifacts/cache.properties.lock
 
 
+.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification.xml
+.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification.xml

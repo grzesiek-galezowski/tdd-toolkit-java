@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
+import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.locks.ReentrantLock;
@@ -12,8 +13,14 @@ import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
  */
 public class LockAssertionsForReentrantLockSpecification {
 
-  private final ReentrantLock lock = new ReentrantLock();
-  private final LockAssertionsForReentrantLock assertions = new LockAssertionsForReentrantLock(lock);
+  private ReentrantLock lock;
+  private LockAssertionsForReentrantLock assertions;
+
+  @BeforeMethod
+  public void initialize() {
+    lock = new ReentrantLock();
+    assertions = new LockAssertionsForReentrantLock(lock);
+  }
 
   @Test
   public void shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked() {

@@ -56,4 +56,5 @@ public class LockAssertionsForMonitorSpecification {
     assertThatNotThrownBy(() -> assertions.assertUnlocked());
   }
 
+
 }

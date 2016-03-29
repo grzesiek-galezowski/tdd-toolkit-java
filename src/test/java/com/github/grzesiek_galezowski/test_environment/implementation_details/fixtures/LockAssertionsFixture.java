@@ -8,7 +8,6 @@ import com.github.grzesiek_galezowski.test_environment.implementation_details.Lo
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
-import java.util.function.Function;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
@@ -19,25 +18,29 @@ public class LockAssertionsFixture<T, U extends LockAssertions> {
 
   public static LockAssertionsFixture<ReentrantLock, LockAssertionsForReentrantLock>
   createReentrantLockFixture() {
-    return new LockAssertionsFixture<>(ReentrantLock::new,
-        LockAssertionsForReentrantLock::new);
+    final ReentrantLock reentrantLock = new ReentrantLock();
+    return new LockAssertionsFixture<>(
+        reentrantLock, new LockAssertionsForReentrantLock(reentrantLock));
   }
 
   public static LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantReadLock>
   createReentrantReadLockFixture() {
-    return new LockAssertionsFixture<>(ReentrantReadWriteLock::new,
-        LockAssertionsForReentrantReadLock::new);
+    final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+    return new LockAssertionsFixture<>(
+        reentrantReadWriteLock, new LockAssertionsForReentrantReadLock(reentrantReadWriteLock));
   }
 
   public static LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
   createReentrantWriteLockFixture() {
-    return new LockAssertionsFixture<>(ReentrantReadWriteLock::new,
-        LockAssertionsForReentrantWriteLock::new);
+    final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+    return new LockAssertionsFixture<>(
+        reentrantReadWriteLock, new LockAssertionsForReentrantWriteLock(reentrantReadWriteLock));
   }
 
   public static LockAssertionsFixture<Object, LockAssertionsForMonitor>
   createMonitorFixture() {
-    return new LockAssertionsFixture<>(Object::new, LockAssertionsForMonitor::new);
+    final Object o = new Object();
+    return new LockAssertionsFixture<>(o, new LockAssertionsForMonitor(o));
   }
 
   public void assertThatLockedAssertionPasses() {
@@ -75,11 +78,10 @@ public class LockAssertionsFixture<T, U extends LockAssertions> {
   }
 
   public LockAssertionsFixture(
-      final ParameterlessFunction<T> lockSource,
-      final Function<T, U> assertionsSource) {
+      final T lock, final U assertions) {
 
-    lock = lockSource.create();
-    assertions = assertionsSource.apply(lock);
+    this.lock = lock;
+    this.assertions = assertions;
   }
 }
 

@@ -3,9 +3,7 @@ package com.github.grzesiek_galezowski.test_environment.implementation_details;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.fixtures.LockAssertionsFixture;
 import org.testng.annotations.Test;
 
-/**
- * Created by astral on 20.03.2016.
- */
+
 public class LockAssertionsForMonitorSpecification {
   @Test
   public void shouldThrowWhenAssertingThatUnlockedMonitorIsLocked() {

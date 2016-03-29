@@ -2,28 +2,28 @@
 <testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="168" started-at="2016-03-28T19:19:22Z" finished-at="2016-03-28T19:19:22Z">
+  <suite name="Command line suite" duration-ms="185" started-at="2016-03-29T20:19:22Z" finished-at="2016-03-29T20:19:22Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="168" started-at="2016-03-28T19:19:22Z" finished-at="2016-03-28T19:19:22Z">
-      <class name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification">
-        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification@161cd475]" name="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked" duration-ms="150" started-at="2016-03-28T21:19:22Z" finished-at="2016-03-28T21:19:22Z">
+    <test name="Command line test" duration-ms="185" started-at="2016-03-29T20:19:22Z" finished-at="2016-03-29T20:19:22Z">
+      <class name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification">
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatLockedMonitorIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification@161cd475]" name="shouldNotThrowWhenAssertingThatLockedMonitorIsLocked" duration-ms="164" started-at="2016-03-29T22:19:22Z" finished-at="2016-03-29T22:19:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked -->
-        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification@161cd475]" name="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked" duration-ms="1" started-at="2016-03-28T21:19:22Z" finished-at="2016-03-28T21:19:22Z">
+        </test-method> <!-- shouldNotThrowWhenAssertingThatLockedMonitorIsLocked -->
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification@161cd475]" name="shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked" duration-ms="0" started-at="2016-03-29T22:19:22Z" finished-at="2016-03-29T22:19:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked -->
-        <test-method status="PASS" signature="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification@161cd475]" name="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked" duration-ms="5" started-at="2016-03-28T21:19:22Z" finished-at="2016-03-28T21:19:22Z">
+        </test-method> <!-- shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatLockedMonitorIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification@161cd475]" name="shouldThrowWhenAssertingThatLockedMonitorIsUnlocked" duration-ms="5" started-at="2016-03-29T22:19:22Z" finished-at="2016-03-29T22:19:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked -->
-        <test-method status="PASS" signature="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification@161cd475]" name="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked" duration-ms="1" started-at="2016-03-28T21:19:22Z" finished-at="2016-03-28T21:19:22Z">
+        </test-method> <!-- shouldThrowWhenAssertingThatLockedMonitorIsUnlocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatUnlockedMonitorIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification@161cd475]" name="shouldThrowWhenAssertingThatUnlockedMonitorIsLocked" duration-ms="0" started-at="2016-03-29T22:19:22Z" finished-at="2016-03-29T22:19:22Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked -->
-      </class> <!-- com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification -->
+        </test-method> <!-- shouldThrowWhenAssertingThatUnlockedMonitorIsLocked -->
+      </class> <!-- com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

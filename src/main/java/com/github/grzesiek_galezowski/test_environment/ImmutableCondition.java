@@ -14,10 +14,10 @@ import static org.mutabilitydetector.unittesting.MutabilityAssert.assertInstance
  */
 public class ImmutableCondition<T> extends Condition<Class<T>> {
 
-  public static final int TWO_MATCHER_ARGS = 2;
-  public static final int THREE_MATCHER_ARGS = 3;
-  public static final int FOUR_MATCHER_ARGS = 4;
-  public static final int INDEX_OF_FIRST_NON_EXPLICIT_MATCHER_ON_ARG_LIST = 3;
+  private static final int TWO_MATCHER_ARGS = 2;
+  private static final int THREE_MATCHER_ARGS = 3;
+  private static final int FOUR_MATCHER_ARGS = 4;
+  private static final int INDEX_OF_FIRST_NON_EXPLICIT_MATCHER_ON_ARG_LIST = 3;
   private final Matcher<MutableReasonDetail>[] matchers;
   private final Matcher<AnalysisResult> mutabilityMatcher;
 
@@ -53,6 +53,4 @@ public class ImmutableCondition<T> extends Condition<Class<T>> {
     }
     return true;
   }
-
-
 }

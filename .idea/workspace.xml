@@ -1,38 +1,67 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0db1a05d-4738-42be-a07e-587e52cde7f4" name="Default" comment="before release">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/ParameterlessFunction.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/testng-failed.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/emailable-report.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/emailable-report.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/index.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsAssertionsSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsAssertionsSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsWithGenericReturnTypeAssertionsSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsWithGenericReturnTypeAssertionsSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAlikeSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAlikeSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAllSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAllSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantLockSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantLockSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertionWorkflowSpecification.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertionWorkflowSpecification.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/classes.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/classes.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods-alphabetical.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods-alphabetical.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/testng.xml.html" afterPath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/testng.xml.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-failed.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/testng-failed.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-results.xml" afterPath="$PROJECT_DIR$/.idea/modules/test-output/testng-results.xml" />
+    <list default="true" id="51249e89-37c0-44d9-b2bd-b6060578dddb" name="Default" comment="">
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/.name" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/codeStyleSettings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/externalDependencies.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/findbugs-idea.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/profiles_settings.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/Command line test.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/Command line suite/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/bullet_point.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/collapseall.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/emailable-report.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/failed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/jquery-1.7.1.min.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsAssertionsSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingFunctionsWithGenericReturnTypeAssertionsSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAlikeSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertAllSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.XAssertSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantLockSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLockSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertionWorkflowSpecification.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/navigator-bullet.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/Command line test.properties" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/classes.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/groups.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/main.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods-alphabetical.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods-not-run.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/methods.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/reporter-output.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/testng.xml.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/Command line suite/toc.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/old/index.html" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/passed.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/skipped.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-failed.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-reports.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-reports.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng-results.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules/test-output/testng.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/qaplug_profiles.xml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/encodings.xml" afterPath="$PROJECT_DIR$/.idea/encodings.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/gradle.xml" afterPath="$PROJECT_DIR$/.idea/gradle.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/modules.xml" afterPath="$PROJECT_DIR$/.idea/modules.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/gradle.properties" afterPath="$PROJECT_DIR$/gradle.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitorSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitorSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/LockAssertionsFixture.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/LockAssertionsFixture.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ImmutableCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ImmutableCondition.java" />
     </list>
     <ignored path="tdd-toolkit-java.iws" />
     <ignored path=".idea/workspace.xml" />
-    <ignored path="$PROJECT_DIR$/out/" />
+    <ignored path="$PROJECT_DIR$/build/classes/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
-    <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -41,17 +70,6 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
-  <component name="CheckTestsConfiguration">
-    <option name="CHECK_FOR_TESTS_BEFORE_PROJECT_COMMIT" value="true" />
-    <option name="LEVELS_TO_CHECK_FOR_TESTS" value="0" />
-  </component>
-  <component name="CompilerWorkspaceConfiguration">
-    <option name="MAKE_PROJECT_ON_SAVE" value="true" />
-    <option name="PARALLEL_COMPILATION" value="true" />
-  </component>
-  <component name="CoverageDataManager">
-    <SUITE FILE_PATH="coverage/tdd-toolkit-java$_default_.coverage" NAME="&lt;default&gt; Coverage Results" MODIFIED="1455523178115" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
-  </component>
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
@@ -77,10 +95,6 @@
               <PATH_ELEMENT>
                 <option name="myItemId" value="tdd-toolkit-java" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Run Configurations" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.RunConfigurationsNode" />
               </PATH_ELEMENT>
             </PATH>
             <PATH>
@@ -114,46 +128,6 @@
                 <option name="myItemId" value="Tasks" />
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
               </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="upload" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="report" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="release" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
             </PATH>
             <PATH>
               <PATH_ELEMENT>
@@ -173,127 +147,61 @@
                 <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
               </PATH_ELEMENT>
             </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="help" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="documentation" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="build setup" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="Tasks" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="build" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.TasksNode$1" />
-              </PATH_ELEMENT>
-            </PATH>
-            <PATH>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ExternalProjectsStructure$RootNode" />
-              </PATH_ELEMENT>
-              <PATH_ELEMENT>
-                <option name="myItemId" value="tdd-toolkit-java" />
-                <option name="myItemType" value="com.intellij.openapi.externalSystem.view.ProjectNode" />
-              </PATH_ELEMENT>
-            </PATH>
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
   <component name="FavoritesManager">
-    <favorites_list name="CodeIris Favorites" />
     <favorites_list name="tdd-toolkit-java" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="package-info.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/package-info.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="96">
+              <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ValueObjectBehaviorCondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ValueObjectBehaviorCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="168">
+              <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ImmutableCondition.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ImmutableCondition.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="538">
+              <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="TestNG Test Class" />
-        <option value="Class" />
-        <option value="Interface" />
-        <option value="package-info" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
-    <option name="PREVIOUS_COMMIT_AUTHORS">
-      <list>
-        <option value="grzesiek" />
-      </list>
-    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GradleLocalSettings">
@@ -590,7 +498,11 @@
     </option>
     <option name="modificationStamps">
       <map>
-        <entry key="$PROJECT_DIR$" value="2914516791619" />
+        <entry key="$USER_HOME$/Desktop/digits-randori" value="2896455670886" />
+        <entry key="$USER_HOME$/Desktop/mido" value="2911242532863" />
+        <entry key="$PROJECT_DIR$" value="2914239847604" />
+        <entry key="$PROJECT_DIR$/../../TrainingExamples/Java/pacman-randori" value="2895347716302" />
+        <entry key="$PROJECT_DIR$/../../uns-vas-avatar" value="2911089478324" />
       </map>
     </option>
     <option name="projectBuildClasspath">
@@ -745,57 +657,7 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithNoReturnValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivateWithReturnValue.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSettingMonitorOnFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSettingMonitorOnCommand.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AssertSynchronizedPrivate.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl3.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/package-info.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/package-info.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertions.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionSteps.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflow.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/StepsForSynchronizingOnCommand.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflowSpecification.java" />
-        <option value="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsErrorMessages.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitor.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReadWriteLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl2.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantWriteLock.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantReadLock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/package-info.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AAAAAAAAA.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AAAAAAA.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreAlikeCondition.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Lol.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreNotAlikeCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XJAssertConditions.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ImmutableCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Main.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/SyncAssertFixture.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsAssertionsSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsWithGenericReturnTypeAssertionsSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/ParameterlessFunction.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLock.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsFixture.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/ParameterlessFunction.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SyncAssertFixture.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLockSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantReadLockSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantWriteLockSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/LockAssertionsFixture.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitorSpecification.java" />
-        <option value="$PROJECT_DIR$/gradle.properties" />
       </list>
     </option>
   </component>
@@ -807,151 +669,12 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="56" />
-    <option name="y" value="2" />
-    <option name="width" value="1629" />
-    <option name="height" value="1055" />
+    <option name="x" value="70" />
+    <option name="y" value="-8" />
+    <option name="width" value="1858" />
+    <option name="height" value="1084" />
   </component>
-  <component name="ProjectInspectionProfilesVisibleTreeState">
-    <entry key="Project Default">
-      <profile-state>
-        <expanded-state>
-          <State>
-            <id />
-          </State>
-          <State>
-            <id>Abstraction issuesJava</id>
-          </State>
-          <State>
-            <id>Class metricsJava</id>
-          </State>
-          <State>
-            <id>Class structureJava</id>
-          </State>
-          <State>
-            <id>Code style issuesJava</id>
-          </State>
-          <State>
-            <id>Control flow issuesJava</id>
-          </State>
-          <State>
-            <id>Cucumber Java</id>
-          </State>
-          <State>
-            <id>Data flow issuesJava</id>
-          </State>
-          <State>
-            <id>Declaration redundancyJava</id>
-          </State>
-          <State>
-            <id>Dependency issuesJava</id>
-          </State>
-          <State>
-            <id>Error handlingGroovy</id>
-          </State>
-          <State>
-            <id>Error handlingJava</id>
-          </State>
-          <State>
-            <id>General</id>
-          </State>
-          <State>
-            <id>Groovy</id>
-          </State>
-          <State>
-            <id>HTML</id>
-          </State>
-          <State>
-            <id>Inheritance issuesJava</id>
-          </State>
-          <State>
-            <id>Internationalization issuesJava</id>
-          </State>
-          <State>
-            <id>JUnit issuesJava</id>
-          </State>
-          <State>
-            <id>Java</id>
-          </State>
-          <State>
-            <id>Java language level issuesJava</id>
-          </State>
-          <State>
-            <id>JavaBeans issuesJava</id>
-          </State>
-          <State>
-            <id>Kotlin</id>
-          </State>
-          <State>
-            <id>Logging issuesJava</id>
-          </State>
-          <State>
-            <id>Manifest</id>
-          </State>
-          <State>
-            <id>Memory issuesJava</id>
-          </State>
-          <State>
-            <id>Modularization issuesJava</id>
-          </State>
-          <State>
-            <id>Naming ConventionsGroovy</id>
-          </State>
-          <State>
-            <id>Naming conventionsJava</id>
-          </State>
-          <State>
-            <id>Packaging issuesJava</id>
-          </State>
-          <State>
-            <id>Performance issuesJava</id>
-          </State>
-          <State>
-            <id>Portability issuesJava</id>
-          </State>
-          <State>
-            <id>Potentially confusing code constructsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsGroovy</id>
-          </State>
-          <State>
-            <id>Probable bugsJava</id>
-          </State>
-          <State>
-            <id>RELAX NG</id>
-          </State>
-          <State>
-            <id>Resource management issuesJava</id>
-          </State>
-          <State>
-            <id>Security issuesJava</id>
-          </State>
-          <State>
-            <id>TestNGJava</id>
-          </State>
-          <State>
-            <id>Visibility issuesJava</id>
-          </State>
-          <State>
-            <id>XML</id>
-          </State>
-          <State>
-            <id>XPath</id>
-          </State>
-          <State>
-            <id>XSLT</id>
-          </State>
-        </expanded-state>
-        <selected-state>
-          <State>
-            <id>GroovyNestedSwitch</id>
-          </State>
-        </selected-state>
-      </profile-state>
-    </entry>
-  </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -970,7 +693,7 @@
       <hideEmptyPackages />
       <abbreviatePackageNames />
       <autoscrollToSource />
-      <autoscrollFromSource ProjectPane="true" />
+      <autoscrollFromSource />
       <sortByType />
       <manualOrder />
       <foldersAlwaysOnTop value="true" />
@@ -1026,16 +749,8 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="test_environment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -1052,7 +767,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="test" />
+              <option name="myItemId" value="main" />
               <option name="myItemType" value="org.jetbrains.plugins.gradle.projectView.GradleTreeStructureProvider$GradleSourceSetDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -1061,92 +776,22 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="test_environment" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="implementation_details" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="tdd-toolkit-java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="GoToClass.includeLibraries" value="false" />
-    <property name="GoToClass.toSaveIncludeLibraries" value="false" />
-    <property name="GoToFile.includeJavaFiles" value="false" />
-    <property name="MemberChooser.sorted" value="false" />
-    <property name="MemberChooser.showClasses" value="true" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
-    <property name="options.lastSelected" value="configurable.group.appearance" />
-    <property name="options.splitter.main.proportions" value="0.3" />
-    <property name="options.splitter.details.proportions" value="0.2" />
-    <property name="last_directory_selection" value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.32413793" />
-    <property name="settings.editor.selected.configurable" value="editing.templates" />
+    <property name="settings.editor.selected.configurable" value="org.infernus.idea.checkstyle.CheckStyleConfigurable" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/build/reports/findbugs" />
-    <property name="extract.method.default.visibility" value="private" />
-    <property name="SearchEverywhereHistoryKey" value="lockass&#9;FILE&#9;file://C:/Users/astral/Documents/GitHub/tdd-toolkit-java/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitor.java&#10;locksCorre&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl2#thenLocksCorrectly&#10;getMonitor&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.implementation_details.AssertSynchronizedPrivate#getMonitorObject&#10;locking&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.XAssertSpecification.LockingAssertionsSpecification&#10;interfacetobe&#9;FILE&#9;file://C:/Users/astral/Documents/GitHub/tdd-toolkit-java/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java&#10;checkstyle&#9;ACTION&#9;CheckStylePluginActions&#10;blabl&#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.XAssertSpecification#shouldLockBlaBlaBla&#10;build.&#9;FILE&#9;file://C:/Users/astral/Documents/GitHub/tdd-toolkit-java/build.gradle" />
-    <property name="extractMethod.generateAnnotations" value="false" />
-    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="TestNG" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config/checkstyle/checkstyle.xml" />
   </component>
-  <component name="RecentsManager">
-    <key name="ExtractSuperBase.RECENT_KEYS">
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-    </key>
-    <key name="CreateTestDialog.RecentsKey">
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-    </key>
-    <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsFixture" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.LockingVoidMethodAssertionsSpecification.SyncAssertFixture" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsErrorMessages" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.SynchronizationAssertDsl" />
-    </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\implementation_details" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\test\java\com\github\grzesiek_galezowski\test_environment\implementation_details" />
-      <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment" />
-      <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\test\java\com\github\grzesiek_galezowski\test_environment" />
-      <recent name="C:\Users\astral\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\implementation_details" />
-    </key>
-    <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-    </key>
-    <key name="CreateClassDialog.RecentsKey">
-      <recent name="com.github.grzesiek_galezowski.test_environment" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-      <recent name="" />
-    </key>
-    <key name="CreateTestDialog.Recents.Supers">
-      <recent name="" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [release]">
+  <component name="RunManager" selected="Gradle.tdd-toolkit-java [check]">
     <configuration default="false" name="tdd-toolkit-java [check]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1165,40 +810,7 @@
       </ExternalSystemSettings>
       <method />
     </configuration>
-    <configuration default="false" name="LockAssertionsForMonitorSpecification.shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.implementation_details.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tdd-toolkit-java_test" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification" />
-      <option name="METHOD_NAME" value="shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="tdd-toolkit-java [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+    <configuration default="false" name="tdd-toolkit-java [checkstyleMain]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
@@ -1209,43 +821,7 @@
         </option>
         <option name="taskNames">
           <list>
-            <option value="uploadArchives" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="tdd-toolkit-java [updateVersion]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="updateVersion" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="false" name="tdd-toolkit-java [release]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="release" />
+            <option value="checkstyleMain" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1275,35 +851,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="BatchConfigurationType" factoryName="Batch">
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="WORKING_DIRECTORY" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <envs />
-      <module name="" />
-      <option name="SCRIPT_NAME" value="" />
-      <option name="PARAMETERS" value="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="true" type="GradleRunConfiguration" factoryName="Gradle">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1318,15 +865,6 @@
         </option>
         <option name="vmOptions" />
       </ExternalSystemSettings>
-      <method />
-    </configuration>
-    <configuration default="true" type="GroovyScriptRunConfiguration" factoryName="Groovy">
-      <module name="" />
-      <setting name="path" value="" />
-      <setting name="vmparams" value="" />
-      <setting name="params" value="" />
-      <setting name="workDir" value="file://$PROJECT_DIR$" />
-      <setting name="debug" value="false" />
       <method />
     </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
@@ -1417,15 +955,42 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="true" type="PIT" factoryName="PIT Runner" REPORT_DIR="$PROJECT_DIR$/build/reports/pit" SOURCE_DIRS="$PROJECT_DIR$/src/main/java" TARGET_CLASSES="com.*" otherParams="--outputFormats XML,HTML">
-      <method />
-    </configuration>
     <configuration default="true" type="Remote" factoryName="Remote">
       <option name="USE_SOCKET_TRANSPORT" value="true" />
       <option name="SERVER_MODE" value="false" />
       <option name="SHMEM_ADDRESS" value="javadebug" />
       <option name="HOST" value="localhost" />
       <option name="PORT" value="5005" />
+      <method />
+    </configuration>
+    <configuration default="true" type="ScalaTestRunConfiguration" factoryName="ScalaTest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Specs2RunConfiguration" factoryName="Specs2">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
@@ -1484,41 +1049,37 @@
       <listeners />
       <method />
     </configuration>
-    <configuration default="true" type="XSLT" factoryName="XSLT">
-      <option name="myOutputFile" />
-      <option name="myOpenOutputFile" value="false" />
-      <option name="myOpenInBrowser" value="false" />
-      <option name="mySmartErrorHandling" value="true" />
-      <option name="myRunnerPort" value="34873" />
-      <option name="myVmArguments" />
-      <option name="myWorkingDirectory" />
-      <option name="myModule" />
-      <option name="myJdk" />
-      <parameters />
-      <OutputType value="CONSOLE" save-to-file="false" />
-      <FileType name="XML" />
-      <JdkChoice value="FROM_MODULE" />
+    <configuration default="true" type="uTestRunConfiguration" factoryName="utest">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="" />
+      <setting name="path" value="" />
+      <setting name="package" value="" />
+      <setting name="vmparams" value="" />
+      <setting name="params" value="" />
+      <setting name="workingDirectory" value="" />
+      <setting name="searchForTest" value="Across module dependencies" />
+      <setting name="testName" value="" />
+      <setting name="testKind" value="Class" />
+      <setting name="showProgressMessages" value="true" />
+      <envs />
       <method />
     </configuration>
-    <list size="5">
+    <list size="2">
       <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.LockAssertionsForMonitorSpecification.shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [uploadArchives]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [updateVersion]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
     </list>
     <recent_temporary>
-      <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [updateVersion]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [uploadArchives]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.LockAssertionsForMonitorSpecification.shouldNotThrowWhenAssertingThatUnlockedMonitorIsUnlocked" />
+      <list size="2">
+        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
       </list>
     </recent_temporary>
+    <configuration name="&lt;template&gt;" type="#org.jetbrains.idea.devkit.run.PluginConfigurationType" default="true" selected="false">
+      <option name="VM_PARAMETERS" value="-Xmx512m -Xms256m -XX:MaxPermSize=250m -ea" />
+    </configuration>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1455524688126" />
+    <option name="lastUpdateTimestamp" value="1459323476792" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1526,604 +1087,95 @@
   <component name="ShelveChangesManager" show_recycled="false">
     <option name="remove_strategy" value="false" />
   </component>
-  <component name="SvnConfiguration">
-    <configuration />
-  </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0db1a05d-4738-42be-a07e-587e52cde7f4" name="Default" comment="" />
-      <created>1454800798290</created>
+      <changelist id="51249e89-37c0-44d9-b2bd-b6060578dddb" name="Default" comment="" />
+      <created>1459323387204</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1454800798290</updated>
+      <updated>1459323387204</updated>
     </task>
-    <task id="LOCAL-00001" summary="before release">
-      <created>1455644742419</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1455644742419</updated>
-    </task>
-    <task id="LOCAL-00002" summary="before release">
-      <created>1455644885402</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1455644885402</updated>
-    </task>
-    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks - 2016.03.26 at 01h 41m 49s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks - 2016.03.26 at 01h 42m 12s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks - 2016.03.26 at 17h 40m 27s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks - 2016.03.26 at 17h 43m 48s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks_(1) - 2016.03.26 at 17h 41m 42s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertSpecification_shouldPerformMutabilityChecks_(1) - 2016.03.26 at 17h 46m 08s.xml">
-      <configuration name="XAssertSpecification.shouldPerformMutabilityChecks (1)" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[check] - 2016.03.26 at 17h 59m 44s.xml">
+    <history-entry file="tdd-toolkit-java_[check] - 2016.03.30 at 09h 37m 51s.xml">
       <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
-    <history-entry file="tdd-toolkit-java_[check] - 2016.03.26 at 19h 00m 23s.xml">
-      <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[check] - 2016.03.28 at 21h 22m 21s.xml">
-      <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[check] - 2016.03.29 at 22h 55m 36s.xml">
+    <history-entry file="tdd-toolkit-java_[check] - 2016.03.30 at 09h 42m 58s.xml">
       <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="56" y="2" width="1629" height="1055" extended-state="1" />
     <editor active="true" />
     <layout>
-      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="true" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.46560848" sideWeight="0.35027897" order="7" side_tool="false" content_ui="tabs" x="336" y="308" width="1070" height="440" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.50898945" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java_test" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.6441414" order="8" side_tool="true" content_ui="tabs" x="64" y="309" width="1613" height="440" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32910052" sideWeight="0.6013639" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.49101055" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.266584" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Analysis" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.5" order="14" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32910052" sideWeight="0.39863607" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.21946684" sideWeight="0.48732942" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="SBT" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32912722" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24972191" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15684094" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.49783012" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java_main" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32910052" sideWeight="0.49101055" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.34497353" sideWeight="0.49721017" order="12" side_tool="false" content_ui="tabs" x="82" y="486" width="1633" height="352" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32698414" sideWeight="0.49101055" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.39853558" sideWeight="0.49412492" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25973305" sideWeight="0.5126706" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
     </layout>
-  </component>
-  <component name="Vcs.Log.UiProperties">
-    <option name="RECENTLY_FILTERED_USER_GROUPS">
-      <collection />
-    </option>
-    <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
-      <collection />
-    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="before release" />
-    <option name="LAST_COMMIT_MESSAGE" value="before release" />
-    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
-  </component>
   <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <option name="time" value="5" />
-    </breakpoint-manager>
+    <breakpoint-manager />
     <watches-manager />
   </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
-  </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/build/reports/pitest/201603230644/index.html" />
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ValueObjectBehaviorCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
+        <state relative-caret-position="168">
           <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/package-info.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="7" column="17" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/AAAAAAA.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.danhaywood.java/danhaywood-java-assertjext/0.1.0/dc18cc3102ea6b521d3b5fb1c3555b19dda14888/danhaywood-java-assertjext-0.1.0-sources.jar!/com/danhaywood/java/assertjext/Conditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="25" column="35" selection-start-line="25" selection-start-column="35" selection-end-line="25" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreAlikeCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="391">
-          <caret line="24" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/org/hamcrest/BaseMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="9" column="22" selection-start-line="9" selection-start-column="22" selection-end-line="9" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.hamcrest/hamcrest-core/1.3/1dc37250fbc78e23a65a67fbbaf71d2e9cbc3c0b/hamcrest-core-1.3-sources.jar!/org/hamcrest/TypeSafeMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="12" column="55" selection-start-line="12" selection-start-column="55" selection-end-line="12" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/unittesting/matchers/reasons/BaseMutableReasonDetailMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="28" column="101" selection-start-line="28" selection-start-column="82" selection-end-line="28" selection-end-column="101" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/unittesting/matchers/reasons/AllowingNonFinalFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="28" column="58" selection-start-line="28" selection-start-column="58" selection-end-line="28" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/unittesting/MutabilityAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="737" column="23" selection-start-line="737" selection-start-column="23" selection-end-line="737" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Lol.java" />
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/unittesting/MutabilityMatchers.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="629">
-          <caret line="42" column="44" selection-start-line="42" selection-start-column="44" selection-end-line="42" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/unittesting/matchers/IsImmutableMatcher.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.mutabilitydetector/MutabilityDetector/0.9.5/fb5555209a60dd67b0b9a592c9e28e3a14462dfe/MutabilityDetector-0.9.5-sources.jar!/org/mutabilitydetector/AnalysisResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="75" column="9" selection-start-line="75" selection-start-column="9" selection-end-line="75" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/AreNotAlikeCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="8" column="24" selection-start-line="8" selection-start-column="24" selection-end-line="8" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="59" column="40" selection-start-line="59" selection-start-column="40" selection-end-line="59" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XJAssertConditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="27" column="44" selection-start-line="27" selection-start-column="44" selection-end-line="27" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="38" selection-start-line="7" selection-start-column="38" selection-end-line="7" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.3.0/48ec0fdd34206703c4e3af9fbecea59f76038cec/assertj-core-3.3.0-sources.jar!/org/assertj/core/api/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="593" column="64" selection-start-line="593" selection-start-column="64" selection-end-line="593" selection-end-column="64" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="283">
-          <caret line="43" column="32" selection-start-line="43" selection-start-column="32" selection-end-line="43" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="453">
-          <caret line="57" column="0" selection-start-line="11" selection-start-column="0" selection-end-line="57" selection-end-column="0" />
+        <state relative-caret-position="96">
+          <caret line="4" column="18" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ImmutableCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="321">
-          <caret line="46" column="52" selection-start-line="46" selection-start-column="52" selection-end-line="46" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/ValueObjectWithoutFinalFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflowSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="181">
-          <caret line="86" column="21" selection-start-line="86" selection-start-column="21" selection-end-line="86" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAlikeSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-499">
-          <caret line="25" column="7" selection-start-line="25" selection-start-column="7" selection-end-line="25" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="32" column="0" selection-start-line="32" selection-start-column="0" selection-end-line="32" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsAssertionsSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-455">
-          <caret line="15" column="46" selection-start-line="15" selection-start-column="38" selection-end-line="15" selection-end-column="46" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-161">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/pitest/201603281157/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLock.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SyncAssertFixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingFunctionsWithGenericReturnTypeAssertionsSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="638">
-          <caret line="71" column="6" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsErrorMessages.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="20" selection-start-line="6" selection-start-column="20" selection-end-line="6" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantWriteLockSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="18" column="17" selection-start-line="18" selection-start-column="17" selection-end-line="18" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantReadLockSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="867">
-          <caret line="54" column="48" selection-start-line="54" selection-start-column="48" selection-end-line="54" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLockSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="599">
-          <caret line="54" column="36" selection-start-line="54" selection-start-column="36" selection-end-line="54" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/package-info.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/LockAssertionsFixture.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="75" column="15" selection-start-line="75" selection-start-column="15" selection-end-line="75" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForMonitorSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="28" column="5" selection-start-line="28" selection-start-column="5" selection-end-line="28" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/annotations/Test.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
-          <caret line="34" column="28" selection-start-line="34" selection-start-column="18" selection-end-line="34" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/annotations/Parameters.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/annotations/Factory.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="14" column="18" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.testng/testng/6.9.10/11af8613a6b909307c7f2f554249c7b176cb50e6/testng-6.9.10-sources.jar!/org/testng/annotations/TestInstance.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/fixtures/ParameterlessFunction.java" />
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+        <state relative-caret-position="538">
+          <caret line="55" column="1" selection-start-line="55" selection-start-column="1" selection-end-line="55" selection-end-column="1" />
           <folding>
-            <marker date="1458952462194" expanded="true" signature="12:216" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="31:113" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="47:61" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="97:107" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="131:141" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="208:214" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="226:232" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="277:279" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="593:893" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="663:891" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="685:885" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="1033:1039" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="1053:1055" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="1105:1165" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="1194:1259" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="1266:1272" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="1283:1285" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="1294:1458" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="1471:1477" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="1499:1501" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="1512:1586" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="1601:2104" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2116:2184" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2194:2200" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="2228:2230" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="2240:2246" placeholder="{" />
-            <marker date="1458952462194" expanded="true" signature="2272:2274" placeholder="}" />
-            <marker date="1458952462194" expanded="true" signature="2291:3750" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2310:3748" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2334:3742" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2521:2715" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2741:3732" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="2956:3256" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3283:3516" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3313:3498" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3545:3718" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3577:3700" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3885:3964" placeholder="{...}" />
-            <marker date="1458952462194" expanded="true" signature="3899:3962" placeholder="{...}" />
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/settings.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/gradle.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="14" selection-start-line="0" selection-start-column="14" selection-end-line="0" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-  </component>
-  <component name="masterDetails">
-    <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="Copyright.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <last-edited>Detection</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="GlobalLibrariesConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="JdkListConfigurable.UI">
-        <settings>
-          <last-edited>1.7</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>Infinitest|tdd-toolkit-java_test|tdd-toolkit-java</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ProjectLibrariesConfigurable.UI">
-        <settings>
-          <last-edited>Gradle: com.beust:jcommander:1.48</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.32413793" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-    </states>
   </component>
 </project>

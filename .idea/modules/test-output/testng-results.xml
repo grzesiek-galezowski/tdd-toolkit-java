@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Command line suite" duration-ms="2" started-at="2016-03-31T05:15:01Z" finished-at="2016-03-31T05:15:01Z">
+    <groups>
+    </groups>
+    <test name="Command line test" duration-ms="2" started-at="2016-03-31T05:15:01Z" finished-at="2016-03-31T05:15:01Z">
+      <class name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification">
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@28a0fd6c]" name="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked" duration-ms="1" started-at="2016-03-31T07:15:01Z" finished-at="2016-03-31T07:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@28a0fd6c]" name="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked" duration-ms="1" started-at="2016-03-31T07:15:01Z" finished-at="2016-03-31T07:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked -->
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@28a0fd6c]" name="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked" duration-ms="0" started-at="2016-03-31T07:15:01Z" finished-at="2016-03-31T07:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@28a0fd6c]" name="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked" duration-ms="0" started-at="2016-03-31T07:15:01Z" finished-at="2016-03-31T07:15:01Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked -->
+      </class> <!-- com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

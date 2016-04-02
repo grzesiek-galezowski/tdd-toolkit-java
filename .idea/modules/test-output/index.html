@@ -221,11 +221,11 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked')
+data.setCell(0, 1, 'shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked')
 data.setCell(0, 2, 'com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification')
 data.setCell(0, 3, 1);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked')
+data.setCell(1, 1, 'shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked')
 data.setCell(1, 2, 'com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification')
 data.setCell(1, 3, 1);
 data.setCell(2, 0, 2)
@@ -233,7 +233,7 @@ data.setCell(2, 1, 'shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlock
 data.setCell(2, 2, 'com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification')
 data.setCell(2, 3, 0);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked')
+data.setCell(3, 1, 'shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked')
 data.setCell(3, 2, 'com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification')
 data.setCell(3, 3, 0);
 window.suiteTableData['Command_line_suite']= { tableData: data, tableDiv: 'times-div-Command_line_suite'}
@@ -281,7 +281,7 @@ return data;
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked</span>
-                <span class="method-start">2 ms</span>
+                <span class="method-start">1 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

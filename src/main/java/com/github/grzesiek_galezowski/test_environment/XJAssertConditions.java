@@ -12,14 +12,6 @@ import static org.mutabilitydetector.unittesting.MutabilityMatchers.areImmutable
  */
 public class XJAssertConditions {
 
-  public static <T> Condition<T> like(final T other) {
-    return new AreAlikeCondition<>(other);
-  }
-
-  public static <T> Condition<T> notLike(final T other) {
-    return new AreNotAlikeCondition<>(other);
-  }
-
   public static Condition<Class<?>> valueObjectBehavior() {
 
     return new ValueObjectBehaviorCondition();

@@ -4,7 +4,9 @@ import com.github.grzesiek_galezowski.test_environment.fixtures.ValueObjectWitho
 import org.testng.annotations.Test;
 
 import java.time.Period;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 import java.util.Optional;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
@@ -42,7 +44,7 @@ public class XAssertSpecification {
   public void shouldAssertOnValueObjectBehavior() {
     assertValueObject(Period.class);
     assertValueObject(Optional.class);
-    assertThatThrownBy(() -> assertValueObject(XAssertAlikeSpecification.User.class));
+    assertThatThrownBy(() -> assertValueObject(User.class));
     assertThatThrownBy(() -> assertValueObject(Date.class));
   }
 
@@ -51,7 +53,7 @@ public class XAssertSpecification {
     assertThat(Period.class).has(valueObjectBehavior());
     assertThat(Optional.class).has(valueObjectBehavior());
     assertThat(ValueObjectWithoutFinalFields.class).has(valueObjectBehavior());
-    assertThatThrownBy(() -> assertThat(XAssertAlikeSpecification.User.class).has(valueObjectBehavior()));
+    assertThatThrownBy(() -> assertThat(User.class).has(valueObjectBehavior()));
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));
   }
 
@@ -68,6 +70,18 @@ public class XAssertSpecification {
 
 }
 
+class User {
+  private final List<Integer> age = new ArrayList<>();
+
+  private final String name;
+
+  User(final int age, final String name) {
+    this.age.add(age);
+    this.age.add(age);
+    this.age.add(age);
+    this.name = name;
+  }
+}
 
 final class Immutable1 {
 

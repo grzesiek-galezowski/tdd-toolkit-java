@@ -22,7 +22,6 @@ public class ImmutableCondition<T> extends Condition<Class<T>> {
   private final Matcher<AnalysisResult> mutabilityMatcher;
 
   public ImmutableCondition(final Matcher<MutableReasonDetail>[] matchers, final Matcher<AnalysisResult> mutabilityMatcher) {
-
     this.matchers = matchers.clone();
     this.mutabilityMatcher = mutabilityMatcher;
   }

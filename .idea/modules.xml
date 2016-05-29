@@ -3,8 +3,6 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/tdd-toolkit-java.iml" filepath="$PROJECT_DIR$/.idea/modules/tdd-toolkit-java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tdd-toolkit-java_main.iml" filepath="$PROJECT_DIR$/.idea/modules/tdd-toolkit-java_main.iml" group="tdd-toolkit-java" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/tdd-toolkit-java_test.iml" filepath="$PROJECT_DIR$/.idea/modules/tdd-toolkit-java_test.iml" group="tdd-toolkit-java" />
     </modules>
   </component>
 </project>

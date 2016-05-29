@@ -39,6 +39,10 @@ if (travis == "null") {
         }
     }
 
+    signing {
+        sign configurations.archives
+    }
+
 } else {
     println "TRAVIS CI build detected"
 }
@@ -105,9 +109,6 @@ artifacts {
     archives sourcesJar
 }
 
-signing {
-    sign configurations.archives
-}
 
 release {
     failOnCommitNeeded = false

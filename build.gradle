@@ -22,7 +22,15 @@ apply plugin: 'findbugs'
 apply plugin: 'pmd'
 apply plugin: "jacoco"
 
-def password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
+def travis = "$System.env.TRAVIS"
+
+def password = "";
+if (travis == "null") {
+	println "Normal build detected"
+    password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
+} else {
+	println "TRAVIS CI build detected"
+}
 
 gradle.taskGraph.whenReady { taskGraph ->
     if (taskGraph.allTasks.any { it instanceof Sign }) {

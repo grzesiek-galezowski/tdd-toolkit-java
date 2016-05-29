@@ -1,33 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="5" passed="5">
+<testng-results skipped="0" failed="0" total="4" passed="4">
   <reporter-output>
   </reporter-output>
-  <suite name="Command line suite" duration-ms="1177" started-at="2016-05-29T17:11:43Z" finished-at="2016-05-29T17:11:44Z">
+  <suite name="Command line suite" duration-ms="4" started-at="2016-05-29T21:00:04Z" finished-at="2016-05-29T21:00:04Z">
     <groups>
     </groups>
-    <test name="Command line test" duration-ms="1177" started-at="2016-05-29T17:11:43Z" finished-at="2016-05-29T17:11:44Z">
-      <class name="com.github.grzesiek_galezowski.test_environment.XAssertSpecification">
-        <test-method status="PASS" signature="shouldAssertOnValueObjectBehavior()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.XAssertSpecification@3a4afd8d]" name="shouldAssertOnValueObjectBehavior" duration-ms="583" started-at="2016-05-29T19:11:43Z" finished-at="2016-05-29T19:11:43Z">
+    <test name="Command line test" duration-ms="4" started-at="2016-05-29T21:00:04Z" finished-at="2016-05-29T21:00:04Z">
+      <class name="com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification">
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@4b14918a]" name="shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked" duration-ms="2" started-at="2016-05-29T23:00:04Z" finished-at="2016-05-29T23:00:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAssertOnValueObjectBehavior -->
-        <test-method status="PASS" signature="shouldAssertOnValueObjectBehaviorWithFluentSyntax()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.XAssertSpecification@3a4afd8d]" name="shouldAssertOnValueObjectBehaviorWithFluentSyntax" duration-ms="199" started-at="2016-05-29T19:11:43Z" finished-at="2016-05-29T19:11:43Z">
+        </test-method> <!-- shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@4b14918a]" name="shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked" duration-ms="1" started-at="2016-05-29T23:00:04Z" finished-at="2016-05-29T23:00:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldAssertOnValueObjectBehaviorWithFluentSyntax -->
-        <test-method status="PASS" signature="shouldFailWhenAssertingThatNoExceptionShouldBeThrownButThereIs()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.XAssertSpecification@3a4afd8d]" name="shouldFailWhenAssertingThatNoExceptionShouldBeThrownButThereIs" duration-ms="5" started-at="2016-05-29T19:11:43Z" finished-at="2016-05-29T19:11:43Z">
+        </test-method> <!-- shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked -->
+        <test-method status="PASS" signature="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@4b14918a]" name="shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked" duration-ms="0" started-at="2016-05-29T23:00:04Z" finished-at="2016-05-29T23:00:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldFailWhenAssertingThatNoExceptionShouldBeThrownButThereIs -->
-        <test-method status="PASS" signature="shouldNotFailWhenAssertingThatNoExceptionShouldBeThrownAndThereIsNot()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.XAssertSpecification@3a4afd8d]" name="shouldNotFailWhenAssertingThatNoExceptionShouldBeThrownAndThereIsNot" duration-ms="1" started-at="2016-05-29T19:11:43Z" finished-at="2016-05-29T19:11:43Z">
+        </test-method> <!-- shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked -->
+        <test-method status="PASS" signature="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification@4b14918a]" name="shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked" duration-ms="0" started-at="2016-05-29T23:00:04Z" finished-at="2016-05-29T23:00:04Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- shouldNotFailWhenAssertingThatNoExceptionShouldBeThrownAndThereIsNot -->
-        <test-method status="PASS" signature="shouldPerformMutabilityChecksCorrectly()[pri:0, instance:com.github.grzesiek_galezowski.test_environment.XAssertSpecification@3a4afd8d]" name="shouldPerformMutabilityChecksCorrectly" duration-ms="370" started-at="2016-05-29T19:11:43Z" finished-at="2016-05-29T19:11:44Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- shouldPerformMutabilityChecksCorrectly -->
-      </class> <!-- com.github.grzesiek_galezowski.test_environment.XAssertSpecification -->
+        </test-method> <!-- shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked -->
+      </class> <!-- com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification -->
     </test> <!-- Command line test -->
   </suite> <!-- Command line suite -->
 </testng-results>

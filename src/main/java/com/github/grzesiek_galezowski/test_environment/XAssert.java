@@ -30,7 +30,5 @@ public class XAssert {
   public static <T> SynchronizationAssertDsl<T> assertThatProxyTo(final T wrappedMock, final T realThing) {
     return new SynchronizationAssertDsl<>(wrappedMock, realThing);
   }
-
-
 }
 

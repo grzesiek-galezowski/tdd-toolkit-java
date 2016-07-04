@@ -10,9 +10,6 @@ import java.util.function.Consumer;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
-/**
- * Created by astral whenReceives 09.02.2016.
- */
 public class XAssert {
 
   public static void assertAll(final Consumer<SoftAssertions> assertions) {

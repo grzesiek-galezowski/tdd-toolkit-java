@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment;
 
+import autofixture.publicinterface.Any;
 import org.assertj.core.api.Assertions;
 import org.testng.annotations.Test;
 
@@ -7,7 +8,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAllSpecification {
 
-  public static final int ARBITRARY_NUMBER = 12;
+  public static final int ARBITRARY_NUMBER = Any.intValue();
 
   @Test
   public void shouldAllowMakingSoftAssertionsAndThrowAtTheEnd() {

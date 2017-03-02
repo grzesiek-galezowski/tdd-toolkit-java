@@ -5,12 +5,12 @@ buildscript {
         }
     }
     dependencies {
-        classpath "info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.9"
+        classpath "info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.11"
     }
 }
 
 plugins {
-    id 'net.researchgate.release' version "2.3.5"
+    id 'net.researchgate.release' version "2.5.0"
 }
 
 apply plugin: "info.solidsoft.pitest"
@@ -27,14 +27,14 @@ def travis = "$System.env.TRAVIS"
 def password = "";
 if (travis == "null") {
     println "Normal build detected"
-    password = new File('C:\\Users\\astral\\Dysk Google\\GradlePassword.txt').text
+    password = new File('C:\\Users\\grzes\\Dysk Google\\GradlePassword.txt').text
 
     gradle.taskGraph.whenReady { taskGraph ->
         if (taskGraph.allTasks.any { it instanceof Sign }) {
             allprojects {
                 ext."signing.password" = password
-                ext."signing.keyId" = '214AA4AD'
-                ext."signing.secretKeyRingFile" = 'C:/Users/astral/AppData/Roaming/gnupg/secring.gpg'
+                ext."signing.keyId" = '58596C05'
+                ext."signing.secretKeyRingFile" = 'C:/Users/grzes/AppData/Roaming/gnupg/secring.gpg'
             }
         }
     }
@@ -95,7 +95,7 @@ dependencies {
     compile "org.assertj:assertj-core:3.6.1"
     compile "org.testng:testng:6.9.13.6"
     compile "org.mockito:mockito-core:2.2.28"
-    compile "com.github.autofixture:autofixturegenerator:1.0.8"
+    compile "com.github.autofixture:autofixturegenerator:1.0.12"
     compile "com.google.code.gson:gson:2.8.0"
     compile "nl.jqno.equalsverifier:equalsverifier:2.1.7"
     compile 'com.sharneng:jsr305defaults:2.0.3'

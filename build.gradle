@@ -10,7 +10,8 @@ buildscript {
 }
 
 plugins {
-    id 'net.researchgate.release' version "2.5.0"
+    id 'net.researchgate.release' version "2.6.0"
+    id 'com.github.ben-manes.versions' version "0.14.0"
 }
 
 apply plugin: "info.solidsoft.pitest"
@@ -92,14 +93,16 @@ findbugs {
 
 dependencies {
     compile "com.google.guava:guava:21.0"
-    compile "org.assertj:assertj-core:3.6.1"
-    compile "org.testng:testng:6.10"
-    compile "org.mockito:mockito-core:2.7.13"
-    compile "com.github.autofixture:autofixturegenerator:1.0.12"
+    compile "org.assertj:assertj-core:3.6.2"
+    compile "org.testng:testng:6.11"
+    compile "org.mockito:mockito-core:2.7.19"
+    compile "com.github.autofixture:autofixturegenerator:1.0.13"
     compile "com.google.code.gson:gson:2.8.0"
     compile "nl.jqno.equalsverifier:equalsverifier:2.2.1"
     compile 'com.sharneng:jsr305defaults:2.0.3'
-    compile 'org.reflections:reflections:0.9.10'
+    compile 'com.google.code.findbugs:annotations:3.0.1'
+    compile 'com.google.code.findbugs:jsr305:3.0.1'
+    compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
 }
 

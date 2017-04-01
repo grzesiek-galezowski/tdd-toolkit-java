@@ -103,6 +103,10 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
+
+    findbugs 'com.google.code.findbugs:findbugs:3.0.1'
+    findbugs configurations.findbugsPlugins.dependencies
+    findbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.4.4'
 }
 
 artifacts {
@@ -164,5 +168,23 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled = false
         html.enabled = true
+    }
+}
+
+//FindBugs task that load security rules only
+task findSecurityBugs(type: FindBugs) {
+
+    classes = fileTree(project.rootDir.absolutePath).include("**/*.class");
+    source = fileTree(project.rootDir.absolutePath).include("**/*.java");
+    classpath = files()
+    pluginClasspath = project.configurations.findbugsPlugins
+
+    findbugs {
+        toolVersion = "3.0.1"
+        sourceSets = [sourceSets.main] // for Java project
+        ignoreFailures = true
+        reportsDir = file("$project.buildDir/findbugsReports")
+        effort = "max"
+        reportLevel = "low"
     }
 }

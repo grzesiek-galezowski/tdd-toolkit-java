@@ -1,13 +1,14 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import autofixture.publicinterface.Any;
+import com.google.common.base.Throwables;
 import com.google.common.reflect.TypeToken;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
 
 /**
- * Created by astral whenReceives 16.03.2016.
+ * Created by astral 16.03.2016.
  */
 public class SynchronizationAssertDsl<T> {
   private final T wrappedMock;
@@ -20,6 +21,22 @@ public class SynchronizationAssertDsl<T> {
   }
 
   public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
+      final CheckedFunction<T, TReturn> methodCallToVerify,
+      final Class<TReturn> clazz) {
+    return whenReceives(throwing(methodCallToVerify), clazz);
+  }
+
+  public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
+      final CheckedFunction<T, TReturn> methodCallToVerify,
+      final TypeToken<TReturn> clazz) {
+    return whenReceives(throwing(methodCallToVerify), clazz);
+  }
+
+  public SynchronizationAssertDsl2<T> whenReceives(final CheckedConsumer<T> consumer) {
+    return whenReceives(throwing(consumer));
+  }
+
+  private <TReturn> SynchronizationAssertDsl2<T> whenReceives(
       final Function<T, TReturn> methodCallToVerify,
       final Class<TReturn> clazz) {
 
@@ -27,14 +44,14 @@ public class SynchronizationAssertDsl<T> {
     return dslOver(workflow(forCheckingSynchronizationOf(methodCallToVerify, retVal)));
   }
 
-  public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
+  private <TReturn> SynchronizationAssertDsl2<T> whenReceives(
       final Function<T, TReturn> methodCallToVerify,
       final TypeToken<TReturn> clazz) {
     final TReturn retVal = Any.anonymous(clazz);
     return dslOver(workflow(forCheckingSynchronizationOf(methodCallToVerify, retVal)));
   }
 
-  public SynchronizationAssertDsl2<T> whenReceives(final Consumer<T> consumer) {
+  private SynchronizationAssertDsl2<T> whenReceives(final Consumer<T> consumer) {
     return dslOver(workflow(forCheckingSynchronizationOf(consumer)));
   }
 
@@ -55,4 +72,28 @@ public class SynchronizationAssertDsl<T> {
     return new SynchronizationAssertionWorkflow<>(this.wrappedMock, realThing,
         stepsForSynchronizingOnCommand);
   }
+
+  private <TReturn> Function<T, TReturn> throwing(CheckedFunction<T, TReturn> methodCallToVerify) {
+    return x -> {
+      try {
+        return methodCallToVerify.apply(x);
+      } catch(Throwable e) {
+        Throwables.throwIfUnchecked(e);
+        throw new RuntimeException(e);
+      }
+    };
+  }
+
+  private Consumer<T> throwing(CheckedConsumer<T> consumer) {
+    return x -> {
+      try {
+        consumer.accept(x);
+      } catch(Throwable e) {
+        Throwables.throwIfUnchecked(e);
+        throw new RuntimeException(e);
+      }
+    };
+  }
+
+
 }

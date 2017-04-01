@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment.fixtures;
 
+import java.io.IOException;
 import java.util.List;
 
 /**
@@ -9,7 +10,11 @@ public interface InterfaceToBeSynchronized {
 
   void correctlyWrappedVoidMethod(int a, int b);
 
+  void correctlyWrappedThrowingVoidMethod(int a, int b) throws IOException;
+
   int correctlyWrappedFunction(int a, int b);
+
+  int correctlyWrappedThrowingFunction(int a, int b) throws IOException;
 
   List<Integer> genericCorrectlySynchronizedFunction(int a, int b);
 
@@ -34,6 +39,4 @@ public interface InterfaceToBeSynchronized {
   List<Integer> genericFunctionCalledWithWrongArguments(int a, int b);
 
   List<Integer> genericFunctionWithNonPropagatedReturnValue(Integer a, Integer b);
-
-  //TODO for methods with return values
 }

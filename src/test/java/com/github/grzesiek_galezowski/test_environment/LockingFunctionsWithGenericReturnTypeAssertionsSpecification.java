@@ -3,10 +3,10 @@ package com.github.grzesiek_galezowski.test_environment;
 import autofixture.publicinterface.InstanceOf;
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import com.github.grzesiek_galezowski.test_environment.fixtures.SyncAssertFixture;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.CheckedFunction;
 import org.testng.annotations.Test;
 
 import java.util.List;
-import java.util.function.Function;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatProxyTo;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -69,8 +69,8 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
         fixture.getA(), fixture.getB()), fixture);
   }
 
-  private void assertThrowsWhen(final Function<InterfaceToBeSynchronized,
-      List<Integer>> function, final SyncAssertFixture fixture) {
+  private void assertThrowsWhen(final CheckedFunction<InterfaceToBeSynchronized,
+        List<Integer>> function, final SyncAssertFixture fixture) {
     assertThatThrownBy(() -> assertThatProxyTo(fixture.getMock(), fixture.getRealThing())
         .whenReceives(function, new InstanceOf<List<Integer>>() {
         }).thenLocksCorrectly()

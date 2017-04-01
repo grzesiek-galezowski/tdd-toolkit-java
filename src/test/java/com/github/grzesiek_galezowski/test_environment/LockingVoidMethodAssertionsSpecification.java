@@ -2,9 +2,8 @@ package com.github.grzesiek_galezowski.test_environment;
 
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import com.github.grzesiek_galezowski.test_environment.fixtures.SyncAssertFixture;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.CheckedConsumer;
 import org.testng.annotations.Test;
-
-import java.util.function.Consumer;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatProxyTo;
 import static org.assertj.core.api.Assertions.assertThat;
@@ -23,6 +22,19 @@ public class LockingVoidMethodAssertionsSpecification {
         .thenLocksCorrectly();
     assertThat(Thread.holdsLock(syncAssertFixture.getRealThing())).isFalse();
   }
+
+  @Test
+  public void shouldPassWhenThrowingVoidMethodIsCalledCorrectlyInSynchronizedBlock() {
+    //GIVEN
+    final SyncAssertFixture syncAssertFixture = SyncAssertFixture.create();
+    //WHEN-THEN
+
+    assertThatProxyTo(syncAssertFixture.getMock(), syncAssertFixture.getRealThing())
+        .whenReceives(instance -> instance.correctlyWrappedThrowingVoidMethod(syncAssertFixture.getA(), syncAssertFixture.getB()))
+        .thenLocksCorrectly();
+    assertThat(Thread.holdsLock(syncAssertFixture.getRealThing())).isFalse();
+  }
+
 
   @Test
   public void shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock() {
@@ -54,12 +66,13 @@ public class LockingVoidMethodAssertionsSpecification {
     });
   }
 
-  private void assertExceptionIsThrownOn(final Consumer<InterfaceToBeSynchronized> consumer) {
+  private void assertExceptionIsThrownOn(final CheckedConsumer<InterfaceToBeSynchronized> consumer) {
     //GIVEN
     final SyncAssertFixture syncAssertFixture = SyncAssertFixture.create();
 
     assertThatThrownBy(() -> assertThatProxyTo(
-        syncAssertFixture.getMock(), syncAssertFixture.getRealThing()).whenReceives(consumer).thenLocksCorrectly()
+        syncAssertFixture.getMock(), syncAssertFixture.getRealThing())
+        .whenReceives(consumer).thenLocksCorrectly()
     ).isInstanceOf(AssertionError.class);
     assertThat(Thread.holdsLock(syncAssertFixture.getRealThing())).isFalse();
   }

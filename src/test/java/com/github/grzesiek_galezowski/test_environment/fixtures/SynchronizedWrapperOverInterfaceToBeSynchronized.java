@@ -3,6 +3,7 @@ package com.github.grzesiek_galezowski.test_environment.fixtures;
 import autofixture.publicinterface.Any;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -26,9 +27,23 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   }
 
   @Override
+  public void correctlyWrappedThrowingVoidMethod(int a, int b) throws IOException {
+    synchronized (this) {
+      iface.correctlyWrappedThrowingVoidMethod(a,b);
+    }
+  }
+
+  @Override
   public int correctlyWrappedFunction(final int a, final int b) {
     synchronized (this) {
       return iface.correctlyWrappedFunction(a, b);
+    }
+  }
+
+  @Override
+  public int correctlyWrappedThrowingFunction(int a, int b) throws IOException {
+    synchronized (this) {
+      return iface.correctlyWrappedThrowingFunction(a, b);
     }
   }
 

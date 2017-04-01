@@ -73,7 +73,8 @@ public class SynchronizationAssertDsl<T> {
         stepsForSynchronizingOnCommand);
   }
 
-  private <TReturn> Function<T, TReturn> throwing(CheckedFunction<T, TReturn> methodCallToVerify) {
+  private <TReturn> Function<T, TReturn> throwing(
+      final CheckedFunction<T, TReturn> methodCallToVerify) {
     return x -> {
       try {
         return methodCallToVerify.apply(x);
@@ -84,7 +85,8 @@ public class SynchronizationAssertDsl<T> {
     };
   }
 
-  private Consumer<T> throwing(CheckedConsumer<T> consumer) {
+  private Consumer<T> throwing(
+      final CheckedConsumer<T> consumer) {
     return x -> {
       try {
         consumer.accept(x);

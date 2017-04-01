@@ -27,7 +27,7 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   }
 
   @Override
-  public void correctlyWrappedThrowingVoidMethod(int a, int b) throws IOException {
+  public void correctlyWrappedThrowingVoidMethod(final int a, final int b) throws IOException {
     synchronized (this) {
       iface.correctlyWrappedThrowingVoidMethod(a,b);
     }
@@ -41,7 +41,7 @@ public class SynchronizedWrapperOverInterfaceToBeSynchronized implements Interfa
   }
 
   @Override
-  public int correctlyWrappedThrowingFunction(int a, int b) throws IOException {
+  public int correctlyWrappedThrowingFunction(final int a, final int b) throws IOException {
     synchronized (this) {
       return iface.correctlyWrappedThrowingFunction(a, b);
     }

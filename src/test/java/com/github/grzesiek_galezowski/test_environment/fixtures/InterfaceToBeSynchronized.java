@@ -8,9 +8,9 @@ import java.util.List;
  */
 public interface InterfaceToBeSynchronized {
 
-  void correctlyWrappedVoidMethod(int a, int b);
+  void correctlyWrappedVoidMethod(final int a, final int b);
 
-  void correctlyWrappedThrowingVoidMethod(int a, int b) throws IOException;
+  void correctlyWrappedThrowingVoidMethod(final int a, final int b) throws IOException;
 
   int correctlyWrappedFunction(int a, int b);
 

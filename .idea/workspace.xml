@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SynchronizedWrapperOverInterfaceToBeSynchronized.java" />
-    </list>
+    <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -1262,7 +1258,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [check]">
+  <component name="RunManager" selected="Gradle.tdd-toolkit-java [release]">
     <configuration default="false" name="tdd-toolkit-java [test]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1526,8 +1522,8 @@
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [check]" />
         <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.LockingVoidMethodAssertionsSpecification.shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments" />
         <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [pitest]" />
@@ -1551,8 +1547,8 @@
     <history-entry file="LockingVoidMethodAssertionsSpecification_shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments - 2017.04.01 at 19h 37m 56s.xml">
       <configuration name="LockingVoidMethodAssertionsSpecification.shouldFailWhenVoidMethodIsSynchronizedButCalledWithWrongArguments" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="tdd-toolkit-java_[test] - 2017.03.24 at 23h 22m 35s.xml">
-      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    <history-entry file="tdd-toolkit-java_[check] - 2017.04.01 at 22h 36m 35s.xml">
+      <configuration name="tdd-toolkit-java [check]" configurationId="GradleRunConfiguration" />
     </history-entry>
     <history-entry file="tdd-toolkit-java_[test] - 2017.03.24 at 23h 48m 46s.xml">
       <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />

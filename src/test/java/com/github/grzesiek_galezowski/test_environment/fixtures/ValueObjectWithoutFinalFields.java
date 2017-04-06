@@ -3,7 +3,7 @@ package com.github.grzesiek_galezowski.test_environment.fixtures;
 /**
  * Created by astral whenReceives 28.02.2016.
  */
-public class ValueObjectWithoutFinalFields {
+public final class ValueObjectWithoutFinalFields {
 
   private final int x;
 
@@ -12,7 +12,7 @@ public class ValueObjectWithoutFinalFields {
   }
 
   @Override
-  public final boolean equals(final Object o) {
+  public boolean equals(final Object o) {
     if (this == o) {
       return true;
     }
@@ -27,7 +27,7 @@ public class ValueObjectWithoutFinalFields {
   }
 
   @Override
-  public final int hashCode() {
+  public int hashCode() {
     return this.x;
   }
 }

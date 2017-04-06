@@ -41,12 +41,16 @@ public class XAssertSpecification {
   }
 
   public static final class OptionalInteger {
-    public final Optional<Integer> optionalInt = Optional.empty();
+    private final Optional<Integer> optionalInt = Optional.empty();
 
     @Override
-    public final boolean equals(Object o) {
-      if (this == o) return true;
-      if (!(o instanceof OptionalInteger)) return false;
+    public boolean equals(final Object o) {
+      if (this == o)  {
+        return true;
+      }
+      if (!(o instanceof OptionalInteger)) {
+        return false;
+      }
 
       OptionalInteger that = (OptionalInteger) o;
 
@@ -54,7 +58,7 @@ public class XAssertSpecification {
     }
 
     @Override
-    public final int hashCode() {
+    public int hashCode() {
       return optionalInt.hashCode();
     }
   }
@@ -71,7 +75,7 @@ public class XAssertSpecification {
   @Test
   public void shouldAssertOnValueObjectBehaviorWithFluentSyntax() {
     assertThat(Period.class).has(valueObjectBehavior());
-    assertThat(Optional.class).has(valueObjectBehavior());
+    assertThat(OptionalInteger.class).has(valueObjectBehavior());
     assertThat(ValueObjectWithoutFinalFields.class).has(valueObjectBehavior());
     assertThatThrownBy(() -> assertThat(User.class).has(valueObjectBehavior()));
     assertThatThrownBy(() -> assertThat(Date.class).has(valueObjectBehavior()));

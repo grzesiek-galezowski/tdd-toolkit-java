@@ -11,9 +11,9 @@ import java.util.Optional;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertValueObject;
-import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.effectivelyImmutable;
-import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.immutable;
-import static com.github.grzesiek_galezowski.test_environment.XJAssertConditions.valueObjectBehavior;
+import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.effectivelyImmutable;
+import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.immutable;
+import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.valueObjectBehavior;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 import static org.assertj.core.api.Assertions.not;
@@ -40,10 +40,30 @@ public class XAssertSpecification {
     });
   }
 
+  public static final class OptionalInteger {
+    public final Optional<Integer> optionalInt = Optional.empty();
+
+    @Override
+    public final boolean equals(Object o) {
+      if (this == o) return true;
+      if (!(o instanceof OptionalInteger)) return false;
+
+      OptionalInteger that = (OptionalInteger) o;
+
+      return optionalInt.equals(that.optionalInt);
+    }
+
+    @Override
+    public final int hashCode() {
+      return optionalInt.hashCode();
+    }
+  }
+
+
   @Test
   public void shouldAssertOnValueObjectBehavior() {
     assertValueObject(Period.class);
-    assertValueObject(Optional.class);
+    assertValueObject(OptionalInteger.class);
     assertThatThrownBy(() -> assertValueObject(User.class));
     assertThatThrownBy(() -> assertValueObject(Date.class));
   }

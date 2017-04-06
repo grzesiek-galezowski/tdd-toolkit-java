@@ -1,13 +1,13 @@
-package com.github.grzesiek_galezowski.test_environment;
+package com.github.grzesiek_galezowski.test_environment.implementation_details.conditions;
 
 import org.assertj.core.api.Condition;
 import org.hamcrest.Matcher;
 import org.mutabilitydetector.AnalysisResult;
 import org.mutabilitydetector.MutableReasonDetail;
+import org.mutabilitydetector.config.JdkConfiguration;
+import org.mutabilitydetector.unittesting.MutabilityAsserter;
 
 import java.util.Arrays;
-
-import static org.mutabilitydetector.unittesting.MutabilityAssert.assertInstancesOf;
 
 /**
  * Created by astral on 26.03.2016.
@@ -21,6 +21,8 @@ public class ImmutableCondition<T> extends Condition<Class<T>> {
   private final Matcher<MutableReasonDetail>[] matchers;
   private final Matcher<AnalysisResult> mutabilityMatcher;
 
+  private static final MutabilityAsserter MUTABILITY = MutabilityAsserter.configured(new JdkConfiguration());
+
   public ImmutableCondition(final Matcher<MutableReasonDetail>[] matchers, final Matcher<AnalysisResult> mutabilityMatcher) {
     this.matchers = matchers.clone();
     this.mutabilityMatcher = mutabilityMatcher;
@@ -30,15 +32,15 @@ public class ImmutableCondition<T> extends Condition<Class<T>> {
   public boolean matches(final Class<T> t) {
     try {
       if (matchers.length == 0) {
-        assertInstancesOf(t, mutabilityMatcher);
+        MUTABILITY.assertInstancesOf(t, mutabilityMatcher);
       } else if (matchers.length == 1) {
-        assertInstancesOf(t, mutabilityMatcher, matchers[0]);
+        MUTABILITY.assertInstancesOf(t, mutabilityMatcher, matchers[0]);
       } else if (matchers.length == TWO_MATCHER_ARGS) {
-        assertInstancesOf(t, mutabilityMatcher, matchers[0], matchers[1]);
+        MUTABILITY.assertInstancesOf(t, mutabilityMatcher, matchers[0], matchers[1]);
       } else if (matchers.length == THREE_MATCHER_ARGS) {
-        assertInstancesOf(t, mutabilityMatcher, matchers[0], matchers[1], matchers[2]);
+        MUTABILITY.assertInstancesOf(t, mutabilityMatcher, matchers[0], matchers[1], matchers[2]);
       } else if (matchers.length == FOUR_MATCHER_ARGS) {
-        assertInstancesOf(t, mutabilityMatcher,
+        MUTABILITY.assertInstancesOf(t, mutabilityMatcher,
             matchers[0],
             matchers[1],
             matchers[2],

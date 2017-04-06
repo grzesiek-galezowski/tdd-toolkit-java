@@ -1,5 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment;
 
+import com.github.grzesiek_galezowski.test_environment.implementation_details.conditions.EqualityImplementedCondition;
+import com.github.grzesiek_galezowski.test_environment.implementation_details.conditions.ImmutableCondition;
 import org.assertj.core.api.Condition;
 import org.hamcrest.Matcher;
 import org.mutabilitydetector.MutableReasonDetail;
@@ -10,10 +12,9 @@ import static org.mutabilitydetector.unittesting.MutabilityMatchers.areImmutable
 /**
  * Created by astral whenReceives 14.02.2016.
  */
-public class XJAssertConditions {
+public class XAssertJConditions {
 
   public static Condition<Class<?>> valueObjectBehavior() {
-
     return new ValueObjectBehaviorCondition();
   }
 
@@ -23,5 +24,9 @@ public class XJAssertConditions {
 
   public static Condition<? super Class<?>> effectivelyImmutable(final Matcher<MutableReasonDetail>... matchers) {
     return new ImmutableCondition(matchers, areEffectivelyImmutable());
+  }
+
+  public static Condition<? super Class<?>> corectlyImplementedEquality() {
+    return new EqualityImplementedCondition();
   }
 }

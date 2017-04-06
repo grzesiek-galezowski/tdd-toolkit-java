@@ -1,12 +1,12 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl;
-import nl.jqno.equalsverifier.EqualsVerifier;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 
 import java.util.function.Consumer;
 
+import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.immutable;
 import static org.assertj.core.api.Assertions.catchThrowable;
 import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 
@@ -24,7 +24,8 @@ public class XAssert {
   }
 
   public static <T> void assertValueObject(final Class<T> clazz) {
-    EqualsVerifier.forClass(clazz).verify();
+    assertThat(clazz).has(XAssertJConditions.corectlyImplementedEquality());
+    assertThat(clazz).is(immutable());
   }
 
   public static <T> SynchronizationAssertDsl<T> assertThatProxyTo(final T wrappedMock, final T realThing) {

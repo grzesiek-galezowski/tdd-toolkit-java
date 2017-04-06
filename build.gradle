@@ -5,7 +5,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.11"
+        classpath "info.solidsoft.gradle.pitest:gradle-pitest-plugin:1.1.4"
     }
 }
 
@@ -97,16 +97,16 @@ dependencies {
     compile "org.testng:testng:6.11"
     compile "org.mockito:mockito-core:2.7.21"
     compile "com.github.autofixture:autofixturegenerator:1.0.13"
-    compile "nl.jqno.equalsverifier:equalsverifier:2.2.1"
+    compile "nl.jqno.equalsverifier:equalsverifier:2.2.2"
     compile 'com.sharneng:jsr305defaults:2.0.3'
     compile 'com.google.code.findbugs:annotations:3.0.1'
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
+    compile 'uk.com.robust-it:cloning:1.9.3'
 
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies
-    findbugsPlugins 'com.h3xstream.findsecbugs:findsecbugs-plugin:1.4.4'
 }
 
 artifacts {
@@ -168,23 +168,5 @@ tasks.withType(FindBugs) {
     reports {
         xml.enabled = false
         html.enabled = true
-    }
-}
-
-//FindBugs task that load security rules only
-task findSecurityBugs(type: FindBugs) {
-
-    classes = fileTree(project.rootDir.absolutePath).include("**/*.class");
-    source = fileTree(project.rootDir.absolutePath).include("**/*.java");
-    classpath = files()
-    pluginClasspath = project.configurations.findbugsPlugins
-
-    findbugs {
-        toolVersion = "3.0.1"
-        sourceSets = [sourceSets.main] // for Java project
-        ignoreFailures = true
-        reportsDir = file("$project.buildDir/findbugsReports")
-        effort = "max"
-        reportLevel = "low"
     }
 }

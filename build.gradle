@@ -60,6 +60,9 @@ repositories {
     jcenter()
 }
 
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.5'
+}
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
     classifier = 'javadoc'

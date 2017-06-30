@@ -10,10 +10,11 @@
 # if you remove the above rule, at least ignore the following:
 
 # User-specific stuff:
-# .idea/workspace.xml
+.idea/workspace.xml
 .idea/tasks.xml
 .idea/dictionaries
 .idea/shelf
+.idea/modules/test-output/*
 
 # Sensitive or high-churn files:
 .idea/dataSources.ids
@@ -87,3 +88,11 @@ test-output/*
 .idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitorSpecification.xml
 .idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLockSpecification.xml
 .idea/kotlinc.xml
+.idea/modules/test-output/Command line suite/Command line test.html
+.idea/modules/test-output/bullet_point.png
+.idea/modules/test-output/Command line suite/testng-failed.xml
+.idea/checkstyle-idea.xml
+.idea/modules/test-output/Command line suite/Command line test.xml
+.idea/modules/test-output/jquery-1.7.1.min.js
+.idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.buffer.ReceivedObjectBufferSpecification.xml
+*.xml

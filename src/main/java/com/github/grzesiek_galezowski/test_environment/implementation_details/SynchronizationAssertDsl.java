@@ -1,8 +1,8 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import autofixture.publicinterface.Any;
+import autofixture.publicinterface.InstanceOf;
 import com.google.common.base.Throwables;
-import com.google.common.reflect.TypeToken;
 
 import java.util.function.Consumer;
 import java.util.function.Function;
@@ -28,7 +28,7 @@ public class SynchronizationAssertDsl<T> {
 
   public <TReturn> SynchronizationAssertDsl2<T> whenReceives(
       final CheckedFunction<T, TReturn> methodCallToVerify,
-      final TypeToken<TReturn> clazz) {
+      final InstanceOf<TReturn> clazz) {
     return whenReceives(throwing(methodCallToVerify), clazz);
   }
 
@@ -46,7 +46,7 @@ public class SynchronizationAssertDsl<T> {
 
   private <TReturn> SynchronizationAssertDsl2<T> whenReceives(
       final Function<T, TReturn> methodCallToVerify,
-      final TypeToken<TReturn> clazz) {
+      final InstanceOf<TReturn> clazz) {
     final TReturn retVal = Any.anonymous(clazz);
     return dslOver(workflow(forCheckingSynchronizationOf(methodCallToVerify, retVal)));
   }

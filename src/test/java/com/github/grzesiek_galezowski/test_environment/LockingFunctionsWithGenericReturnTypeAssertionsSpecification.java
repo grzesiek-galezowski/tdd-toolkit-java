@@ -72,8 +72,7 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
   private void assertThrowsWhen(final CheckedFunction<InterfaceToBeSynchronized,
         List<Integer>> function, final SyncAssertFixture fixture) {
     assertThatThrownBy(() -> assertThatProxyTo(fixture.getMock(), fixture.getRealThing())
-        .whenReceives(function, new InstanceOf<List<Integer>>() {
-        }).thenLocksCorrectly()
+        .whenReceives(function, new InstanceOf<List<Integer>>() {}).thenLocksCorrectly()
     ).isInstanceOf(AssertionError.class);
     assertThat(Thread.holdsLock(fixture.getRealThing())).isFalse();
   }

@@ -95,18 +95,17 @@ findbugs {
 }
 
 dependencies {
-    compile "com.google.guava:guava:22.0"
     compile "org.assertj:assertj-core:3.8.0"
     compile "org.testng:testng:6.11"
     compile "org.mockito:mockito-core:2.8.47"
-    compile "com.github.autofixture:autofixturegenerator:1.0.17"
+    compile "com.github.autofixture:autofixturegenerator:1.0.28"
     compile "nl.jqno.equalsverifier:equalsverifier:2.3"
     compile 'com.sharneng:jsr305defaults:2.0.3'
     compile 'com.google.code.findbugs:annotations:3.0.1'
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
-    compile 'uk.com.robust-it:cloning:1.9.4'
+    compile 'uk.com.robust-it:cloning:1.9.5'
 
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies
@@ -164,7 +163,7 @@ uploadArchives {
 }
 
 uploadArchives.dependsOn([jar, test])
-check.dependsOn("pitest")
+//check.dependsOn("pitest")
 
 afterReleaseBuild.dependsOn uploadArchives
 tasks.withType(FindBugs) {

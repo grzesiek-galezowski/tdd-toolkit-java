@@ -5,6 +5,7 @@ import com.github.grzesiek_galezowski.test_environment.implementation_details.Lo
 import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantLock;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLock;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLock;
+import lombok.val;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -18,28 +19,28 @@ public class LockAssertionsFixture<T, U extends LockAssertions> {
 
   public static LockAssertionsFixture<ReentrantLock, LockAssertionsForReentrantLock>
   createReentrantLockFixture() {
-    final ReentrantLock reentrantLock = new ReentrantLock();
+    val reentrantLock = new ReentrantLock();
     return new LockAssertionsFixture<>(
         reentrantLock, new LockAssertionsForReentrantLock(reentrantLock));
   }
 
   public static LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantReadLock>
   createReentrantReadLockFixture() {
-    final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+    val reentrantReadWriteLock = new ReentrantReadWriteLock();
     return new LockAssertionsFixture<>(
         reentrantReadWriteLock, new LockAssertionsForReentrantReadLock(reentrantReadWriteLock));
   }
 
   public static LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
   createReentrantWriteLockFixture() {
-    final ReentrantReadWriteLock reentrantReadWriteLock = new ReentrantReadWriteLock();
+    val reentrantReadWriteLock = new ReentrantReadWriteLock();
     return new LockAssertionsFixture<>(
         reentrantReadWriteLock, new LockAssertionsForReentrantWriteLock(reentrantReadWriteLock));
   }
 
   public static LockAssertionsFixture<Object, LockAssertionsForMonitor>
   createMonitorFixture() {
-    final Object o = new Object();
+    val o = new Object();
     return new LockAssertionsFixture<>(o, new LockAssertionsForMonitor(o));
   }
 

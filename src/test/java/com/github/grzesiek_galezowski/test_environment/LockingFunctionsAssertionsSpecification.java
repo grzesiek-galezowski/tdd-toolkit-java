@@ -3,6 +3,7 @@ package com.github.grzesiek_galezowski.test_environment;
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import com.github.grzesiek_galezowski.test_environment.fixtures.SyncAssertFixture;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.CheckedFunction;
+import lombok.val;
 import org.testng.annotations.Test;
 
 import static org.assertj.core.api.Assertions.assertThat;
@@ -13,7 +14,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
     //WHEN-THEN
 
     XAssert.assertThatProxyTo(fixture.getMock(), fixture.getRealThing())
@@ -24,7 +25,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldPassWhenThrowingFunctionIsCalledCorrectlyInSynchronizedBlock() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
     //WHEN-THEN
     final CheckedFunction<InterfaceToBeSynchronized, Integer> methodCallToVerify =
         instance -> instance.correctlyWrappedThrowingFunction(fixture.getA(), fixture.getB());
@@ -38,7 +39,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldFailWhenVoidMethodIsCalledCorrectlyButNotInSynchronizedBlock() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
 
     //WHEN-THEN
     assertThrowsWhen(instance -> instance.correctlyCalledButNotSynchronizedFunction(
@@ -48,7 +49,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldFailWhenFunctionIsNotCalledAtAll() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
 
     //WHEN-THEN
     assertThrowsWhen(instance -> instance.functionNotCalledAtAll(
@@ -58,7 +59,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldFailWhenFunctionIsSynchronizedButCalledWithWrongArguments() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
 
     //WHEN-THEN
     assertThrowsWhen(instance -> instance.functionCalledWithWrongArguments(
@@ -68,7 +69,7 @@ public class LockingFunctionsAssertionsSpecification {
   @Test
   public void shouldFailWhenFunctionIsSynchronizedButItsReturnValueIsNotPropagatedBack() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
 
     //WHEN-THEN
     assertThrowsWhen(instance -> instance.functionWithNonPropagatedReturnValue(

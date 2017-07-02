@@ -1,6 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
+import lombok.val;
 import org.mockito.InOrder;
 import org.testng.annotations.Test;
 
@@ -17,14 +18,13 @@ public class SynchronizationAssertionWorkflowSpecification {
   @Test
   public void shouldPerformAllStepsInCorrectOrder() {
     //GIVEN
-    final InterfaceToBeSynchronized interfaceMock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized proxy = mock(InterfaceToBeSynchronized.class);
-    final SynchronizationAssertionSteps<InterfaceToBeSynchronized> steps
-        = mock(SynchronizationAssertionSteps.class);
-    final LockAssertions assertions = mock(LockAssertions.class);
+    val interfaceMock = mock(InterfaceToBeSynchronized.class);
+    val proxy = mock(InterfaceToBeSynchronized.class);
+    val steps = mock(SynchronizationAssertionSteps.class);
+    val assertions = mock(LockAssertions.class);
 
-    final SynchronizationAssertionWorkflow<InterfaceToBeSynchronized> workflow
-        = new SynchronizationAssertionWorkflow<>(interfaceMock, proxy, steps);
+    val workflow = new SynchronizationAssertionWorkflow<InterfaceToBeSynchronized>(
+        interfaceMock, proxy, steps);
 
     interfaceMock.correctlyCalledButNotSynchronizedFunction(1, 2);
 
@@ -32,7 +32,7 @@ public class SynchronizationAssertionWorkflowSpecification {
     workflow.invoke(assertions);
 
     //THEN
-    final InOrder inOrder = inOrder(steps, assertions);
+    val inOrder = inOrder(steps, assertions);
     inOrder.verify(assertions).assertUnlocked();
     inOrder.verify(steps).prepareMockForCall(interfaceMock, proxy, assertions);
     inOrder.verify(steps).callMethodOnProxy(proxy);
@@ -45,14 +45,12 @@ public class SynchronizationAssertionWorkflowSpecification {
   @Test
   public void shouldResetTheMockAfterwards() {
     //GIVEN
-    final InterfaceToBeSynchronized interfaceMock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized proxy = mock(InterfaceToBeSynchronized.class);
-    final SynchronizationAssertionSteps<InterfaceToBeSynchronized> steps
-        = mock(SynchronizationAssertionSteps.class);
-    final LockAssertions assertions = mock(LockAssertions.class);
+    val interfaceMock = mock(InterfaceToBeSynchronized.class);
+    val proxy = mock(InterfaceToBeSynchronized.class);
+    val steps = mock(SynchronizationAssertionSteps.class);
+    val assertions = mock(LockAssertions.class);
 
-    final SynchronizationAssertionWorkflow<InterfaceToBeSynchronized> workflow
-        = new SynchronizationAssertionWorkflow<>(interfaceMock, proxy, steps);
+    val workflow = new SynchronizationAssertionWorkflow<>(interfaceMock, proxy, steps);
 
 
     //WHEN
@@ -66,14 +64,12 @@ public class SynchronizationAssertionWorkflowSpecification {
   @Test
   public void shouldResetTheMockAfterwardsInCaseOfException() {
     //GIVEN
-    final InterfaceToBeSynchronized interfaceMock = mock(InterfaceToBeSynchronized.class);
-    final InterfaceToBeSynchronized proxy = mock(InterfaceToBeSynchronized.class);
-    final SynchronizationAssertionSteps<InterfaceToBeSynchronized> steps
-        = mock(SynchronizationAssertionSteps.class);
-    final LockAssertions assertions = mock(LockAssertions.class);
+    val interfaceMock = mock(InterfaceToBeSynchronized.class);
+    val proxy = mock(InterfaceToBeSynchronized.class);
+    val steps = mock(SynchronizationAssertionSteps.class);
+    val assertions = mock(LockAssertions.class);
 
-    final SynchronizationAssertionWorkflow<InterfaceToBeSynchronized> workflow
-        = new SynchronizationAssertionWorkflow<>(interfaceMock, proxy, steps);
+    val workflow = new SynchronizationAssertionWorkflow<>(interfaceMock, proxy, steps);
 
     doThrow(new RuntimeException()).when(steps).callMethodOnProxy(proxy);
 

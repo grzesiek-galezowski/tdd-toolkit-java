@@ -1,6 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import com.github.grzesiek_galezowski.test_environment.implementation_details.SynchronizationAssertDsl;
+import lombok.val;
 import org.assertj.core.api.SoftAssertions;
 import org.assertj.core.api.ThrowableAssert.ThrowingCallable;
 
@@ -13,13 +14,13 @@ import static org.assertj.core.api.AssertionsForInterfaceTypes.assertThat;
 public class XAssert {
 
   public static void assertAll(final Consumer<SoftAssertions> assertions) {
-    final SoftAssertions softAssertions = new SoftAssertions();
+    val softAssertions = new SoftAssertions();
     assertions.accept(softAssertions);
     softAssertions.assertAll();
   }
 
   public static void assertThatNotThrownBy(final ThrowingCallable callable) {
-    final Throwable exception = catchThrowable(callable);
+    val exception = catchThrowable(callable);
     assertThat(exception).isEqualTo(null);
   }
 

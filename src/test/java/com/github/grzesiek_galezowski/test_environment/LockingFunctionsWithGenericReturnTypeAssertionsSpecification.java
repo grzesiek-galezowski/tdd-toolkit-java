@@ -4,6 +4,7 @@ import autofixture.publicinterface.InstanceOf;
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import com.github.grzesiek_galezowski.test_environment.fixtures.SyncAssertFixture;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.CheckedFunction;
+import lombok.val;
 import org.testng.annotations.Test;
 
 import java.util.List;
@@ -17,7 +18,7 @@ public class LockingFunctionsWithGenericReturnTypeAssertionsSpecification {
   @Test
   public void shouldPassWhenFunctionIsCalledCorrectlyInSynchronizedBlock() {
     //GIVEN
-    final SyncAssertFixture fixture = new SyncAssertFixture();
+    val fixture = new SyncAssertFixture();
 
     //WHEN-THEN
     assertThatProxyTo(fixture.getMock(), fixture.getRealThing())

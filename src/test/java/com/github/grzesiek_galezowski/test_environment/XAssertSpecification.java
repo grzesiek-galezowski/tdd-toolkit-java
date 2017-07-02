@@ -1,6 +1,8 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import com.github.grzesiek_galezowski.test_environment.fixtures.ValueObjectWithoutFinalFields;
+import lombok.Value;
+import lombok.val;
 import org.testng.annotations.Test;
 
 import java.time.Period;
@@ -40,29 +42,10 @@ public class XAssertSpecification {
     });
   }
 
+  @Value
   public static final class OptionalInteger {
     private final Optional<Integer> optionalInt = Optional.empty();
-
-    @Override
-    public boolean equals(final Object o) {
-      if (this == o)  {
-        return true;
-      }
-      if (!(o instanceof OptionalInteger)) {
-        return false;
-      }
-
-      OptionalInteger that = (OptionalInteger) o;
-
-      return optionalInt.equals(that.optionalInt);
-    }
-
-    @Override
-    public int hashCode() {
-      return optionalInt.hashCode();
-    }
   }
-
 
   @Test
   public void shouldAssertOnValueObjectBehavior() {

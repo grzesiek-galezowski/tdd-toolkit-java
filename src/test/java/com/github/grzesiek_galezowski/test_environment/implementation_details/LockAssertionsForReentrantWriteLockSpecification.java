@@ -1,6 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import com.github.grzesiek_galezowski.test_environment.implementation_details.fixtures.LockAssertionsFixture;
+import lombok.val;
 import org.testng.annotations.Test;
 
 import java.util.concurrent.locks.ReentrantReadWriteLock;
@@ -13,8 +14,7 @@ public class LockAssertionsForReentrantWriteLockSpecification {
   @Test
   public void shouldThrowWhenAssertingThatUnlockedReentrantLockIsLocked() {
     //GIVEN
-    final LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
-        fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
+    val fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
 
     //WHEN - THEN
     fixture.assertThatLockedAssertionFails();
@@ -24,8 +24,7 @@ public class LockAssertionsForReentrantWriteLockSpecification {
   @Test
   public void shouldNotThrowWhenAssertingThatLockedReentrantLockIsLocked() {
     //GIVEN
-    final LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
-        fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
+    val fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
 
     //WHEN - THEN
     fixture.getLock().writeLock().lock();
@@ -36,8 +35,7 @@ public class LockAssertionsForReentrantWriteLockSpecification {
   @Test
   public void shouldThrowWhenAssertingThatLockedReentrantLockIsUnlocked() {
     //GIVEN
-    final LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
-        fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
+    val fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
 
     //WHEN - THEN
     fixture.getLock().writeLock().lock();
@@ -48,8 +46,7 @@ public class LockAssertionsForReentrantWriteLockSpecification {
   @Test
   public void shouldNotThrowWhenAssertingThatUnlockedReentrantLockIsUnlocked() {
     //GIVEN
-    final LockAssertionsFixture<ReentrantReadWriteLock, LockAssertionsForReentrantWriteLock>
-        fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
+    val fixture = LockAssertionsFixture.createReentrantWriteLockFixture();
 
     //WHEN - THEN
     fixture.assertThatUnlockedAssertionPasses();

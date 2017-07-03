@@ -25,7 +25,6 @@ public class ReceivedObjectBufferSpecificationWithSingleStoredObject {
         .hasMessage("Could not evaluate " + condition.toString() + ". The buffer is empty.");
   }
 
-  /*
   @Test
   public void shouldThrowExceptionWhenAssertingObjectOtherThanStored() {
     //GIVEN
@@ -44,9 +43,14 @@ public class ReceivedObjectBufferSpecificationWithSingleStoredObject {
     //WHEN
     assertThatThrownBy(() -> buffer.assertHasAny(condition)
     ).isInstanceOf(ObjectNotFoundInBufferException.class)
-    .hasMessage(condition.toString() + " failed to match any of the items because " + anyMessage);
+    .hasMessage(condition.toString() + " failed to match any of the items: \n" +
+        "Check #1 is false because " + anyMessage + "\n" +
+        "Check #2 is false because " + anyMessage + "\n" +
+        "Check #3 is false because " + anyMessage);
+    //fixme add a property to exception for each failed check
+    // -> gather not in string, but collection or builder
   }
-*/
+
   @Test
   public void shouldNotThrowAnythingWhenConditionIsPassingForItem() {
     //GIVEN

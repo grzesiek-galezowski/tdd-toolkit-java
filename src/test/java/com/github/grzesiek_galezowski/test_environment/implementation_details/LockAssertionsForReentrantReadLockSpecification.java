@@ -4,8 +4,6 @@ import com.github.grzesiek_galezowski.test_environment.implementation_details.fi
 import lombok.val;
 import org.testng.annotations.Test;
 
-import java.util.concurrent.locks.ReentrantReadWriteLock;
-
 /**
  * Created by astral on 20.03.2016.
  */

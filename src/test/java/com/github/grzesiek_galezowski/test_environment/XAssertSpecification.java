@@ -2,7 +2,6 @@ package com.github.grzesiek_galezowski.test_environment;
 
 import com.github.grzesiek_galezowski.test_environment.fixtures.ValueObjectWithoutFinalFields;
 import lombok.Value;
-import lombok.val;
 import org.testng.annotations.Test;
 
 import java.time.Period;
@@ -13,12 +12,8 @@ import java.util.Optional;
 
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
 import static com.github.grzesiek_galezowski.test_environment.XAssert.assertValueObject;
-import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.effectivelyImmutable;
-import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.immutable;
-import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.valueObjectBehavior;
-import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
-import static org.assertj.core.api.Assertions.not;
+import static com.github.grzesiek_galezowski.test_environment.XAssertJConditions.*;
+import static org.assertj.core.api.Assertions.*;
 
 /**
  * Created by astral whenReceives 07.02.2016.

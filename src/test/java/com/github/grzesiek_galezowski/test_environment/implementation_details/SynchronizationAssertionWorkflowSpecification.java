@@ -2,13 +2,9 @@ package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
 import com.github.grzesiek_galezowski.test_environment.fixtures.InterfaceToBeSynchronized;
 import lombok.val;
-import org.mockito.InOrder;
 import org.testng.annotations.Test;
 
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.inOrder;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verifyZeroInteractions;
+import static org.mockito.Mockito.*;
 import static org.testng.Assert.assertTrue;
 
 /**

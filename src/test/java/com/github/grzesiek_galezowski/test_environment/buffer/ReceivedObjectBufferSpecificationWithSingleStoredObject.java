@@ -43,10 +43,11 @@ public class ReceivedObjectBufferSpecificationWithSingleStoredObject {
     //WHEN
     assertThatThrownBy(() -> buffer.assertHasAny(condition)
     ).isInstanceOf(ObjectNotFoundInBufferException.class)
-    .hasMessage(condition.toString() + " failed to match any of the items: \n" +
-        "Check #1 is false because " + anyMessage + "\n" +
-        "Check #2 is false because " + anyMessage + "\n" +
-        "Check #3 is false because " + anyMessage);
+    .hasMessage(condition.toString()
+        + " failed to match any of the items: \n"
+        + "Check #1 is false because " + anyMessage + "\n"
+        + "Check #2 is false because " + anyMessage + "\n"
+        + "Check #3 is false because " + anyMessage);
     //fixme add a property to exception for each failed check
     // -> gather not in string, but collection or builder
   }

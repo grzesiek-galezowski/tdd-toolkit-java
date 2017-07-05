@@ -5,16 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/integration/AutoFixtureIntegrationSpecification.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/integration/ObjectWithListInConstructor.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBufferSpecificationWithSingleStoredObject.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBufferSpecificationWithSingleStoredObject.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLockSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantLockSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantReadLockSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantReadLockSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantWriteLockSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/LockAssertionsForReentrantWriteLockSpecification.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflowSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertionWorkflowSpecification.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -235,11 +227,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="false">
+      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="99" column="1" lean-forward="false" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
+            <state relative-caret-position="288">
+              <caret line="106" column="56" lean-forward="false" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
               <folding />
             </state>
           </provider>
@@ -275,7 +267,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AutoFixtureIntegrationSpecification.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AutoFixtureIntegrationSpecification.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/integration/AutoFixtureIntegrationSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="288">
@@ -705,8 +697,8 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../AutoFixtureGenerator" value="2976815844183" />
-        <entry key="$PROJECT_DIR$" value="5984179303434" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="2978431545" />
+        <entry key="$PROJECT_DIR$" value="5984183917401" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2226072118" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="359305792" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
       </map>
@@ -871,10 +863,10 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/LockingVoidMethodAssertionsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/AutoFixtureIntegrationSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/integration/ObjectWithListInconstructor.java" />
-        <option value="$PROJECT_DIR$/build.gradle" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBufferSpecificationWithSingleStoredObject.java" />
         <option value="$PROJECT_DIR$/src/test/java/integration/ObjectWithListInConstructor.java" />
         <option value="$PROJECT_DIR$/src/test/java/integration/AutoFixtureIntegrationSpecification.java" />
+        <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
@@ -1130,68 +1122,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [build]">
-    <configuration default="false" name="AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="tdd-toolkit-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="integration.AutoFixtureIntegrationSpecification" />
-      <option name="METHOD_NAME" value="shouldNotThrowExceptionWhenGeneratingObjects" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="METHOD" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
-    <configuration default="false" name="AutoFixtureIntegrationSpecification" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="integration.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="tdd-toolkit-java" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="SUITE_NAME" />
-      <option name="PACKAGE_NAME" value="integration" />
-      <option name="MAIN_CLASS_NAME" value="integration.AutoFixtureIntegrationSpecification" />
-      <option name="METHOD_NAME" value="shouldNotThrowExceptionWhenGeneratingObjects" />
-      <option name="GROUP_NAME" />
-      <option name="TEST_OBJECT" value="CLASS" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
-      <option name="OUTPUT_DIRECTORY" />
-      <option name="ANNOTATION_TYPE" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <option name="USE_DEFAULT_REPORTERS" value="false" />
-      <option name="PROPERTIES_FILE" />
-      <envs />
-      <properties />
-      <listeners />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="Gradle.tdd-toolkit-java [test]">
     <configuration default="false" name="AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1255,6 +1186,42 @@
         <option name="taskNames">
           <list>
             <option value="test" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="tdd-toolkit-java [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <method />
+    </configuration>
+    <configuration default="false" name="tdd-toolkit-java [dependencyUpdates]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="dependencyUpdates" />
           </list>
         </option>
         <option name="vmOptions" />
@@ -1430,19 +1397,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
+      <item index="0" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
+      <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [clean]" />
+      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" />
-        <item index="3" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects" />
+        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [test]" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
+        <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [clean]" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -1475,19 +1442,19 @@
     <history-entry file="AutoFixtureIntegrationSpecification_shouldNotThrowExceptionWhenGeneratingObjects_(1) - 2017.07.05 at 20h 43m 03s.xml">
       <configuration name="AutoFixtureIntegrationSpecification.shouldNotThrowExceptionWhenGeneratingObjects (1)" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="tdd-toolkit-java_[test] - 2017.06.14 at 21h 37m 20s.xml">
-      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[test] - 2017.06.14 at 22h 56m 41s.xml">
-      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[test] - 2017.06.30 at 06h 52m 18s.xml">
-      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
-    <history-entry file="tdd-toolkit-java_[test] - 2017.06.30 at 06h 52m 48s.xml">
-      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
-    </history-entry>
     <history-entry file="tdd-toolkit-java_[test] - 2017.07.05 at 21h 55m 48s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2017.07.05 at 22h 31m 11s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2017.07.05 at 22h 31m 17s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2017.07.05 at 22h 31m 32s.xml">
+      <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
+    </history-entry>
+    <history-entry file="tdd-toolkit-java_[test] - 2017.07.05 at 22h 32m 46s.xml">
       <configuration name="tdd-toolkit-java [test]" configurationId="GradleRunConfiguration" />
     </history-entry>
   </component>
@@ -1855,14 +1822,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/build.gradle">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="162">
-          <caret line="99" column="1" lean-forward="false" selection-start-line="99" selection-start-column="1" selection-end-line="99" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -1923,6 +1882,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="288">
           <caret line="16" column="17" lean-forward="false" selection-start-line="16" selection-start-column="17" selection-end-line="16" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/build.gradle">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="106" column="56" lean-forward="false" selection-start-line="106" selection-start-column="56" selection-end-line="106" selection-end-column="56" />
           <folding />
         </state>
       </provider>

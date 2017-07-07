@@ -35,7 +35,8 @@ if (travis == "null") {
         if (taskGraph.allTasks.any { it instanceof Sign }) {
             allprojects {
                 ext."signing.password" = password
-                ext."signing.keyId" = '58596C05' //workplace E52FB31B
+                //home '58596C05' //workplace 'E52FB31B'
+                ext."signing.keyId" = 'E52FB31B'
                 ext."signing.secretKeyRingFile" = 'C:/Users/grzes/AppData/Roaming/gnupg/secring.gpg'
             }
         }
@@ -82,7 +83,7 @@ test {
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
     outputFormats = ['XML', 'HTML']
-    pitestVersion = "1.2.0"
+    pitestVersion = "1.2.1"
 }
 
 checkstyle {
@@ -103,7 +104,7 @@ dependencies {
     compile "org.assertj:assertj-core:3.8.0"
     compile "org.testng:testng:6.11"
     compile "org.mockito:mockito-core:2.8.47"
-    compile "com.github.autofixture:autofixturegenerator:1.0.30"
+    compile "com.github.autofixture:autofixturegenerator:1.0.31"
     compile "nl.jqno.equalsverifier:equalsverifier:2.3.1"
     compile 'com.sharneng:jsr305defaults:2.0.3'
     compile 'com.google.code.findbugs:annotations:3.0.1'

@@ -112,6 +112,8 @@ dependencies {
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
     compile 'uk.com.robust-it:cloning:1.9.5'
+    compile 'org.awaitility:awaitility:3.0.0'
+
 
     compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
 

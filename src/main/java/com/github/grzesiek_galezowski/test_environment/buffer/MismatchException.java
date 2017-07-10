@@ -7,14 +7,13 @@ import java.util.List;
 /**
  * Created by grzes on 26.06.2017.
  */
-public class ObjectNotFoundInBufferException extends RuntimeException {
+public class MismatchException extends RuntimeException {
 
-  public <T> ObjectNotFoundInBufferException(
+  public <T> MismatchException(
       final Condition<T> condition,
       final List<String> matchingDescriptions,
       final List<Boolean> matchingResult) {
-    super(getMessage(condition, matchingDescriptions, matchingResult)
-    );
+    super(getMessage(condition, matchingDescriptions, matchingResult));
   }
 
   private static <T> String getMessage(
@@ -22,8 +21,9 @@ public class ObjectNotFoundInBufferException extends RuntimeException {
       final List<String> matchingDescriptions,
       final List<Boolean> matchingResult) {
     return condition.toString()
-        + " failed to match any of the items: "
-        + correlate(matchingResult, matchingDescriptions);
+        + " failed to match the specified condition for the following matches: "
+        + correlate(matchingResult, matchingDescriptions) + "\n"
+        + "More information can be acquired by using observers";
   }
 
   private static String correlate(final List<Boolean> matchingResult, final List<String> matchingDescriptions) {
@@ -35,4 +35,6 @@ public class ObjectNotFoundInBufferException extends RuntimeException {
     }
     return message;
   }
+
+
 }

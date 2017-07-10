@@ -12,6 +12,11 @@ public class Item {
       public boolean matches(final T item) {
         return item.equals(expected);
       }
+
+      @Override
+      public String toString() {
+        return "equal to " + expected;
+      }
     };
   }
 }

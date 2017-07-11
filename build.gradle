@@ -13,6 +13,7 @@ plugins {
     id 'net.researchgate.release' version "2.6.0"
     id 'com.github.ben-manes.versions' version "0.15.0"
     id 'io.franzbecker.gradle-lombok' version '1.8'
+    id 'com.github.johnrengelman.shadow' version '2.0.1'
 }
 
 apply plugin: "info.solidsoft.pitest"
@@ -96,6 +97,16 @@ findbugs {
     ignoreFailures = false
 }
 
+shadowJar {
+    classifier = null
+
+    relocate('org.awaitility', 'shadow.org.awaitility')
+    relocate('nl.jqno.equalsverifier', 'shadow.nl.jqno.equalsverifier')
+    relocate('org.reflections', 'shadow.org.reflections')
+    relocate('org.mutabilitydetector', 'shadow.org.mutabilitydetector')
+    relocate('uk.com.robust-it', 'shadow.uk.com.robust-it')
+}
+
 lombok {
     version = "1.16.18"
 }
@@ -122,7 +133,7 @@ dependencies {
 }
 
 artifacts {
-    archives jar
+    archives shadowJar
     archives javadocJar
     archives sourcesJar
 }
@@ -172,9 +183,7 @@ uploadArchives {
     }
 }
 
-uploadArchives.dependsOn([jar, test])
-//check.dependsOn("pitest")
-
+uploadArchives.dependsOn([shadowJar, test])
 afterReleaseBuild.dependsOn uploadArchives
 tasks.withType(FindBugs) {
     reports {

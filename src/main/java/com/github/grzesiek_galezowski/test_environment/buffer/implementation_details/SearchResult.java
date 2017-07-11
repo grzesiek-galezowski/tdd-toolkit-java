@@ -1,5 +1,8 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation_details;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.ExpectedMatchCount;
+import com.github.grzesiek_galezowski.test_environment.buffer.MismatchException;
 import org.assertj.core.api.Condition;
 
 import java.util.ArrayList;

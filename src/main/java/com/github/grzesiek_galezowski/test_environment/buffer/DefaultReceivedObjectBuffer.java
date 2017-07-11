@@ -1,5 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation_details.SearchCommandFactory;
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation_details.SearchResult;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
@@ -59,6 +61,11 @@ public final class DefaultReceivedObjectBuffer<T> implements ReceivedObjectBuffe
   @Override
   public void subscribeForItems(final ItemSubscriber<T> subscriber) {
     subscribers.add(subscriber);
+  }
+
+  @Override
+  public void subscribeFor(final Condition<T> condition, final ItemSubscriber<T> subscriber) {
+    subscribers.add(subscriber, condition);
   }
 
   //todo add toString that prints current buffer

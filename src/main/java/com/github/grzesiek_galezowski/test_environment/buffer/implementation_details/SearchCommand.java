@@ -1,5 +1,7 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation_details;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.exceptions.ExceptionRaisedByConditionException;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
@@ -22,7 +24,7 @@ public class SearchCommand<T> {
     this.searchResult = searchResult;
   }
 
-  void performSearch() {
+  public void performSearch() {
     observer.searchingStartedWithin(receivedObjects, condition);
 
     for (T receivedObject : this.receivedObjects) {

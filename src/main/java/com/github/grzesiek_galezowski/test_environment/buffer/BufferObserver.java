@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.exceptions.ExceptionRaisedByConditionException;
 import org.assertj.core.api.Condition;
 
 import java.util.List;

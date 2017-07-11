@@ -36,4 +36,6 @@ public interface ReceivedObjectBuffer<T> {
   Poll<T> pollFor(Duration duration);
 
   void subscribeForItems(ItemSubscriber<T> subscriber);
+
+  void subscribeFor(Condition<T> condition, ItemSubscriber<T> subscriber);
 }

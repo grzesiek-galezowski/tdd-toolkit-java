@@ -16,7 +16,9 @@ import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class PollingSpecification {
-  //TODO events with conditions
+  private final Duration fiveSeconds = Duration.ofSeconds(5);
+  private final Duration twoSeconds = Duration.ofSeconds(2);
+  private final Duration oneSecond = Duration.ofSeconds(1);
   //todo convert expected count to condition
 
   @Test
@@ -27,7 +29,7 @@ public class PollingSpecification {
 
     //WHEN - THEN
     val future = insertAfter1Second(storedValue, buffer);
-    buffer.pollFor(Duration.ofSeconds(5))
+    buffer.pollFor(fiveSeconds)
         .awaiting(atLeastOne(), Item.equalTo(storedValue));
 
     //ANNIHILATE
@@ -42,7 +44,7 @@ public class PollingSpecification {
 
     //WHEN - THEN
     assertThatThrownBy(() ->
-      buffer.pollFor(Duration.ofSeconds(2))
+      buffer.pollFor(twoSeconds)
           .awaiting(atLeastOne(), Item.equalTo(storedValue3))
     ).isInstanceOf(ConditionTimeoutException.class);
   }
@@ -54,7 +56,7 @@ public class PollingSpecification {
 
     //WHEN - THEN
     assertThatCode(() ->
-      buffer.pollFor(Duration.ofSeconds(5))
+      buffer.pollFor(twoSeconds)
         .toEnsureThereIsNo(Item.equalTo(Any.intValue()))
     ).doesNotThrowAnyException();
   }
@@ -68,7 +70,7 @@ public class PollingSpecification {
     //WHEN - THEN
     val future = insertAfter1Second(storedValue, buffer);
     assertThatThrownBy(() ->
-        buffer.pollFor(Duration.ofSeconds(5))
+        buffer.pollFor(twoSeconds)
             .toEnsureThereIsNo(Item.equalTo(storedValue)))
     .isInstanceOf(MismatchException.class);
 
@@ -81,7 +83,7 @@ public class PollingSpecification {
     Assertions.assertThat(buffer.isEmpty()).isTrue();
     return CompletableFuture.runAsync(() -> {
       try {
-        Thread.sleep(1000);
+        Thread.sleep(oneSecond.toMillis());
       } catch (InterruptedException e) {
         e.printStackTrace();
       }

@@ -1,12 +1,11 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
 import autofixture.publicinterface.Any;
+import com.github.grzesiek_galezowski.test_environment.Item;
 import lombok.val;
 import org.testng.annotations.Test;
 
-import static org.mockito.Mockito.doThrow;
-import static org.mockito.Mockito.mock;
-import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.*;
 
 /**
  * Created by grzes on 11.07.2017.
@@ -26,6 +25,28 @@ public class SubscriptionSpecification {
     //THEN
     verify(subscriber).itemStored(value);
   }
+
+  @Test
+  public void shouldPassStoredValuesMatchingConditionToSubscriber() {
+    //GIVEN
+    val buffer = ReceivedObjectBuffer.<Integer>createDefault();
+    final ItemSubscriber<Integer> subscriber = mock(ItemSubscriber.class);
+    final int value1 = Any.intValue();
+    final int value2 = Any.intValue();
+    final int value3 = Any.intValue();
+    buffer.subscribeFor(Item.equalTo(value2), subscriber);
+
+    //WHEN
+    buffer.store(value1);
+    buffer.store(value2);
+    buffer.store(value3);
+
+    //THEN
+    verify(subscriber, never()).itemStored(value1);
+    verify(subscriber).itemStored(value2);
+    verify(subscriber, never()).itemStored(value3);
+  }
+
 
   @Test
   public void shouldPassAllStoredValuesToAllSubscribers() {

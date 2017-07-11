@@ -1,5 +1,6 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation_details;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.ExpectedMatchCount;
 import org.assertj.core.api.Condition;
 
 import java.util.List;

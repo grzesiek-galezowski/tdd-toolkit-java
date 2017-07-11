@@ -57,6 +57,12 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
 
   @Override
   @Synchronized
+  public void subscribeFor(final Condition<T> condition, final ItemSubscriber<T> subscriber) {
+    innerBuffer.subscribeFor(condition, subscriber);
+  }
+
+  @Override
+  @Synchronized
   public Poll<T> poll() {
     return Poll.on(this, observer);
   }

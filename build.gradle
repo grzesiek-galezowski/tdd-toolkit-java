@@ -84,7 +84,7 @@ test {
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
     outputFormats = ['XML', 'HTML']
-    pitestVersion = "1.2.1"
+    pitestVersion = "1.2.2"
 }
 
 checkstyle {

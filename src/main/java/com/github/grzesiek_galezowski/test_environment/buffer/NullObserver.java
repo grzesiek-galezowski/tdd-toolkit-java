@@ -63,4 +63,9 @@ public class NullObserver<T> implements BufferObserver<T> {
   public void singlePollFinishedWith(final boolean pollResult) {
 
   }
+
+  @Override
+  public void exceptionWhileNotifyingSubscriberAboutStoredItem(final ItemSubscriber<T> subscriber, final T object) {
+
+  }
 }

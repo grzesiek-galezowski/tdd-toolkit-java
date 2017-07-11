@@ -36,7 +36,7 @@ if (travis == "null") {
             allprojects {
                 ext."signing.password" = password
                 //home '58596C05' //workplace 'E52FB31B'
-                ext."signing.keyId" = 'E52FB31B'
+                ext."signing.keyId" = '58596C05'
                 ext."signing.secretKeyRingFile" = 'C:/Users/grzes/AppData/Roaming/gnupg/secring.gpg'
             }
         }

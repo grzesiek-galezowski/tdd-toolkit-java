@@ -51,7 +51,7 @@ public class SearchResult<T> {
 
   public MismatchException mismatchException() {
     return new MismatchException(
-        this.condition, matchingDescriptions, matchingResult);
+        this.condition, matchingDescriptions, matchingResult, expectedMatchCount);
   }
 
   public boolean foundAccordingToSpecification() {

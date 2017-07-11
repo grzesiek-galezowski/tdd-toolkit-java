@@ -26,21 +26,15 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
   }
 
   @Override
-  @Synchronized
-  public void assertHasAtLeastOne(final Condition<T> condition) {
-    innerBuffer.assertHasAtLeastOne(condition);
-  }
-
-  @Override
   @Synchronized()
-  public void assertHas(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    innerBuffer.assertHas(expectedMatchCount, condition);
+  public void assertContains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
+    innerBuffer.assertContains(expectedMatchCount, condition);
   }
 
   @Override
   @Synchronized
-  public boolean has(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    return innerBuffer.has(expectedMatchCount, condition);
+  public boolean contains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
+    return innerBuffer.contains(expectedMatchCount, condition);
   }
 
   @Override
@@ -51,13 +45,25 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
 
   @Override
   @Synchronized
+  public void clearItems() {
+    innerBuffer.clearItems();
+  }
+
+  @Override
+  @Synchronized
+  public void subscribeForItems(final ItemSubscriber<T> subscriber) {
+    innerBuffer.subscribeForItems(subscriber);
+  }
+
+  @Override
+  @Synchronized
   public Poll<T> poll() {
     return Poll.on(this, observer);
   }
 
   @Override
   @Synchronized
-  public Poll<T> poll(final Duration duration) {
+  public Poll<T> pollFor(final Duration duration) {
     return Poll.on(this, duration, observer);
   }
 }

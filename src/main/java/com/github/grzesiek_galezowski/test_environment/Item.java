@@ -10,7 +10,22 @@ public class Item {
     return new Condition<T>() {
       @Override
       public boolean matches(final T item) {
-        return item.equals(expected);
+        boolean result = item.equals(expected);
+        describedAs(
+            item.toString()
+                + " is"
+                + okOrNot(result)
+                + " equal to expected "
+                + expected.toString());
+        return result;
+      }
+
+      public String okOrNot(final boolean result) {
+        if (result) {
+          return "";
+        } else {
+          return " not";
+        }
       }
 
       @Override

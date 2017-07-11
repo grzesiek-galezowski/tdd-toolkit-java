@@ -41,4 +41,6 @@ public interface BufferObserver<T> {
   void singlePollStarted();
 
   void singlePollFinishedWith(boolean pollResult);
+
+  void exceptionWhileNotifyingSubscriberAboutStoredItem(ItemSubscriber<T> subscriber, final T object);
 }

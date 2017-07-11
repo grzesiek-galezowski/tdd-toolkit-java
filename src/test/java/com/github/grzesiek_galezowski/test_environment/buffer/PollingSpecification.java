@@ -11,14 +11,13 @@ import java.time.Duration;
 import java.util.concurrent.CompletableFuture;
 import java.util.concurrent.ExecutionException;
 
+import static com.github.grzesiek_galezowski.test_environment.buffer.ExpectedMatchCount.*;
 import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class PollingSpecification {
-  //todo add clear method
-  //TODO events
+  //TODO events with conditions
   //todo convert expected count to condition
-  //todo polling that something does NOT happen (happy+error)
 
   @Test
   public void shouldAllowPollingForItemExistence() throws ExecutionException, InterruptedException { //bug
@@ -28,7 +27,8 @@ public class PollingSpecification {
 
     //WHEN - THEN
     val future = insertAfter1Second(storedValue, buffer);
-    buffer.poll(Duration.ofSeconds(5)).toFind(ExpectedMatchCount.atLeastOne(), Item.equalTo(storedValue));
+    buffer.pollFor(Duration.ofSeconds(5))
+        .awaiting(atLeastOne(), Item.equalTo(storedValue));
 
     //ANNIHILATE
     future.get();
@@ -42,7 +42,8 @@ public class PollingSpecification {
 
     //WHEN - THEN
     assertThatThrownBy(() ->
-      buffer.poll(Duration.ofSeconds(2)).toFind(ExpectedMatchCount.atLeastOne(), Item.equalTo(storedValue3))
+      buffer.pollFor(Duration.ofSeconds(2))
+          .awaiting(atLeastOne(), Item.equalTo(storedValue3))
     ).isInstanceOf(ConditionTimeoutException.class);
   }
 
@@ -50,12 +51,11 @@ public class PollingSpecification {
   public void shouldAllowPollingForItemNonExistence() throws ExecutionException, InterruptedException { //bug
     //GIVEN
     ReceivedObjectBuffer<Integer> buffer = ReceivedObjectBuffer.createDefault();
-    val storedValue = Any.intValue();
 
     //WHEN - THEN
     assertThatCode(() ->
-      buffer.poll(Duration.ofSeconds(5))
-        .toEnsureThereIsNo(Item.equalTo(storedValue))
+      buffer.pollFor(Duration.ofSeconds(5))
+        .toEnsureThereIsNo(Item.equalTo(Any.intValue()))
     ).doesNotThrowAnyException();
   }
 
@@ -68,13 +68,13 @@ public class PollingSpecification {
     //WHEN - THEN
     val future = insertAfter1Second(storedValue, buffer);
     assertThatThrownBy(() ->
-        buffer.poll(Duration.ofSeconds(5)).toEnsureThereIsNo(Item.equalTo(storedValue)))
-    .hasMessage("lol");
+        buffer.pollFor(Duration.ofSeconds(5))
+            .toEnsureThereIsNo(Item.equalTo(storedValue)))
+    .isInstanceOf(MismatchException.class);
 
     //ANNIHILATE
     future.get();
   }
-
 
   private CompletableFuture<Void> insertAfter1Second(final Integer storedValue3,
                                                      final ReceivedObjectBuffer<Integer> buffer) {
@@ -85,7 +85,6 @@ public class PollingSpecification {
       } catch (InterruptedException e) {
         e.printStackTrace();
       }
-      System.out.println("inserted");
       buffer.store(storedValue3);
     });
   }

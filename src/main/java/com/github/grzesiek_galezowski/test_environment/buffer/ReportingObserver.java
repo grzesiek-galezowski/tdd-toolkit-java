@@ -64,4 +64,10 @@ public class ReportingObserver<T> implements BufferObserver<T> {
   public void singlePollFinishedWith(final boolean pollResult) {
     System.out.println("Single poll finished");
   }
+
+  @Override
+  public void exceptionWhileNotifyingSubscriberAboutStoredItem(
+      final ItemSubscriber<T> subscriber, final T object) {
+    System.out.println("subscriber notification caused exception");
+  }
 }

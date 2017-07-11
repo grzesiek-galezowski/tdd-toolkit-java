@@ -7,6 +7,7 @@ import org.hamcrest.Description;
 
 import java.util.concurrent.TimeUnit;
 
+import static com.github.grzesiek_galezowski.test_environment.buffer.ExpectedMatchCount.*;
 import static org.awaitility.Awaitility.await;
 
 /**
@@ -45,21 +46,22 @@ public class Poll<T> {
         observer);
   }
 
-  public void toFind(
+  public void awaiting(
       final ExpectedMatchCount expectedMatchCount,
       final Condition<T> condition) {
     observer.periodicPollingStarted();
     await().pollInterval(Duration.ONE_SECOND).atMost(pollDuration).until(
         () -> {
           observer.singlePollStarted();
-          boolean pollResult = buffer.has(expectedMatchCount, condition);
+          boolean pollResult = buffer.contains(expectedMatchCount, condition);
           observer.singlePollFinishedWith(pollResult);
           return pollResult;
         },
-        createDescribingMatcher(condition));
+        createDescribingMatcher(condition, expectedMatchCount));
   }
 
-  private static <T> BaseMatcher<Boolean> createDescribingMatcher(final Condition<T> condition) {
+  private static <T> BaseMatcher<Boolean> createDescribingMatcher(
+      final Condition<T> condition, final ExpectedMatchCount expectedMatchCount) {
     return new BaseMatcher<Boolean>() {
       private int matchAttemptCount = 0;
 
@@ -72,7 +74,12 @@ public class Poll<T> {
       @Override
       public void describeTo(final Description description) {
         description.appendText(
-            "after polling " + matchAttemptCount + " times to find item: " + condition.toString());
+            "after polling "
+                + matchAttemptCount
+                + " times to find "
+                + expectedMatchCount
+                + " occurence(s) of item: "
+                + condition.toString());
       }
     };
   }
@@ -80,14 +87,12 @@ public class Poll<T> {
   public void toEnsureThereIsNo(final Condition<T> condition) {
     observer.periodicPollingStarted();
 
-    // the below algorithm is wrong! it should sleep, then check
-    await().pollInterval(Duration.ONE_SECOND).atMost(pollDuration).until(
-        () -> {
-          observer.singlePollStarted();
-          boolean pollResult = !buffer.has(ExpectedMatchCount.atLeastOne(), condition);
-          observer.singlePollFinishedWith(pollResult);
-          return pollResult;
-        },
-        createDescribingMatcher(condition));
+    try {
+      Thread.sleep(pollDuration.getValueInMS());
+    } catch (InterruptedException e) {
+      throw new RuntimeException(e);
+    }
+
+    buffer.assertContains(no(), condition);
   }
 }

@@ -100,11 +100,11 @@ findbugs {
 shadowJar {
     classifier = null
 
+    dependencies {
+        include(dependency('org.awaitility:awaitility:.*'))
+    }
+
     relocate('org.awaitility', 'shadow.org.awaitility')
-    relocate('nl.jqno.equalsverifier', 'shadow.nl.jqno.equalsverifier')
-    relocate('org.reflections', 'shadow.org.reflections')
-    relocate('org.mutabilitydetector', 'shadow.org.mutabilitydetector')
-    relocate('uk.com.robust-it', 'shadow.uk.com.robust-it')
 }
 
 lombok {
@@ -126,7 +126,7 @@ dependencies {
     compile 'org.awaitility:awaitility:3.0.0'
 
 
-    compileOnly group: 'org.projectlombok', name: 'lombok', version: '1.16.18'
+    compileOnly 'org.projectlombok:lombok:1.16.18'
 
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies

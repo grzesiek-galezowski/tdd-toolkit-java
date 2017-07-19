@@ -49,11 +49,11 @@ public class XAssertAllSpecification {
     );
 
 
-
-    assertThat(new SurnameParser()).has(type(SurnameParser.class));
+/*
+    assertThat(new SurnameParser()).is(type(SurnameParser.class));
 
     assertThat(new PersonNameParser(null, null))
-        .has(type(SurnameParser.class, type(Integer.class)));
+        .is(type(PersonNameParser.class, type(Integer.class)));
 
     assertThat(new PersonNameParser(
         new FirstnameParser(),
@@ -62,17 +62,19 @@ public class XAssertAllSpecification {
         type(PersonNameParser.class,
           type(FirstnameParser.class),
           type(SurnameParser.class)));
-
-    assertThat(typeTree).has(
+*/
+    assertThat(typeTree).is(
         type(PersonParser.class,
             type(PersonAddressParser.class),
              type(PersonNameParser.class,
+               type(Integer.class, type(String.class)),
+
                type(FirstnameParser.class),
                type(SurnameParser.class))));
 
   }
 
-  private <T> Condition<T> type(final Class clazz, Condition<Class>... nested) {
+  private TypeTreeCondition type(final Class clazz, TypeTreeCondition... nested) {
     return new TypeTreeCondition(clazz, nested);
   }
 

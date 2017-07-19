@@ -4,54 +4,67 @@ import lombok.val;
 import org.assertj.core.api.Condition;
 
 import java.lang.reflect.Field;
-import java.util.Arrays;
 
 /**
  * Created by grzes on 17.07.2017.
  */
+
+//Tests required:
+  //1. expected field of type, but no fields
+  //2. expected field of type, but not found
+  //3. trail
+  //4. multiple mismatches
+  //5. exception throughout processing
+  //...
 public class TypeTreeCondition<T> extends Condition<T> {
   private final Class clazz;
-  private final Condition[] nested;
+  private final TypeTreeCondition<Object>[] nestedConditions;
+  private StringBuilder errorLog = new StringBuilder();
 
-  public TypeTreeCondition(final Class clazz, final Condition[] nested) {
-
+  public TypeTreeCondition(final Class clazz, final TypeTreeCondition<Object>[] nestedConditions) {
     this.clazz = clazz;
-    this.nested = nested;
+    this.nestedConditions = nestedConditions;
+    describedAs(clazz.toString());
   }
 
   @Override
   public boolean matches(final T sourceObject) {
+
+    if(sourceObject == null) {
+      describedAs("is set to null, which has no type");
+      return false;
+    }
+
     if (clazz.equals(sourceObject.getClass())) {
-      val message = new StringBuilder();
-      for (val condition : nested) {
+      for (val condition : nestedConditions) {
         boolean conditionMatchedAnyField = doesConditionMatchAnyField(
             sourceObject,
-            condition,
+            Clone.of(condition),
             clazz,
-            message
+            errorLog
         );
 
         if (!conditionMatchedAnyField) {
-          describedAs(message.toString());
           return false;
         }
       }
       return true;
     } else {
-      describedAs(clazz + " is not equal to " + sourceObject.getClass());
+      errorLog.append(clazz.getSimpleName() + " expected but got " + sourceObject.getClass().getSimpleName());
       return false;
     }
   }
 
   public boolean doesConditionMatchAnyField(
       final T sourceObject,
-      final Condition condition,
+      final TypeTreeCondition condition,
       final Class clazz, final StringBuilder message) {
     Field[] declaredFields = clazz.getDeclaredFields();
 
     boolean conditionMatchedAnyField = false;
     if(declaredFields.length == 0) {
-      conditionMatchedAnyField = true;
+      message.append("the class contains zero fields");
+      return false;
     } else {
       for (val field : declaredFields) {
         try {
@@ -60,10 +73,10 @@ public class TypeTreeCondition<T> extends Condition<T> {
           if(condition.matches(fieldValue)) {
             conditionMatchedAnyField = true;
           } else {
-            message.append(field.getName() + ": " + condition.description() + "\n");
+            this.errorLog.append(
+                "\nfield " + sourceObject.getClass().getSimpleName() + "." + field.getName() + ": " + condition.reasonOfFailure() + "\n");
           }
         } catch (IllegalAccessException e) {
-          describedAs(e.toString());
           throw new RuntimeException(e);
         }
       }
@@ -71,4 +84,38 @@ public class TypeTreeCondition<T> extends Condition<T> {
     return conditionMatchedAnyField;
   }
 
+  private String reasonOfFailure() {
+    return errorLog.toString();
+  }
+
+  @Override
+  public String toString() {
+    return getExpectedTypeSubtree(1)
+        + "\nBut could not find matches.\n"
+        + "Tried the following matches before failing:\n"
+        + reasonOfFailure();
+  }
+
+  public String getExpectedTypeSubtree(final int indent) {
+    String result = clazz.getSimpleName();
+    if(nestedConditions.length > 0) {
+      result += " with: (\n";
+      for (val condition : nestedConditions) {
+        result += spaces(indent) + condition.getExpectedTypeSubtree(indent +1);
+      }
+      result += spaces(indent -1) + ")";
+    }
+
+    result += ",\n";
+
+    return result;
+  }
+
+  private String spaces(final int indent) {
+    String result = "";
+    for(int i = 0; i < indent; ++i) {
+      result += "  ";
+    }
+    return result;
+  }
 }

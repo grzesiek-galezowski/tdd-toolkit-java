@@ -1,90 +1,62 @@
 package com.github.grzesiek_galezowski.test_environment;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.ClassFields;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
-import java.lang.reflect.Field;
-
-/**
- * Created by grzes on 17.07.2017.
- */
-
 //Tests required:
-  //1. expected field of type, but no fields
-  //2. expected field of type, but not found
-  //3. trail
-  //4. multiple mismatches
-  //5. exception throughout processing
-  //...
+//1. expected field of type, but no fields
+//2. expected field of type, but not found
+//3. trail
+//4. multiple mismatches
+//5. exception throughout processing
+//...
+
 public class TypeTreeCondition<T> extends Condition<T> {
   private final Class clazz;
   private final TypeTreeCondition<Object>[] nestedConditions;
-  private StringBuilder errorLog = new StringBuilder();
+  private ErrorLog errorLog;
+  private ClassFields classFields;
 
   public TypeTreeCondition(final Class clazz, final TypeTreeCondition<Object>[] nestedConditions) {
     this.clazz = clazz;
     this.nestedConditions = nestedConditions;
     describedAs(clazz.toString());
+    errorLog = new ErrorLog(clazz);
+    classFields = ClassFields.of(clazz, errorLog);
   }
 
   @Override
   public boolean matches(final T sourceObject) {
 
     if(sourceObject == null) {
-      describedAs("is set to null, which has no type");
+      errorLog.nullObjectFound();
       return false;
     }
 
     if (clazz.equals(sourceObject.getClass())) {
       for (val condition : nestedConditions) {
-        boolean conditionMatchedAnyField = doesConditionMatchAnyField(
-            sourceObject,
-            Clone.of(condition),
-            clazz,
-            errorLog
-        );
+        SingleConditionResult result = new SingleConditionResult();
 
-        if (!conditionMatchedAnyField) {
+        if(classFields.dontExist()) {
+          errorLog.classContainsZeroFields();
+        } else {
+          classFields.searchForMatch(sourceObject, Clone.of(condition), result);
+        }
+
+        if (result.isMismatch()) {
+          result.addTo(errorLog);
           return false;
         }
       }
       return true;
     } else {
-      errorLog.append(clazz.getSimpleName() + " expected but got " + sourceObject.getClass().getSimpleName());
+      errorLog.addError(sourceObject);
       return false;
     }
   }
 
-  public boolean doesConditionMatchAnyField(
-      final T sourceObject,
-      final TypeTreeCondition condition,
-      final Class clazz, final StringBuilder message) {
-    Field[] declaredFields = clazz.getDeclaredFields();
-
-    boolean conditionMatchedAnyField = false;
-    if(declaredFields.length == 0) {
-      message.append("the class contains zero fields");
-      return false;
-    } else {
-      for (val field : declaredFields) {
-        try {
-          field.setAccessible(true);
-          Object fieldValue = field.get(sourceObject);
-          if(condition.matches(fieldValue)) {
-            conditionMatchedAnyField = true;
-          } else {
-            this.errorLog.append(
-                "\nfield " + sourceObject.getClass().getSimpleName() + "." + field.getName() + ": " + condition.reasonOfFailure() + "\n");
-          }
-        } catch (IllegalAccessException e) {
-          throw new RuntimeException(e);
-        }
-      }
-    }
-    return conditionMatchedAnyField;
-  }
-
-  private String reasonOfFailure() {
+  public String reasonOfFailure() {
     return errorLog.toString();
   }
 

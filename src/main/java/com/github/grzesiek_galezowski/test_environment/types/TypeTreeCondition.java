@@ -36,7 +36,10 @@ public class TypeTreeCondition<T> extends Condition<T> {
     return matches;
   }
 
-  public boolean matches(final T actualObject, final BreadCrumbs breadCrumbs, final ErrorLog errorLog) {
+  public boolean matches(
+      final T actualObject,
+      final BreadCrumbs breadCrumbs,
+      final ErrorLog errorLog) {
     if (actualObject == null) {
       errorLog.nullObjectFound(breadCrumbs);
       return false;

@@ -3,7 +3,6 @@ package com.github.grzesiek_galezowski.test_environment.buffer;
 import org.assertj.core.api.Condition;
 
 import java.time.Duration;
-import java.util.Collection;
 
 /**
  * Created by grzes on 09.07.2017.

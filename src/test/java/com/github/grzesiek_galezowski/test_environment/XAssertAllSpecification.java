@@ -39,7 +39,7 @@ public class XAssertAllSpecification {
     assertThat(exception).isEqualTo(null);
   }
 
-  @Test
+  @Test(enabled = false)
   @SuppressFBWarnings
   public void shouldAllowQueryingTypeTrees() {
 

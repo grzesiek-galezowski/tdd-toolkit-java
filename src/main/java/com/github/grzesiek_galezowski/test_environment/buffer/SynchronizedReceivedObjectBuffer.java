@@ -26,6 +26,18 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
   }
 
   @Override
+  @Synchronized
+  public void store(final T[] objects) {
+    innerBuffer.store(objects);
+  }
+
+  @Override
+  @Synchronized
+  public void store(final Iterable<T> objects) {
+    innerBuffer.store(objects);
+  }
+
+  @Override
   @Synchronized()
   public void assertContains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
     innerBuffer.assertContains(expectedMatchCount, condition);

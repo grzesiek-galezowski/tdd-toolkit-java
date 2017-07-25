@@ -3,6 +3,7 @@ package com.github.grzesiek_galezowski.test_environment.buffer;
 import org.assertj.core.api.Condition;
 
 import java.time.Duration;
+import java.util.Collection;
 
 /**
  * Created by grzes on 09.07.2017.
@@ -22,6 +23,8 @@ public interface ReceivedObjectBuffer<T> {
   }
 
   void store(T object);
+  void store(T[] objects);
+  void store(Iterable<T> objects);
 
   boolean isEmpty();
 

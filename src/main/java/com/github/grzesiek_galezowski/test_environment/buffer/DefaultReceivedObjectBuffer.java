@@ -7,7 +7,9 @@ import org.assertj.core.api.Condition;
 
 import java.time.Duration;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
+import java.util.stream.StreamSupport;
 
 /**
  * Created by grzes on 26.06.2017.
@@ -30,6 +32,17 @@ public final class DefaultReceivedObjectBuffer<T> implements ReceivedObjectBuffe
   public void store(final T object) {
     receivedObjects.add(object);
     subscribers.notifySubscribersAbout(object);
+  }
+
+  @Override
+  public void store(final T[] objects) {
+    Arrays.stream(objects).forEach(item -> store(item));
+  }
+
+  @Override
+  public void store(final Iterable<T> objects) {
+    StreamSupport.stream(objects.spliterator(), false)
+        .forEach(item -> store(item));
   }
 
   @Override

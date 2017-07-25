@@ -2,11 +2,12 @@ package com.github.grzesiek_galezowski.test_environment;
 
 import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.fixtures.*;
-import lombok.val;
+import com.github.grzesiek_galezowski.test_environment.types.TypeTreeCondition;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.assertj.core.api.Assertions;
-import org.assertj.core.api.Condition;
 import org.testng.annotations.Test;
 
+import static com.github.grzesiek_galezowski.test_environment.types.TypeTreeCondition.type;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAllSpecification {
@@ -39,31 +40,36 @@ public class XAssertAllSpecification {
   }
 
   @Test
+  @SuppressFBWarnings
   public void shouldAllowQueryingTypeTrees() {
-    val typeTree = new PersonParser(
-        new PersonAddressParser(),
-        new PersonNameParser(
-            new FirstnameParser(),
-            new SurnameParser()
-        )
-    );
 
+
+    //assertThat(new SurnameParser()).is(type(SurnameParser.class));
+
+    TypeTreeCondition condition = type(PersonNameParser.class, type(Integer.class));
+    boolean is = condition.matches(new PersonNameParser(null, null));
+
+//    assertThat(new PersonNameParser(null, null))
+//        .is(type(PersonNameParser.class, type(Integer.class)));
 
 /*
-    assertThat(new SurnameParser()).is(type(SurnameParser.class));
-
-    assertThat(new PersonNameParser(null, null))
-        .is(type(PersonNameParser.class, type(Integer.class)));
-
     assertThat(new PersonNameParser(
         new FirstnameParser(),
         new SurnameParser()
     )).has(
         type(PersonNameParser.class,
           type(FirstnameParser.class),
+          type(Integer.class),
           type(SurnameParser.class)));
 */
-    assertThat(typeTree).is(
+    assertThat(
+        new PersonParser(
+          new PersonAddressParser(),
+          new PersonNameParser(
+            new FirstnameParser(),
+            new SurnameParser()
+        )
+    )).is(
         type(PersonParser.class,
             type(PersonAddressParser.class),
              type(PersonNameParser.class,
@@ -72,10 +78,6 @@ public class XAssertAllSpecification {
                type(FirstnameParser.class),
                type(SurnameParser.class))));
 
-  }
-
-  private TypeTreeCondition type(final Class clazz, TypeTreeCondition... nested) {
-    return new TypeTreeCondition(clazz, nested);
   }
 
 

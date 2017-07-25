@@ -1,40 +1,39 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
-import com.github.grzesiek_galezowski.test_environment.ErrorLog;
-import com.github.grzesiek_galezowski.test_environment.SingleConditionResult;
-import com.github.grzesiek_galezowski.test_environment.TypeTreeCondition;
+import com.github.grzesiek_galezowski.test_environment.types.BreadCrumbs;
+import com.github.grzesiek_galezowski.test_environment.types.ErrorLog;
+import com.github.grzesiek_galezowski.test_environment.types.SingleConditionResult;
+import com.github.grzesiek_galezowski.test_environment.types.TypeTreeCondition;
 import lombok.val;
 
 import java.lang.reflect.Field;
 
 public class ClassFields {
   private final Field[] value;
-  private ErrorLog errorLog;
 
-  public ClassFields(final Field[] value, final ErrorLog errorLog) {
+  public ClassFields(final Field[] value) {
     this.value = value;
-    this.errorLog = errorLog;
   }
 
-  public static ClassFields of(final Class clazz, final ErrorLog errorLog) {
+  public static ClassFields of(final Class clazz) {
     Field[] declaredFields = clazz.getDeclaredFields();
 
     for (val field : declaredFields) {
       field.setAccessible(true);
     }
-    return new ClassFields(declaredFields, errorLog);
+    return new ClassFields(declaredFields);
   }
 
   public <T> void searchForMatch(
       final T sourceObject,
       final TypeTreeCondition condition,
-      final SingleConditionResult result) {
+      final SingleConditionResult result,
+      final ErrorLog errorLog,
+      final BreadCrumbs breadCrumbs) {
     for (val field : getValue()) {
       try {
         Object fieldValue = field.get(sourceObject);
-        if (!condition.matches(fieldValue)) {
-          result.conditionMismatch(errorLog, sourceObject, condition, field);
-        } else {
+        if (condition.matches(fieldValue, breadCrumbs.add(sourceObject.getClass()), errorLog)) {
           result.success();
           return;
         }

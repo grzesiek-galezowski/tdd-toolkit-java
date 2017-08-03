@@ -35,6 +35,7 @@ public class SearchCommand<T> {
   }
 
   private void determineMatchOf(final T receivedObject) {
+    String previousDescription = condition.description().toString();
     try {
       observer.tryingToMatch(receivedObject, condition);
 
@@ -47,6 +48,8 @@ public class SearchCommand<T> {
           = new ExceptionRaisedByConditionException(condition, t);
       observer.searchingFinishedWith(exception, receivedObject);
       throw exception;
+    } finally {
+      condition.describedAs(previousDescription);
     }
   }
 

@@ -7,7 +7,7 @@ import java.util.List;
  */
 public interface ExpectedMatchCount  {
   static ExpectedMatchCount atLeast(int times) {
-    return new LambdaBasedExpectedMatchCount(m -> countEquals(times, m), "at least " + times + " item(s)");
+    return new LambdaBasedExpectedMatchCount(m -> countAtLeast(times, m), "at least " + times + " item(s)");
   }
 
   static ExpectedMatchCount exactly(int times) {
@@ -24,6 +24,10 @@ public interface ExpectedMatchCount  {
 
   static boolean countEquals(final int times, final List<Boolean> m) {
     return getCount(m) == times;
+  }
+
+  static boolean countAtLeast(int times, List<Boolean> m) {
+    return getCount(m) >= times;
   }
 
   static long getCount(final List<Boolean> m) {

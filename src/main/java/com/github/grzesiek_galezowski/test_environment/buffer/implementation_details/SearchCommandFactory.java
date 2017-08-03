@@ -1,6 +1,5 @@
 package com.github.grzesiek_galezowski.test_environment.buffer.implementation_details;
 
-import com.github.grzesiek_galezowski.test_environment.Clone;
 import com.github.grzesiek_galezowski.test_environment.buffer.BufferObserver;
 import org.assertj.core.api.Condition;
 
@@ -24,7 +23,7 @@ public class SearchCommandFactory<T> {
     return new SearchCommand<T>(
         this.observer,
         this.receivedObjects,
-        Clone.of(expected),
+        expected,
         searchResult);
   }
 }

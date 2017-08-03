@@ -104,7 +104,7 @@ shadowJar {
         include(dependency('org.awaitility:awaitility:.*'))
     }
 
-    relocate('org.awaitility', 'shadow.org.awaitility')
+    relocate('org.awaitility', "shadow" + UUID.randomUUID() + ".org.awaitility")
 }
 
 lombok {
@@ -112,10 +112,6 @@ lombok {
 }
 
 dependencies {
-    compile "org.assertj:assertj-core:3.8.0"
-    compile "org.testng:testng:6.11"
-    compile "org.mockito:mockito-core:2.8.47"
-    compile "com.github.autofixture:autofixturegenerator:1.0.32"
     compile "nl.jqno.equalsverifier:equalsverifier:2.3.1"
     compile 'com.sharneng:jsr305defaults:2.0.3'
     compile 'com.google.code.findbugs:annotations:3.0.1'
@@ -125,11 +121,15 @@ dependencies {
     compile 'uk.com.robust-it:cloning:1.9.5'
     compile 'org.awaitility:awaitility:3.0.0'
 
-
     compileOnly 'org.projectlombok:lombok:1.16.18'
 
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies
+    compile "org.assertj:assertj-core:3.8.0"
+    compile "org.testng:testng:6.12"
+    compile "org.mockito:mockito-core:2.8.47"
+    compile "com.github.autofixture:autofixturegenerator:1.0.32"
+
 }
 
 artifacts {

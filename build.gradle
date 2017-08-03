@@ -100,6 +100,9 @@ findbugs {
 shadowJar {
     classifier = null
 
+    exclude '**/pom.xml'
+    exclude '**/pom.properties'
+
     dependencies {
         include(dependency('org.awaitility:awaitility:.*'))
     }

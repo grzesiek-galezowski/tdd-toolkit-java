@@ -96,3 +96,4 @@ test-output/*
 .idea/modules/test-output/jquery-1.7.1.min.js
 .idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.buffer.ReceivedObjectBufferSpecification.xml
 *.xml
+.idea/sonarlint/*

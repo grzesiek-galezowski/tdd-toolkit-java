@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchPattern.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchesCollection.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ClassFields.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/BreadCrumbs.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/ErrorLog.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java" afterPath="" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeTreeCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/FirstnameParser.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/FirstnameParser.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -93,101 +109,101 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/build.gradle">
+      <file leaf-file-name="TypePathCondition.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="775">
-              <caret line="133" column="63" lean-forward="false" selection-start-line="133" selection-start-column="63" selection-end-line="133" selection-end-column="63" />
+            <state relative-caret-position="875">
+              <caret line="35" column="2" lean-forward="false" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="LICENSE" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LICENSE">
+      <file leaf-file-name="MatchesCollection.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchesCollection.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="50">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="settings.gradle" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/settings.gradle">
+      <file leaf-file-name="LambdaBasedExpectedMatchCount.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/LambdaBasedExpectedMatchCount.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="200">
+              <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="gradle.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/gradle.properties">
+      <file leaf-file-name="XAssertAllSpecification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1100">
+              <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MANIFEST.MF" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/libs/tdd-toolkit-java-1.0.33/META-INF/MANIFEST.MF">
+      <file leaf-file-name="TypePatternsSpecification.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="1275">
+              <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.properties" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/libs/tdd-toolkit-java-1.0.33/META-INF/maven/org.awaitility/awaitility/pom.properties">
+      <file leaf-file-name="PersonParser.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="225">
+              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom-default.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/poms/pom-default.xml">
+      <file leaf-file-name="TypeNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2525">
-              <caret line="101" column="17" lean-forward="false" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
+            <state relative-caret-position="625">
+              <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ivy.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/build/ivy.xml">
+      <file leaf-file-name="TypeGraphNodeFactory.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="850">
+              <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchCommandFactory.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommandFactory.java">
+      <file leaf-file-name="MatchPattern.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
+            <state relative-caret-position="149">
+              <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SearchCommand.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommand.java">
+      <file leaf-file-name="TypeGraphNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1250">
-              <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
+            <state relative-caret-position="75">
+              <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
               <folding />
             </state>
           </provider>
@@ -205,10 +221,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Clone.o</find>
-      <find>again</find>
-      <find>is set</find>
-      <find>\n</find>
       <find>- field</find>
       <find>set to</find>
       <find>While try</find>
@@ -220,7 +232,6 @@
       <find>but got</find>
       <find>enabled</find>
       <find>@Nullable</find>
-      <find>&quot;&quot;</find>
       <find>expected</find>
       <find>Searched</find>
       <find>expected but got</find>
@@ -235,10 +246,18 @@
       <find>Clone.</find>
       <find>await</find>
       <find>maven</find>
+      <find>.getFields</find>
+      <find>getFields</find>
+      <find>&quot;&quot;</find>
+      <find>throws</find>
+      <find>endl</find>
     </findStrings>
     <replaceStrings>
       <replace />
     </replaceStrings>
+    <dirStrings>
+      <dir>C:\Users\grzes\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\types</dir>
+    </dirStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -586,8 +605,8 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../AutoFixtureGenerator" value="2976815844183" />
-        <entry key="$PROJECT_DIR$" value="5992067345620" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1032699805" />
+        <entry key="$PROJECT_DIR$" value="5997849558253" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="3941503514" />
         <entry key="$PROJECT_DIR$/gradle.properties" value="2071368599" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="566444372" />
       </map>
@@ -718,17 +737,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/test/java/integration/ObjectWithListInconstructor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/integration/ObjectWithListInConstructor.java" />
-        <option value="$PROJECT_DIR$/src/test/java/integration/AutoFixtureIntegrationSpecification.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBufferSpecificationWithSingleStoredObject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/LambdaBasedExpectedMatchCount.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/SearchResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/MismatchException.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/MessageFormat.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/MismatchMessageBuilder.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Item.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBufferSpecificationWithManyStoredObjects.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ItemsClearingSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/AssertionsSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ItemSubscriber.java" />
@@ -747,28 +755,39 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/SurnameParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/MyParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonAddressParser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/FirstnameParser.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonNameParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/TypeTreeCondition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/ErrorLog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/SingleConditionResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Mismatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/Mismatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/ErrorLog.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ClassFields.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/BreadCrumbs.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBuffer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/SynchronizedReceivedObjectBuffer.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/DefaultReceivedObjectBuffer.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeTreeCondition.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ExpectedMatchCount.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommand.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommandFactory.java" />
         <option value="$PROJECT_DIR$/build/poms/pom-default.xml" />
         <option value="$PROJECT_DIR$/build.gradle" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/FirstnameParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/TypeNode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types2/NullNode.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types2/TypeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/BreadCrumbs.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/ErrorLog.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeTreeCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNodeCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePath.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchPattern.java" />
       </list>
     </option>
   </component>
@@ -794,6 +813,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="Scratches" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -811,13 +833,146 @@
               <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="buffer" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="buffer" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation_details" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="implementation_details" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="fixtures" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="&lt; 1.8 &gt;" type="70bed36:NamedLibraryElementNode" />
+              <item name="rt.jar" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="util" type="462c0819:PsiDirectoryNode" />
+              <item name="stream" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -833,15 +988,21 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
-      <recent name="com.github.grzesiek_galezowski.test_environment.TypeTreeCondition" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.SingleConditionResult" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.buffer.ClassFields" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.buffer.MessageFormat" />
-      <recent name="com.github.grzesiek_galezowski.test_environment.buffer.MatchingResult" />
+      <recent name="com.github.grzesiek_galezowski.test_environment.types.TypeGraphNodeFactory" />
+      <recent name="com.github.grzesiek_galezowski.test_environment.types.TypeNode" />
+      <recent name="com.github.grzesiek_galezowski.test_environment.types2.TypeNode" />
+      <recent name="com.github.grzesiek_galezowski.test_environment.XAssertAllSpecification.TypeNode" />
+      <recent name="com.github.grzesiek_galezowski.test_environment.types2.NullNode" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.github.grzesiek_galezowski.test_environment.buffer" />
       <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details.conditions" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\grzes\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\implementation_details\conditions" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.github.grzesiek_galezowski.test_environment.types2" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="com.github.grzesiek_galezowski.test_environment.types" />
@@ -849,9 +1010,6 @@
       <recent name="com.github.grzesiek_galezowski.test_environment.fixtures" />
       <recent name="com.github.grzesiek_galezowski.test_environment.buffer" />
       <recent name="com.github.grzesiek_galezowski.test_environment.implementation_details" />
-    </key>
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\Users\grzes\Documents\GitHub\tdd-toolkit-java\src\main\java\com\github\grzesiek_galezowski\test_environment\implementation_details\conditions" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -866,7 +1024,103 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [dependencyUpdates]">
+  <component name="RunManager" selected="TestNG.TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice">
+    <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tdd-toolkit-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment.types" />
+      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.types.TypePatternsSpecification" />
+      <option name="METHOD_NAME" value="shouldThrowErrorWhenPathIsNotFound" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tdd-toolkit-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment.types" />
+      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.types.TypePatternsSpecification" />
+      <option name="METHOD_NAME" value="shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
+    <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tdd-toolkit-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment" />
+      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.XAssertAllSpecification" />
+      <option name="METHOD_NAME" value="shouldAllowQueryingTypeTrees" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1023,23 +1277,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration name="tdd-toolkit-java [beforeReleaseBuild]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="beforeReleaseBuild" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
     <configuration name="tdd-toolkit-java [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -1074,59 +1311,25 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
     </configuration>
-    <configuration name="tdd-toolkit-java [release]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="release" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
-    <configuration name="tdd-toolkit-java [uploadArchives]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="uploadArchives" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-    </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [beforeReleaseBuild]" />
-      <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [uploadArchives]" />
-      <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
-      <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
+      <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
+      <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
+      <item index="2" class="java.lang.String" itemvalue="TestNG.XAssertAllSpecification.shouldAllowQueryingTypeTrees" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" />
+      <item index="4" class="java.lang.String" itemvalue="TestNG.TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
-        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
-        <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [release]" />
-        <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [uploadArchives]" />
-        <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [beforeReleaseBuild]" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
+        <item index="1" class="java.lang.String" itemvalue="TestNG.TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.XAssertAllSpecification.shouldAllowQueryingTypeTrees" />
+        <item index="3" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [dependencyUpdates]" />
+        <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [build]" />
       </list>
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1504386370610" />
+    <option name="lastUpdateTimestamp" value="1507581280841" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1145,59 +1348,60 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.24 at 22h 56m 11s.xml">
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsNotFound - 2017.10.11 at 22h 18m 20s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsNotFound - 2017.10.11 at 22h 19m 55s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsNotFound - 2017.10.11 at 22h 21m 27s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsNotFound - 2017.10.11 at 22h 22m 26s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsNotFound" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsPartiallyFoundTwice - 2017.10.11 at 22h 41m 00s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsPartiallyFoundTwice - 2017.10.11 at 22h 41m 19s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsPartiallyFoundTwice - 2017.10.11 at 22h 48m 05s.xml">
+      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" configurationId="TestNG" />
+    </history-entry>
+    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.10.11 at 21h 29m 18s.xml">
       <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.24 at 22h 56m 23s.xml">
+    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.10.11 at 21h 30m 04s.xml">
       <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
     </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.24 at 23h 05m 12s.xml">
+    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.10.11 at 22h 03m 55s.xml">
       <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.24 at 23h 07m 05s.xml">
-      <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.25 at 06h 21m 05s.xml">
-      <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.25 at 06h 21m 30s.xml">
-      <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.25 at 06h 21m 43s.xml">
-      <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="XAssertAllSpecification_shouldAllowQueryingTypeTrees - 2017.07.25 at 23h 43m 07s.xml">
-      <configuration name="XAssertAllSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2017.07.25 at 06h 20m 01s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
-    </history-entry>
-    <history-entry file="_default_ - 2017.07.25 at 06h 36m 13s.xml">
-      <configuration name="&lt;default&gt;" configurationId="TestNG" />
     </history-entry>
   </component>
   <component name="ToolWindowManager">
-    <frame x="70" y="-8" width="1618" height="1066" extended-state="6" />
+    <frame x="56" y="-8" width="1632" height="1066" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Key Promoter X" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32635984" sideWeight="0.4144819" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32635984" sideWeight="0.5855181" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.63304454" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57949793" sideWeight="0.8372525" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20724095" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20668317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.49750313" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20786516" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.36695546" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20730197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39853558" sideWeight="0.48051947" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39853558" sideWeight="0.4684406" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Code Iris" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1208,9 +1412,9 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.49041435" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.48081684" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.42115027" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.38737625" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1261,157 +1465,17 @@
           <option name="timeStamp" value="8" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java</url>
-          <line>51</line>
+          <url>file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java</url>
+          <line>24</line>
           <properties />
-          <option name="timeStamp" value="26" />
+          <option name="timeStamp" value="28" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="27" />
+      <option name="time" value="29" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.8.0/85dab3e124fb391b10196df9bfdb43640deabb09/assertj-core-3.8.0-sources.jar!/org/assertj/core/error/ShouldBe.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="10" lean-forward="false" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.8.0/85dab3e124fb391b10196df9bfdb43640deabb09/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/Condition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2574">
-          <caret line="143" column="17" lean-forward="false" selection-start-line="143" selection-start-column="17" selection-end-line="143" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.8.0/85dab3e124fb391b10196df9bfdb43640deabb09/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/Assertions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="12996">
-          <caret line="722" column="41" lean-forward="false" selection-start-line="722" selection-start-column="41" selection-end-line="722" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/reflect/AccessibleObject.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2250">
-          <caret line="125" column="16" lean-forward="false" selection-start-line="125" selection-start-column="16" selection-end-line="125" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/AbstractList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2646">
-          <caret line="147" column="0" lean-forward="false" selection-start-line="147" selection-start-column="0" selection-end-line="147" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/Poll.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/MessageFormat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="18" column="16" lean-forward="false" selection-start-line="18" selection-start-column="16" selection-end-line="18" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/MismatchException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="900">
-          <caret line="50" column="19" lean-forward="false" selection-start-line="50" selection-start-column="19" selection-end-line="50" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/Item.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="8" column="33" lean-forward="false" selection-start-line="8" selection-start-column="33" selection-end-line="8" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.8.0/85dab3e124fb391b10196df9bfdb43640deabb09/assertj-core-3.8.0-sources.jar!/org/assertj/core/internal/Conditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1080">
-          <caret line="60" column="0" lean-forward="false" selection-start-line="60" selection-start-column="0" selection-end-line="60" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.assertj/assertj-core/3.8.0/85dab3e124fb391b10196df9bfdb43640deabb09/assertj-core-3.8.0-sources.jar!/org/assertj/core/api/AbstractAssert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5922">
-          <caret line="329" column="0" lean-forward="false" selection-start-line="329" selection-start-column="0" selection-end-line="329" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/AssertionsSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="32" column="53" lean-forward="false" selection-start-line="32" selection-start-column="53" selection-end-line="32" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/ItemsClearingSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="558">
-          <caret line="31" column="1" lean-forward="false" selection-start-line="31" selection-start-column="1" selection-end-line="31" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/PollingSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/SubscriptionSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1584">
-          <caret line="88" column="24" lean-forward="false" selection-start-line="88" selection-start-column="24" selection-end-line="88" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/findbugs/main.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/build/reports/findbugs/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="198">
-          <caret line="11" column="9" lean-forward="false" selection-start-line="11" selection-start-column="9" selection-end-line="11" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonNameParser.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="58" lean-forward="false" selection-start-line="2" selection-start-column="58" selection-end-line="2" selection-end-column="58" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/MismatchMessageBuilder.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1044">
-          <caret line="58" column="21" lean-forward="false" selection-start-line="58" selection-start-column="21" selection-end-line="58" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/lang/Object.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="4212">
@@ -1419,54 +1483,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ClassFields.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="38" column="9" lean-forward="false" selection-start-line="38" selection-start-column="9" selection-end-line="38" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/Mismatch.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="2" lean-forward="false" selection-start-line="12" selection-start-column="2" selection-end-line="12" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/BreadCrumbs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="234">
-          <caret line="13" column="2" lean-forward="false" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/BufferObserver.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
           <caret line="21" column="7" lean-forward="false" selection-start-line="21" selection-start-column="7" selection-end-line="21" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="0" lean-forward="false" selection-start-line="45" selection-start-column="0" selection-end-line="45" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/ErrorLog.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="378">
-          <caret line="21" column="22" lean-forward="false" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeTreeCondition.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="810">
-          <caret line="45" column="5" lean-forward="false" selection-start-line="45" selection-start-column="5" selection-end-line="45" selection-end-column="5" />
         </state>
       </provider>
     </entry>
@@ -1492,27 +1513,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/DefaultReceivedObjectBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="792">
-          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/SynchronizedReceivedObjectBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="648">
-          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBuffer.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/tdd-toolkit-java.iml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1531,15 +1531,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ExpectedMatchCount.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="15" column="0" lean-forward="false" selection-start-line="15" selection-start-column="0" selection-end-line="15" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1547,15 +1538,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="250">
           <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommand.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1250">
-          <caret line="50" column="6" lean-forward="false" selection-start-line="50" selection-start-column="6" selection-end-line="50" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1563,7 +1545,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="475">
           <caret line="19" column="35" lean-forward="false" selection-start-line="19" selection-start-column="35" selection-end-line="19" selection-end-column="35" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1571,7 +1552,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1586,7 +1566,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1594,7 +1573,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2525">
           <caret line="101" column="17" lean-forward="false" selection-start-line="101" selection-start-column="17" selection-end-line="101" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1602,7 +1580,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1610,7 +1587,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1618,7 +1594,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1626,14 +1601,227 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/implementation_details/SynchronizationAssertDsl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="30" column="17" lean-forward="false" selection-start-line="30" selection-start-column="17" selection-end-line="30" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="775">
-          <caret line="133" column="63" lean-forward="false" selection-start-line="133" selection-start-column="63" selection-end-line="133" selection-end-column="63" />
+        <state relative-caret-position="3325">
+          <caret line="133" column="62" lean-forward="false" selection-start-line="133" selection-start-column="62" selection-end-line="133" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/MismatchMessageBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="825">
+          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/HashMap.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11825">
+          <caret line="473" column="11" lean-forward="false" selection-start-line="473" selection-start-column="11" selection-end-line="473" selection-end-column="11" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/FirstnameParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="10" column="39" lean-forward="false" selection-start-line="10" selection-start-column="39" selection-end-line="10" selection-end-column="39" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/BreadCrumbs.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/ErrorLog.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ClassFields.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/SynchronizedReceivedObjectBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="36" column="19" lean-forward="false" selection-start-line="36" selection-start-column="19" selection-end-line="36" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ReportingObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ReceivedObjectBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="25">
+          <caret line="9" column="17" lean-forward="false" selection-start-line="9" selection-start-column="17" selection-end-line="9" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/Poll.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="542">
+          <caret line="30" column="29" lean-forward="false" selection-start-line="30" selection-start-column="29" selection-end-line="30" selection-end-column="29" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/NullObserver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/MismatchException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="205">
+          <caret line="10" column="13" lean-forward="false" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ItemSubscriber.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="17" lean-forward="false" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ExpectedMatchCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="6" column="3" lean-forward="false" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/DefaultReceivedObjectBuffer.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="44" column="35" lean-forward="false" selection-start-line="44" selection-start-column="35" selection-end-line="44" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Stream.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="11950">
+          <caret line="478" column="14" lean-forward="false" selection-start-line="478" selection-start-column="14" selection-end-line="478" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Collectors.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5700">
+          <caret line="228" column="29" lean-forward="false" selection-start-line="228" selection-start-column="29" selection-end-line="228" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/SearchCommand.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="13" column="16" lean-forward="false" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/LambdaBasedExpectedMatchCount.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="200">
+          <caret line="8" column="13" lean-forward="false" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchesCollection.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1100">
+          <caret line="44" column="0" lean-forward="false" selection-start-line="44" selection-start-column="0" selection-end-line="44" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="850">
+          <caret line="34" column="22" lean-forward="false" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="875">
+          <caret line="35" column="2" lean-forward="false" selection-start-line="35" selection-start-column="2" selection-end-line="35" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="51" column="37" lean-forward="false" selection-start-line="51" selection-start-column="37" selection-end-line="51" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="625">
+          <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchPattern.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="149">
+          <caret line="8" column="18" lean-forward="false" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
           <folding />
         </state>
       </provider>

@@ -2,12 +2,15 @@ package com.github.grzesiek_galezowski.test_environment;
 
 import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.fixtures.*;
-import com.github.grzesiek_galezowski.test_environment.types.TypeTreeCondition;
+import com.github.grzesiek_galezowski.test_environment.types.TypeGraphNode;
+import com.github.grzesiek_galezowski.test_environment.types.TypeNode;
+import com.github.grzesiek_galezowski.test_environment.types.TypePathCondition;
 import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.assertj.core.api.Assertions;
+import org.assertj.core.api.Condition;
 import org.testng.annotations.Test;
 
-import static com.github.grzesiek_galezowski.test_environment.types.TypeTreeCondition.type;
+import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAllSpecification {
@@ -39,46 +42,6 @@ public class XAssertAllSpecification {
     assertThat(exception).isEqualTo(null);
   }
 
-  @Test(enabled = false)
-  @SuppressFBWarnings
-  public void shouldAllowQueryingTypeTrees() {
-
-
-    //assertThat(new SurnameParser()).is(type(SurnameParser.class));
-
-    TypeTreeCondition condition = type(PersonNameParser.class, type(Integer.class));
-    boolean is = condition.matches(new PersonNameParser(null, null));
-
-//    assertThat(new PersonNameParser(null, null))
-//        .is(type(PersonNameParser.class, type(Integer.class)));
-
-/*
-    assertThat(new PersonNameParser(
-        new FirstnameParser(),
-        new SurnameParser()
-    )).has(
-        type(PersonNameParser.class,
-          type(FirstnameParser.class),
-          type(Integer.class),
-          type(SurnameParser.class)));
-*/
-    assertThat(
-        new PersonParser(
-          new PersonAddressParser(),
-          new PersonNameParser(
-            new FirstnameParser(),
-            new SurnameParser()
-        )
-    )).is(
-        type(PersonParser.class,
-            type(PersonAddressParser.class),
-             type(PersonNameParser.class,
-               type(Integer.class, type(String.class)),
-
-               type(FirstnameParser.class),
-               type(SurnameParser.class))));
-
-  }
 
 
 }

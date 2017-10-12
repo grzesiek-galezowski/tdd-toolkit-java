@@ -84,7 +84,7 @@ test {
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
     outputFormats = ['XML', 'HTML']
-    pitestVersion = "1.2.2"
+    pitestVersion = "1.2.4"
 }
 
 checkstyle {
@@ -121,7 +121,7 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
-    compile 'uk.com.robust-it:cloning:1.9.5'
+    compile 'uk.com.robust-it:cloning:1.9.6'
     compile 'org.awaitility:awaitility:3.0.0'
 
     compileOnly 'org.projectlombok:lombok:1.16.18'
@@ -130,8 +130,8 @@ dependencies {
     findbugs configurations.findbugsPlugins.dependencies
     compile "org.assertj:assertj-core:3.8.0"
     compile "org.testng:testng:6.12"
-    compile "org.mockito:mockito-core:2.9.0"
-    compile "com.github.autofixture:autofixturegenerator:1.0.33"
+    compile "org.mockito:mockito-core:2.10.0"
+    compile "com.github.autofixture:autofixturegenerator:2.0.0"
 
 }
 

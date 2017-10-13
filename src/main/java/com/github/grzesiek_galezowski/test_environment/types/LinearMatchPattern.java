@@ -6,13 +6,13 @@ import org.assertj.core.util.Lists;
 import java.util.Arrays;
 import java.util.List;
 
-public class MatchPattern {
+public class LinearMatchPattern {
   private Class<?>[] typePath;
   private int currentIndex = 0;
   private List<String> currentMatchedFields = Lists.newArrayList();
   private List<List<String>> matchPaths = Lists.newArrayList();
 
-  public MatchPattern(final Class<?>[] typePath) {
+  public LinearMatchPattern(final Class<?>[] typePath) {
     this.typePath = typePath;
     matchPaths.add(currentMatchedFields);
   }
@@ -31,7 +31,7 @@ public class MatchPattern {
 
   public void matchFound(final String fieldName) {
     if(currentIndex < currentMatchedFields.size()) {
-      currentMatchedFields = currentMatchedFields.subList(0, currentIndex);
+      currentMatchedFields = Lists.newArrayList(currentMatchedFields.subList(0, currentIndex));
       matchPaths.add(currentMatchedFields);
     }
     currentMatchedFields.add(fieldName);

@@ -1,20 +1,17 @@
 package com.github.grzesiek_galezowski.test_environment.types;
 
-import com.google.common.base.Joiner;
 import lombok.val;
 import org.assertj.core.api.Condition;
-
-import java.util.Arrays;
 
 public class TypePathCondition<T> extends Condition<T> {
 
   private Class<?>[] typePath;
-  private MatchPattern matchPattern;
+  private LinearMatchPattern matchPattern;
 
   //todo finish from typePath to matchPattern
   public TypePathCondition(final Class<?>[] typePath) {
     this.typePath = typePath;
-    matchPattern = new MatchPattern(typePath);
+    matchPattern = new LinearMatchPattern(typePath);
   }
 
   @Override
@@ -28,12 +25,14 @@ public class TypePathCondition<T> extends Condition<T> {
   }
 
   public void describeError() {
-    describedAs("the folowing type path: "
+    describedAs("the following type path: "
       + matchPattern.getString()
-      + " but the closest matches were : " + matchPattern.getMatchedAsString());
+      + " but the closest matches were : "
+        + System.lineSeparator()
+        + matchPattern.getMatchedAsString());
   }
 
-  public static <T> TypePathCondition typePath(
+  public static TypePathCondition typePath(
       final Class<?>... typePath) {
     return new TypePathCondition(typePath);
   }

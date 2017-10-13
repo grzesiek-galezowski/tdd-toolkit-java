@@ -1,16 +1,9 @@
 package com.github.grzesiek_galezowski.test_environment;
 
 import autofixture.publicinterface.Any;
-import com.github.grzesiek_galezowski.test_environment.fixtures.*;
-import com.github.grzesiek_galezowski.test_environment.types.TypeGraphNode;
-import com.github.grzesiek_galezowski.test_environment.types.TypeNode;
-import com.github.grzesiek_galezowski.test_environment.types.TypePathCondition;
-import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.assertj.core.api.Assertions;
-import org.assertj.core.api.Condition;
 import org.testng.annotations.Test;
 
-import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.*;
 import static org.assertj.core.api.Assertions.assertThat;
 
 public class XAssertAllSpecification {

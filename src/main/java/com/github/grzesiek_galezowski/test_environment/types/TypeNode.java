@@ -20,7 +20,7 @@ public class TypeNode implements TypeGraphNode {
   }
 
   @Override
-  public boolean matches(final MatchPattern matchPattern) {
+  public boolean matches(final LinearMatchPattern matchPattern) {
 
     if (matchPattern.nextItemIs(type)) {
       matchPattern.matchFound(fieldName);

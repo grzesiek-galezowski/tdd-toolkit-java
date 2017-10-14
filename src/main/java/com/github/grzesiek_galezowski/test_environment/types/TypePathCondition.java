@@ -5,13 +5,11 @@ import org.assertj.core.api.Condition;
 
 public class TypePathCondition<T> extends Condition<T> {
 
-  private Class<?>[] typePath;
   private LinearMatchPattern matchPattern;
 
   //todo finish from typePath to matchPattern
-  public TypePathCondition(final Class<?>[] typePath) {
-    this.typePath = typePath;
-    matchPattern = new LinearMatchPattern(typePath);
+  public TypePathCondition(final LinearMatchPattern matchPattern) {
+    this.matchPattern = matchPattern;
   }
 
   @Override
@@ -26,14 +24,15 @@ public class TypePathCondition<T> extends Condition<T> {
 
   public void describeError() {
     describedAs("the following type path: "
-      + matchPattern.getString()
+      + matchPattern.getPatternString()
       + " but the closest matches were : "
         + System.lineSeparator()
-        + matchPattern.getMatchedAsString());
+        + matchPattern.getBestMatchesString());
   }
 
   public static TypePathCondition typePath(
       final Class<?>... typePath) {
-    return new TypePathCondition(typePath);
+    return new TypePathCondition(
+        LinearMatchPattern.forTypes(typePath));
   }
 }

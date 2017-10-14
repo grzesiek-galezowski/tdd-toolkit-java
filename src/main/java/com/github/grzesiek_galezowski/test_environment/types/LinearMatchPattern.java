@@ -7,14 +7,14 @@ import java.util.Arrays;
 import java.util.List;
 
 public class LinearMatchPattern {
-  private Class<?>[] typePath;
+  private PatternElement[] patternElements;
   private int currentIndex = 0;
   private List<String> currentMatchedFields = Lists.newArrayList();
   private List<List<String>> matchPaths = Lists.newArrayList();
   private boolean reverted = false;
 
-  public LinearMatchPattern(final Class<?>[] typePath) {
-    this.typePath = typePath;
+  public  LinearMatchPattern(final PatternElement[] patternElements) {
+    this.patternElements = patternElements;
     matchPaths.add(currentMatchedFields);
   }
 
@@ -26,8 +26,9 @@ public class LinearMatchPattern {
         .anyMatch(n -> n.matches(this));
   }
 
-  public boolean nextItemIs(final Class<?> type) {
-    return type.equals(typePath[currentIndex]);
+  public boolean matches(final TypeNode typeNode) {
+    PatternElement patternElement = patternElements[currentIndex];
+    return patternElement.isMatchedBy(typeNode);
   }
 
   public void matchFound(final String fieldName) {
@@ -45,15 +46,14 @@ public class LinearMatchPattern {
   }
 
   public boolean isMatchedCompletely() {
-    System.out.println("current index is " + currentIndex);
-    return currentIndex == typePath.length;
+    return currentIndex == patternElements.length;
   }
 
-  public String getString() {
-    return Joiner.on("->").join(Arrays.stream(typePath).map(t -> t.getSimpleName()).toArray());
+  public String getPatternString() {
+    return Joiner.on("->").join(Arrays.stream(patternElements).map(t -> t.getName()).toArray());
   }
 
-  public String getMatchedAsString() {
+  public String getBestMatchesString() {
     List<String> strings = Lists.newArrayList();
 
     for(int i = 0; i < matchPaths.size(); i++) {
@@ -66,5 +66,9 @@ public class LinearMatchPattern {
   public void revertOneMatch() {
     currentIndex--;
     reverted = true;
+  }
+
+  public static LinearMatchPattern forTypes(final Class<?>[] typePath) {
+    return new LinearMatchPattern(Arrays.stream(typePath).map(t -> new PatternTypeElement(t)).toArray(PatternElement[]::new));
   }
 }

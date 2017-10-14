@@ -2,4 +2,6 @@ package com.github.grzesiek_galezowski.test_environment.types;
 
 public interface TypeGraphNode {
   boolean matches(final LinearMatchPattern matchPattern);
+
+  boolean hasType(final Class<?> aClass);
 }

@@ -20,4 +20,9 @@ public class NullNode implements TypeGraphNode {
   public boolean matches(final LinearMatchPattern matchPattern) {
     return false;
   }
+
+  @Override
+  public boolean hasType(final Class<?> aClass) {
+    return false;
+  }
 }

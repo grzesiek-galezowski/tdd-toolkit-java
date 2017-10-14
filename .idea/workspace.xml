@@ -5,11 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternElement.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternTypeElement.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" afterPath="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" />
     </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -99,18 +102,8 @@
       <file leaf-file-name="TypePathCondition.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="InterfaceToBeSynchronized.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/InterfaceToBeSynchronized.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="8" column="17" lean-forward="false" selection-start-line="8" selection-start-column="17" selection-end-line="8" selection-end-column="17" />
+            <state relative-caret-position="125">
+              <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -126,21 +119,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="XAssertAllSpecification.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="125">
-              <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="LinearTypePatternsSpecification.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="540">
-              <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+            <state relative-caret-position="117">
+              <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -149,18 +132,8 @@
       <file leaf-file-name="LinearValuePatternsSpecification.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PersonParser.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+            <state relative-caret-position="575">
+              <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -169,8 +142,8 @@
       <file leaf-file-name="TypeNode.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+            <state relative-caret-position="246">
+              <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
               <folding />
             </state>
           </provider>
@@ -179,8 +152,38 @@
       <file leaf-file-name="LinearMatchPattern.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+            <state relative-caret-position="1375">
+              <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="PatternTypeElement.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternTypeElement.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TypeGraphNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="125">
+              <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="NullNode.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="17" />
               <folding />
             </state>
           </provider>
@@ -201,8 +204,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
         <option value="Class" />
+        <option value="Interface" />
       </list>
     </option>
   </component>
@@ -724,8 +727,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/BufferObserver.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/ReportingObserver.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/BufferItemNotificationSubscribers.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/buffer/SubscriptionSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/buffer/implementation_details/MessageFormat.java" />
@@ -763,17 +764,19 @@
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/SingleConditionResult.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeTreeCondition.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNodeCondition.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePath.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertAllSpecification.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/fixtures/PersonParser.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/MatchPattern.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/TypePatternsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternElement.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternTypeElement.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java" />
       </list>
     </option>
@@ -800,7 +803,9 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -967,8 +972,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -984,6 +987,7 @@
   </component>
   <component name="RecentsManager">
     <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.github.grzesiek_galezowski.test_environment.types" />
       <recent name="com.github.grzesiek_galezowski.test_environment.types2" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
@@ -1023,7 +1027,39 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [checkstyleMain]">
+  <component name="RunManager" selected="TestNG.LinearTypePatternsSpecification.shouldAllowQueryingTypeTrees">
+    <configuration name="LinearTypePatternsSpecification.shouldAllowQueryingTypeTrees" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.github.grzesiek_galezowski.test_environment.types.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="tdd-toolkit-java" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" value="com.github.grzesiek_galezowski.test_environment.types" />
+      <option name="MAIN_CLASS_NAME" value="com.github.grzesiek_galezowski.test_environment.types.LinearTypePatternsSpecification" />
+      <option name="METHOD_NAME" value="shouldAllowQueryingTypeTrees" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="ANNOTATION_TYPE" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <envs />
+      <properties />
+      <listeners />
+    </configuration>
     <configuration name="LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" type="TestNG" factoryName="TestNG" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1325,20 +1361,19 @@
         <option name="vmOptions" />
       </ExternalSystemSettings>
     </configuration>
-    <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
-      <item index="1" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
-      <item index="2" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
-      <item index="3" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
-      <item index="4" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
+    <list size="4">
+      <item index="0" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
+      <item index="1" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
+      <item index="2" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
+      <item index="3" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldAllowQueryingTypeTrees" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
-        <item index="1" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
-        <item index="2" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
+        <item index="0" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldAllowQueryingTypeTrees" />
+        <item index="1" class="java.lang.String" itemvalue="Gradle.tdd-toolkit-java [checkstyleMain]" />
+        <item index="2" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
         <item index="3" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
-        <item index="4" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundTwice" />
+        <item index="4" class="java.lang.String" itemvalue="TestNG.LinearTypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" />
       </list>
     </recent_temporary>
   </component>
@@ -1362,8 +1397,8 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsPartiallyFoundOnce - 2017.10.13 at 18h 08m 28s.xml">
-      <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" configurationId="TestNG" />
+    <history-entry file="LinearTypePatternsSpecification_shouldAllowQueryingTypeTrees - 2017.10.14 at 20h 31m 35s.xml">
+      <configuration name="LinearTypePatternsSpecification.shouldAllowQueryingTypeTrees" configurationId="TestNG" />
     </history-entry>
     <history-entry file="TypePatternsSpecification_shouldThrowErrorWhenPathIsPartiallyFoundOnce - 2017.10.13 at 22h 49m 34s.xml">
       <configuration name="TypePatternsSpecification.shouldThrowErrorWhenPathIsPartiallyFoundOnce" configurationId="TestNG" />
@@ -1401,18 +1436,20 @@
       <window_info id="PlantUML" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="FindBugs-IDEA" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.47834158" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.6701733" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57949793" sideWeight="0.5550743" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.6905941" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.57949793" sideWeight="0.552599" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20668317" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.32982674" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3294979" sideWeight="0.30940595" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.37066832" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20730197" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39853558" sideWeight="0.46101484" order="3" side_tool="false" content_ui="tabs" />
@@ -1426,9 +1463,7 @@
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.48081684" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32740587" sideWeight="0.3855198" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
@@ -1486,13 +1521,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java</url>
-          <line>20</line>
+          <line>18</line>
           <properties />
           <option name="timeStamp" value="29" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java</url>
-          <line>34</line>
+          <line>35</line>
           <properties />
           <option name="timeStamp" value="30" />
         </line-breakpoint>
@@ -1502,13 +1537,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssertJConditions.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/XAssert.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -1709,13 +1737,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="500">
-          <caret line="20" column="4" lean-forward="false" selection-start-line="20" selection-start-column="4" selection-end-line="20" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/stream/Stream.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="11950">
@@ -1751,14 +1772,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="16" lean-forward="false" selection-start-line="3" selection-start-column="16" selection-end-line="3" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNodeFactory.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="850">
@@ -1771,14 +1784,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="225">
           <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1807,42 +1812,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="540">
-          <caret line="37" column="37" lean-forward="true" selection-start-line="37" selection-start-column="37" selection-end-line="37" selection-end-column="37" />
+        <state relative-caret-position="575">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/XAssertSpecification.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/NullNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="25" column="4" lean-forward="false" selection-start-line="25" selection-start-column="4" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeGraphNode.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="10" lean-forward="false" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="117">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypePathCondition.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="19" column="17" lean-forward="true" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+        <state relative-caret-position="125">
+          <caret line="17" column="21" lean-forward="false" selection-start-line="17" selection-start-column="21" selection-end-line="17" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/TypeNode.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="24" column="29" lean-forward="true" selection-start-line="24" selection-start-column="29" selection-end-line="24" selection-end-column="29" />
+        <state relative-caret-position="246">
+          <caret line="24" column="20" lean-forward="false" selection-start-line="24" selection-start-column="20" selection-end-line="24" selection-end-column="20" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/PatternTypeElement.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="125">
+          <caret line="5" column="9" lean-forward="false" selection-start-line="5" selection-start-column="9" selection-end-line="5" selection-end-column="9" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/LinearMatchPattern.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="34" column="0" lean-forward="false" selection-start-line="34" selection-start-column="0" selection-end-line="34" selection-end-column="0" />
+        <state relative-caret-position="1375">
+          <caret line="58" column="28" lean-forward="false" selection-start-line="58" selection-start-column="28" selection-end-line="58" selection-end-column="28" />
           <folding />
         </state>
       </provider>

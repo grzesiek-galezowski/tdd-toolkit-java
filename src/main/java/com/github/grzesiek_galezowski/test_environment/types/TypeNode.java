@@ -32,7 +32,7 @@ public class TypeNode implements TypeGraphNode {
       if (matchPattern.isMatchedByAnyOf(fieldNodes)) {
         return true;
       } else {
-        matchPattern.rewind();
+        matchPattern.revertOneMatch();
       }
     }
     return false;

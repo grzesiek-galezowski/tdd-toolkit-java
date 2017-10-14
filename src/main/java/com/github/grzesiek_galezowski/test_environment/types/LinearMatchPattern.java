@@ -11,6 +11,7 @@ public class LinearMatchPattern {
   private int currentIndex = 0;
   private List<String> currentMatchedFields = Lists.newArrayList();
   private List<List<String>> matchPaths = Lists.newArrayList();
+  private boolean reverted = false;
 
   public LinearMatchPattern(final Class<?>[] typePath) {
     this.typePath = typePath;
@@ -30,12 +31,17 @@ public class LinearMatchPattern {
   }
 
   public void matchFound(final String fieldName) {
-    if(currentIndex < currentMatchedFields.size()) {
-      currentMatchedFields = Lists.newArrayList(currentMatchedFields.subList(0, currentIndex));
-      matchPaths.add(currentMatchedFields);
+    if(reverted) {
+      revertMatchesTo(currentIndex);
+      reverted = false;
     }
     currentMatchedFields.add(fieldName);
     currentIndex++;
+  }
+
+  public void revertMatchesTo(final int currentIndex) {
+    currentMatchedFields = Lists.newArrayList(currentMatchedFields.subList(0, currentIndex));
+    matchPaths.add(currentMatchedFields);
   }
 
   public boolean isMatchedCompletely() {
@@ -57,7 +63,8 @@ public class LinearMatchPattern {
 
   }
 
-  public void rewind() {
+  public void revertOneMatch() {
     currentIndex--;
+    reverted = true;
   }
 }

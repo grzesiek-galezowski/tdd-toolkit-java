@@ -11,7 +11,7 @@ public class ExpectedErrorMessages {
   public static String partiallyFound(final String... matchStrings) {
     val arr = matchStrings;
     String result = "";
-    for(int i = 0 ; i < arr.length ; ++i) {
+    for(int i = 0; i < arr.length; ++i) {
       result += System.lineSeparator();
       result += " " + (i+1) + ". ";
       result += arr[i];

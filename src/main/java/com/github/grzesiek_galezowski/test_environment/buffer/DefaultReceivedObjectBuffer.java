@@ -1,7 +1,5 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
-import com.github.grzesiek_galezowski.test_environment.buffer.implementation_details.SearchCommandFactory;
-import com.github.grzesiek_galezowski.test_environment.buffer.implementation_details.SearchResult;
 import lombok.val;
 import org.assertj.core.api.Condition;
 

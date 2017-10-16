@@ -9,10 +9,12 @@ public class PersonParser implements MyParser {
 
   @Override
   public String toString() {
-    return "PersonParser{" +
-        "parser1=" + parser1 +
-        ", parser2=" + parser2 +
-        '}';
+    return "PersonParser{"
+        + "parser1="
+        + parser1
+        + ", parser2="
+        + parser2
+        + '}';
   }
 
   public PersonParser(final MyParser parser1, final MyParser parser2) {

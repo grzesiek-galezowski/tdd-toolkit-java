@@ -1,17 +1,18 @@
 package com.github.grzesiek_galezowski.test_environment.types;
 
+import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.fixtures.*;
-import lombok.val;
 import org.testng.annotations.Test;
 
 import static com.github.grzesiek_galezowski.test_environment.types.ExpectedErrorMessages.expected;
 import static com.github.grzesiek_galezowski.test_environment.types.ExpectedErrorMessages.partiallyFound;
-import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.*;
-import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.typePath;
+import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.valuePath;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 public class LinearValuePatternsSpecification {
+
+  private static final Integer ANY_INT = Any.intValue();
 
   @Test
   public void shouldAllowQueryingTypeTrees() {
@@ -48,10 +49,10 @@ public class LinearValuePatternsSpecification {
             personParser,
             personNameParser,
             firstnameParser,
-            Integer.valueOf(123)))
+            ANY_INT))
     ).hasMessageContaining(
-        expected("PersonParser{parser1=PersonAddressParser{}, parser2=PersonNameParser{firstnameParser=FirstnameParser{hs=null, hm={}}, surnameParser=SurnameParser{}}}->PersonNameParser{firstnameParser=FirstnameParser{hs=null, hm={}}, surnameParser=SurnameParser{}}->FirstnameParser{hs=null, hm={}}->123") +
-            partiallyFound("root->parser2->firstnameParser"));
+        expected("PersonParser{parser1=PersonAddressParser{}, parser2=PersonNameParser{firstnameParser=FirstnameParser{hs=null, hm={}}, surnameParser=SurnameParser{}}}->PersonNameParser{firstnameParser=FirstnameParser{hs=null, hm={}}, surnameParser=SurnameParser{}}->FirstnameParser{hs=null, hm={}}->" + ANY_INT)
+            + partiallyFound("root->parser2->firstnameParser"));
   }
 
   @Test
@@ -66,9 +67,9 @@ public class LinearValuePatternsSpecification {
         assertThat(personParser).has(valuePath(
             personParser,
             personAddressParser,
-            Integer.valueOf(123)))
+            ANY_INT))
     ).hasMessageContaining(
-        expected("PersonParser{parser1=PersonAddressParser{}, parser2=PersonAddressParser{}}->PersonAddressParser{}->123")
+        expected("PersonParser{parser1=PersonAddressParser{}, parser2=PersonAddressParser{}}->PersonAddressParser{}->" + ANY_INT)
             + partiallyFound(
             "root->parser1",
             "root->parser2"

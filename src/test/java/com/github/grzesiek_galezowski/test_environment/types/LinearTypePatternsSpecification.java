@@ -40,8 +40,8 @@ public class LinearTypePatternsSpecification {
           PersonNameParser.class,
           Integer.class))
     ).hasMessageContaining(
-        expected("PersonParser->PersonNameParser->Integer") +
-            partiallyFound("root->parser2"));
+        expected("PersonParser->PersonNameParser->Integer")
+            + partiallyFound("root->parser2"));
   }
 
   @Test

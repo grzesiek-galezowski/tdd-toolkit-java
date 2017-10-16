@@ -1,18 +1,17 @@
 package com.github.grzesiek_galezowski.test_environment.types;
 
-import com.github.grzesiek_galezowski.test_environment.fixtures.*;
+import com.github.grzesiek_galezowski.test_environment.fixtures.PersonParser;
+import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.assertj.core.api.Condition;
 import org.testng.annotations.Test;
 
-import static com.github.grzesiek_galezowski.test_environment.types.ExpectedErrorMessages.expected;
-import static com.github.grzesiek_galezowski.test_environment.types.ExpectedErrorMessages.partiallyFound;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
-
 
 //todo finish
 public class GraphTypePatternSpecification {
-  @Test
+
+  @Test(enabled = false)
+  @SuppressFBWarnings
   public void shouldNotThrowWhenSubGraphIsFound() {
 
     PersonParser personParser = new PersonParser(null, null);

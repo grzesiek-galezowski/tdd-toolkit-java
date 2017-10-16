@@ -1,43 +1,31 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
-import java.util.List;
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.LambdaBasedExpectedMatchCount;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 
 /**
- * Created by grzes on 09.07.2017.
+  * Created by grzes on 09.07.2017.
  */
-public interface ExpectedMatchCount  {
-  static ExpectedMatchCount atLeast(int times) {
-    return new LambdaBasedExpectedMatchCount(m -> countAtLeast(times, m), "at least " + times + " item(s)");
+public interface ExpectedMatchCount {
+  static MatchCountCondition atLeast(int times) {
+    return LambdaBasedExpectedMatchCount.atLeast(times);
   }
 
-  static ExpectedMatchCount exactly(int times) {
-    return new LambdaBasedExpectedMatchCount(m -> countEquals(times, m), "exactly " + times + " item(s)");
+  static MatchCountCondition exactly(int times) {
+    return LambdaBasedExpectedMatchCount.exactly(times);
   }
 
-  static ExpectedMatchCount atLeastOne() {
-    return atLeast(1);
+  static MatchCountCondition atLeastOne() {
+    return LambdaBasedExpectedMatchCount.atLeastOne();
   }
 
-  static ExpectedMatchCount exactlyOne() {
-    return exactly(1);
+  static MatchCountCondition exactlyOne() {
+    return LambdaBasedExpectedMatchCount.exactlyOne();
   }
 
-  static boolean countEquals(final int times, final List<Boolean> m) {
-    return getCount(m) == times;
+  static MatchCountCondition no() {
+    return LambdaBasedExpectedMatchCount.no();
   }
 
-  static boolean countAtLeast(int times, List<Boolean> m) {
-    return getCount(m) >= times;
-  }
-
-  static long getCount(final List<Boolean> m) {
-    return m.stream().filter(i -> i.equals(true)).count();
-  }
-
-  static ExpectedMatchCount no() {
-    return exactly(0);
-  }
-
-  boolean matchFound(List<Boolean> matchingResult);
 }
 

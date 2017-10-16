@@ -1,5 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import org.assertj.core.api.Condition;
 
 import java.util.ArrayList;
@@ -8,16 +10,16 @@ import java.util.List;
 public class SearchResult<T> {
   private final List<Boolean> matchingResult = new ArrayList<>();
   private final List<String> matchingDescriptions = new ArrayList<>();
-  private final ExpectedMatchCount expectedMatchCount;
+  private final MatchCountCondition matchCountCondition;
   private final Condition<T> condition;
   private final BufferObserver<T> observer;
 
   public SearchResult(
-      final ExpectedMatchCount expectedMatchCount,
+      final MatchCountCondition matchCountCondition,
       final Condition<T> condition,
       final BufferObserver<T> observer) {
 
-    this.expectedMatchCount = expectedMatchCount;
+    this.matchCountCondition = matchCountCondition;
     this.condition = condition;
     this.observer = observer;
   }
@@ -51,10 +53,10 @@ public class SearchResult<T> {
 
   public MismatchException mismatchException() {
     return new MismatchException(
-        this.condition, matchingDescriptions, matchingResult, expectedMatchCount);
+        this.condition, matchingDescriptions, matchingResult, matchCountCondition);
   }
 
   public boolean foundAccordingToSpecification() {
-    return this.expectedMatchCount.matchFound(matchingResult);
+    return this.matchCountCondition.matchFound(matchingResult);
   }
 }

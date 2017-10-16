@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.interfaces;
 
 /**
  * Created by grzes on 11.07.2017.

@@ -1,5 +1,11 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.AwaitilityPoll;
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.BufferItemNotificationSubscribers;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Poll;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
@@ -44,16 +50,16 @@ public final class DefaultReceivedObjectBuffer<T> implements ReceivedObjectBuffe
   }
 
   @Override
-  public void assertContains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    val searchResult = blankResultFor(condition, expectedMatchCount);
+  public void assertContains(final MatchCountCondition matchCountCondition, final Condition<T> condition) {
+    val searchResult = blankResultFor(condition, matchCountCondition);
     val searchCommand = searchCommandFactory.searchFor(condition, searchResult);
     searchCommand.performSearch();
     searchResult.assertFoundAccordingToSpecification();
   }
 
   @Override
-  public boolean contains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    val searchResult = blankResultFor(condition, expectedMatchCount);
+  public boolean contains(final MatchCountCondition matchCountCondition, final Condition<T> condition) {
+    val searchResult = blankResultFor(condition, matchCountCondition);
     val searchCommand = searchCommandFactory.searchFor(condition, searchResult);
     searchCommand.performSearch();
     return searchResult.foundAccordingToSpecification();
@@ -82,15 +88,15 @@ public final class DefaultReceivedObjectBuffer<T> implements ReceivedObjectBuffe
   //todo add toString that prints current buffer
   @Override
   public Poll<T> poll() {
-    return Poll.on(this, observer);
+    return AwaitilityPoll.on(this, observer);
   }
 
   @Override
   public Poll<T> pollFor(final Duration duration) {
-    return Poll.on(this, duration, observer);
+    return AwaitilityPoll.on(this, duration, observer);
   }
 
-  private SearchResult<T> blankResultFor(final Condition<T> expected, final ExpectedMatchCount expectedMatchCount) {
-    return new SearchResult<T>(expectedMatchCount, expected, observer);
+  private SearchResult<T> blankResultFor(final Condition<T> expected, final MatchCountCondition matchCountCondition) {
+    return new SearchResult<T>(matchCountCondition, expected, observer);
   }
 }

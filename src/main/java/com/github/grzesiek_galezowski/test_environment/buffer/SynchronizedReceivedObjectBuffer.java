@@ -1,5 +1,10 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.AwaitilityPoll;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Poll;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import lombok.Synchronized;
 import org.assertj.core.api.Condition;
 
@@ -39,14 +44,14 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
 
   @Override
   @Synchronized()
-  public void assertContains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    innerBuffer.assertContains(expectedMatchCount, condition);
+  public void assertContains(final MatchCountCondition matchCountCondition, final Condition<T> condition) {
+    innerBuffer.assertContains(matchCountCondition, condition);
   }
 
   @Override
   @Synchronized
-  public boolean contains(final ExpectedMatchCount expectedMatchCount, final Condition<T> condition) {
-    return innerBuffer.contains(expectedMatchCount, condition);
+  public boolean contains(final MatchCountCondition matchCountCondition, final Condition<T> condition) {
+    return innerBuffer.contains(matchCountCondition, condition);
   }
 
   @Override
@@ -76,12 +81,12 @@ public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer
   @Override
   @Synchronized
   public Poll<T> poll() {
-    return Poll.on(this, observer);
+    return AwaitilityPoll.on(this, observer);
   }
 
   @Override
   @Synchronized
   public Poll<T> pollFor(final Duration duration) {
-    return Poll.on(this, duration, observer);
+    return AwaitilityPoll.on(this, duration, observer);
   }
 }

@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import org.assertj.core.api.Condition;
 
 import java.util.List;
@@ -42,12 +43,12 @@ public class MismatchMessageBuilder<T> {
     return message.append(" ");
   }
 
-  public StringBuilder addExpectedDescription(final Condition<T> condition, final ExpectedMatchCount expectedMatchCount) {
-    return message.append(expectedDescription(condition, expectedMatchCount));
+  public StringBuilder addExpectedDescription(final Condition<T> condition, final MatchCountCondition matchCountCondition) {
+    return message.append(expectedDescription(condition, matchCountCondition));
   }
 
-  private String expectedDescription(final Condition<T> condition, final ExpectedMatchCount expectedMatchCount) {
-    return "<" + expectedMatchCount.toString() + " " + condition.toString() + ">";
+  private String expectedDescription(final Condition<T> condition, final MatchCountCondition matchCountCondition) {
+    return "<" + matchCountCondition.toString() + " " + condition.toString() + ">";
   }
 
   static String correlate(final List<Boolean> matchingResult, final List<String> matchingDescriptions) {

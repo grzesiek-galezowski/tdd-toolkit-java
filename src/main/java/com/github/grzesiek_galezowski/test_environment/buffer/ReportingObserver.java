@@ -1,5 +1,8 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ExceptionRaisedByConditionException;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
 import org.assertj.core.api.Condition;
 
 import java.util.List;
@@ -31,7 +34,7 @@ public class ReportingObserver<T> implements BufferObserver<T> {
 
   @Override
   public void searchingFinishedWith(
-      final ExceptionRaisedByConditionException exception,
+      final Throwable exception,
       final T receivedObjectThatCausedException) {
     System.out.println("Match attempt failed with: " + exception);
   }

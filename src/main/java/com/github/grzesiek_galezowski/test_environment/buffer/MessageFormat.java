@@ -1,5 +1,6 @@
 package com.github.grzesiek_galezowski.test_environment.buffer;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import org.assertj.core.api.Condition;
 
 import java.util.List;
@@ -19,8 +20,8 @@ public class MessageFormat<T> {
       final Condition<T> condition,
       final List<String> matchingDescriptions,
       final List<Boolean> matchingResult,
-      final ExpectedMatchCount expectedMatchCount) {
-    message.addExpectedDescription(condition, expectedMatchCount);
+      final MatchCountCondition matchCountCondition) {
+    message.addExpectedDescription(condition, matchCountCondition);
     message.addSpace();
     message.addFailureAnnouncement();
     message.addNewLine();

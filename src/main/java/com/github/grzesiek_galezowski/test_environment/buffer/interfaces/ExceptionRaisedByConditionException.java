@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.interfaces;
 
 
 import org.assertj.core.api.Condition;

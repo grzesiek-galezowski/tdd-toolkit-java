@@ -2,6 +2,7 @@ package com.github.grzesiek_galezowski.test_environment.buffer;
 
 import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.Item;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
 import lombok.val;
 import org.testng.annotations.Test;
 

@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.interfaces;
 
 import org.assertj.core.api.Condition;
 
@@ -8,13 +8,6 @@ import java.util.List;
  * Created by grzes on 08.07.2017.
  */
 public interface BufferObserver<T> {
-  static <T> BufferObserver<T> createDefault() {
-    return new ReportingObserver<T>();
-  }
-
-  static <T> BufferObserver<T> none() {
-    return new NullObserver<T>();
-  }
 
   void searchingStartedWithin(List<T> receivedObjects, Condition<T> condition);
 
@@ -26,7 +19,7 @@ public interface BufferObserver<T> {
       String matchDescription);
 
   void searchingFinishedWith(
-      ExceptionRaisedByConditionException exception,
+      Throwable exception,
       T receivedObjectThatCausedException);
 
   void searchingFinished(long matchesCount);
@@ -42,5 +35,5 @@ public interface BufferObserver<T> {
 
   void singlePollFinishedWith(boolean pollResult);
 
-  void exceptionWhileNotifyingSubscriberAboutStoredItem(ItemSubscriber<T> subscriber, final T object);
+  void exceptionWhileNotifyingSubscriberAboutStoredItem(ItemSubscriber<T> subscriber, T object);
 }

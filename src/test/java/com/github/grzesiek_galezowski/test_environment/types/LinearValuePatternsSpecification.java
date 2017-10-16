@@ -29,9 +29,7 @@ public class LinearValuePatternsSpecification {
         personParser,
         personNameParser,
         firstnameParser));
-
   }
-
 
   @Test
   public void shouldThrowErrorWhenPathIsPartiallyFoundOnce() {

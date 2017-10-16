@@ -7,6 +7,14 @@ public class PersonParser implements MyParser {
   private final MyParser parser1;
   private final MyParser parser2;
 
+  @Override
+  public String toString() {
+    return "PersonParser{" +
+        "parser1=" + parser1 +
+        ", parser2=" + parser2 +
+        '}';
+  }
+
   public PersonParser(final MyParser parser1, final MyParser parser2) {
     this.parser1 = parser1;
     this.parser2 = parser2;

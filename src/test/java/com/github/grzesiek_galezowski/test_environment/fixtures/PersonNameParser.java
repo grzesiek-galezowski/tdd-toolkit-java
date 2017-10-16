@@ -10,6 +10,14 @@ public class PersonNameParser implements MyParser {
   private final MyParser surnameParser;
 
 
+  @Override
+  public String toString() {
+    return "PersonNameParser{" +
+        "firstnameParser=" + firstnameParser +
+        ", surnameParser=" + surnameParser +
+        '}';
+  }
+
   public PersonNameParser(
       @SuppressFBWarnings
       final MyParser firstnameParser,

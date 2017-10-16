@@ -24,6 +24,7 @@ apply plugin: 'checkstyle'
 apply plugin: 'findbugs'
 apply plugin: 'pmd'
 apply plugin: "jacoco"
+apply from: "$rootDir/gradle/degraph.gradle"
 
 def travis = "$System.env.TRAVIS"
 

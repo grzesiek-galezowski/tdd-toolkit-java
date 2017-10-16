@@ -13,8 +13,8 @@ public class PatternTypeElement implements PatternElement {
   }
 
   @Override
-  public boolean isMatchedBy(final TypeNode typeNode) {
-    return typeNode.hasType(expectedType);
+  public boolean isMatchedBy(final ObjectNode objectNode) {
+    return objectNode.hasType(expectedType);
   }
 
 }

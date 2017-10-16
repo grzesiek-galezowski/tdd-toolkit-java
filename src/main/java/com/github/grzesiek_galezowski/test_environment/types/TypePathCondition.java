@@ -3,12 +3,14 @@ package com.github.grzesiek_galezowski.test_environment.types;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
+import java.util.Arrays;
+
 public class TypePathCondition<T> extends Condition<T> {
 
-  private LinearMatchPattern matchPattern;
+  private MatchPattern matchPattern;
 
   //todo finish from typePath to matchPattern
-  public TypePathCondition(final LinearMatchPattern matchPattern) {
+  public TypePathCondition(final MatchPattern matchPattern) {
     this.matchPattern = matchPattern;
   }
 
@@ -23,7 +25,7 @@ public class TypePathCondition<T> extends Condition<T> {
   }
 
   public void describeError() {
-    describedAs("the following type path: "
+    describedAs("the following dependency chain: "
       + matchPattern.getPatternString()
       + " but the closest matches were : "
         + System.lineSeparator()
@@ -34,5 +36,11 @@ public class TypePathCondition<T> extends Condition<T> {
       final Class<?>... typePath) {
     return new TypePathCondition(
         LinearMatchPattern.forTypes(typePath));
+  }
+
+  static Condition<Object> valuePath(final Object... args) {
+    return new TypePathCondition<>(new LinearMatchPattern(
+        Arrays.stream(args).map(o -> new PatternValueElement(o)).toArray(PatternElement[]::new)));
+
   }
 }

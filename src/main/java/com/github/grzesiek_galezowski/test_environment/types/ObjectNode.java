@@ -2,25 +2,28 @@ package com.github.grzesiek_galezowski.test_environment.types;
 
 import java.util.List;
 
-public class TypeNode implements TypeGraphNode {
+public class ObjectNode implements ObjectGraphNode {
   private final Object fieldValue;
   private final String fieldName;
   private final Class<?> type;
-  private final List<TypeGraphNode> childNodes;
+  private int nestingLevel;
+  private final List<ObjectGraphNode> childNodes;
 
-  public TypeNode(
+  public ObjectNode(
       final Class<?> type,
       final String fieldName,
       final Object fieldValue,
-      final List<TypeGraphNode> childNodes) {
+      final int nestingLevel,
+      final List<ObjectGraphNode> childNodes) {
     this.fieldName = fieldName;
     this.fieldValue = fieldValue;
     this.type = type;
+    this.nestingLevel = nestingLevel;
     this.childNodes = childNodes;
   }
 
   @Override
-  public boolean matches(final LinearMatchPattern pattern) {
+  public boolean matches(final MatchPattern pattern) {
 
     if (pattern.matches(this)) {
       pattern.matchFound(fieldName);
@@ -32,7 +35,7 @@ public class TypeNode implements TypeGraphNode {
       if (pattern.isMatchedByAnyOf(childNodes)) {
         return true;
       } else {
-        pattern.revertOneMatch();
+        pattern.rewindOneMatch();
       }
     }
     return false;
@@ -41,6 +44,11 @@ public class TypeNode implements TypeGraphNode {
   @Override
   public boolean hasType(final Class<?> aClass) {
     return type.equals(aClass);
+  }
+
+  @Override
+  public boolean hasValue(final Object o) {
+    return fieldValue.equals(o);
   }
 
 }

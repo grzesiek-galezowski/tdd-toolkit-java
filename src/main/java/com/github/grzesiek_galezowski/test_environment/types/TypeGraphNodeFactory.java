@@ -8,57 +8,62 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TypeGraphNodeFactory {
-  public static TypeNode create(final String fieldName, final Object fieldValue, final List<TypeGraphNode> fieldNodes) throws IllegalAccessException {
-    return new TypeNode(
+  public static ObjectNode create(
+      final String fieldName,
+      final Object fieldValue,
+      final int nestingLevel,
+      final List<ObjectGraphNode> fieldNodes) throws IllegalAccessException {
+    return new ObjectNode(
         fieldValue.getClass(),
         fieldName,
         fieldValue,
+        nestingLevel,
         fieldNodes);
   }
 
-  public static TypeNode create(
+  public static ObjectNode create(
       final String fieldName,
-      final Object fieldValue) {
+      final Object fieldValue, final int nestingLevel) {
     try {
-      return create(fieldName, fieldValue,
-          extractFieldsNodesFrom(fieldValue));
+      return create(fieldName, fieldValue, nestingLevel,
+          extractFieldsNodesFrom(fieldValue, nestingLevel+1));
     } catch (IllegalAccessException e) {
       throw new RuntimeException(e);
     }
   }
 
-  public static List<TypeGraphNode> extractFieldsNodesFrom(final Object o) {
-    List<TypeGraphNode> nodes = new ArrayList<>();
+  public static List<ObjectGraphNode> extractFieldsNodesFrom(final Object o, final int nestingLevel) {
+    List<ObjectGraphNode> nodes = new ArrayList<>();
     Field[] declaredFields = o.getClass().getDeclaredFields();
 
     for (val field : declaredFields) {
-      nodes.add(getForFieldOf(o, field));
+      nodes.add(createNodeForFieldOf(o, field, nestingLevel));
     }
     return nodes;
   }
 
-  private static TypeGraphNode getForFieldOf(final Object o, final Field field) {
+  private static ObjectGraphNode createNodeForFieldOf(final Object o, final Field field, final int nestingLevel) {
     try {
       field.setAccessible(true);
       Object fieldValue = field.get(o);
       if (fieldValue != null) {
-        return create(field.getName(), fieldValue, createNodesFromFieldsOf(fieldValue));
+        return create(field.getName(), fieldValue, nestingLevel, createNodesFromFieldsOf(fieldValue, nestingLevel + 1));
       } else {
-        return NullNode.create(field);
+        return NullNode.create(field, nestingLevel);
       }
     } catch(IllegalAccessException e) {
       throw new RuntimeException(e);
     }
   }
 
-  private static List<TypeGraphNode> createNodesFromFieldsOf(final Object fieldValue) throws IllegalAccessException {
+  private static List<ObjectGraphNode> createNodesFromFieldsOf(final Object fieldValue, final int nestingLevel) throws IllegalAccessException {
     if (!Primitives.isWrapperType(fieldValue.getClass()) && !fieldValue.getClass().isPrimitive()) {
-      return extractFieldsNodesFrom(fieldValue);
+      return extractFieldsNodesFrom(fieldValue, nestingLevel);
     }
     return new ArrayList<>();
   }
 
-  public static <T> TypeNode create(final T value) {
-    return create("root", value);
+  public static <T> ObjectNode create(final T value) {
+    return create("root", value, 0);
   }
 }

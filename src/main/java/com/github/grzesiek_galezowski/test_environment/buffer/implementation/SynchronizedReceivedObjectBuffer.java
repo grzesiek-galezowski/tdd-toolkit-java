@@ -1,10 +1,10 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
 
-import com.github.grzesiek_galezowski.test_environment.buffer.implementation.AwaitilityPoll;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Poll;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Buffer;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Poll;
 import lombok.Synchronized;
 import org.assertj.core.api.Condition;
 
@@ -13,13 +13,13 @@ import java.time.Duration;
 /**
  * Created by grzes on 09.07.2017.
  */
-public class SynchronizedReceivedObjectBuffer<T> implements ReceivedObjectBuffer<T> {
-  private ReceivedObjectBuffer<T> innerBuffer;
-  private BufferObserver observer;
+public class SynchronizedReceivedObjectBuffer<T> implements Buffer<T> {
+  private Buffer<T> innerBuffer;
+  private BufferObserver<T> observer;
 
   public SynchronizedReceivedObjectBuffer(
-      final ReceivedObjectBuffer<T> innerBuffer,
-      final BufferObserver observer) {
+      final Buffer<T> innerBuffer,
+      final BufferObserver<T> observer) {
     this.innerBuffer = innerBuffer;
     this.observer = observer;
   }

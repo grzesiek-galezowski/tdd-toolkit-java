@@ -1,11 +1,6 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
 
-import com.github.grzesiek_galezowski.test_environment.buffer.implementation.AwaitilityPoll;
-import com.github.grzesiek_galezowski.test_environment.buffer.implementation.BufferItemNotificationSubscribers;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Poll;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ItemSubscriber;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.*;
 import lombok.val;
 import org.assertj.core.api.Condition;
 
@@ -18,7 +13,7 @@ import java.util.stream.StreamSupport;
 /**
  * Created by grzes on 26.06.2017.
  */
-public final class DefaultReceivedObjectBuffer<T> implements ReceivedObjectBuffer<T> {
+public final class DefaultReceivedObjectBuffer<T> implements Buffer<T> {
   private final BufferItemNotificationSubscribers<T>
       subscribers;
   private List<T> receivedObjects = new ArrayList<>();

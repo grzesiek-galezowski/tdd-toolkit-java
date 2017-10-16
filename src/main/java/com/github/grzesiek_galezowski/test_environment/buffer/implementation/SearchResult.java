@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
 
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
@@ -24,7 +24,7 @@ public class SearchResult<T> {
     this.observer = observer;
   }
 
-  void add(final T receivedObject, final boolean isMatch, final String matchDescription) {
+  public void add(final T receivedObject, final boolean isMatch, final String matchDescription) {
     matchingResult.add(isMatch);
     matchingDescriptions.add(matchDescription);
     if(isMatch) {

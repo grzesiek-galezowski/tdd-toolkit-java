@@ -2,6 +2,8 @@ package com.github.grzesiek_galezowski.test_environment.buffer;
 
 import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.Item;
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.MismatchException;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Buffer;
 import com.github.grzesiek_galezowski.test_environment.implementation_details.FakeCondition;
 import lombok.val;
 import org.assertj.core.api.Assertions;
@@ -85,7 +87,7 @@ public class AssertionsSpecification {
         );
   }
 
-  private ReceivedObjectBuffer<Integer> createNewBuffer() {
+  private Buffer createNewBuffer() {
     return ReceivedObjectBuffer.createDefault();
   }
 

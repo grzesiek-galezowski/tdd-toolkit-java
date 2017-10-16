@@ -2,6 +2,8 @@ package com.github.grzesiek_galezowski.test_environment.buffer;
 
 import autofixture.publicinterface.Any;
 import com.github.grzesiek_galezowski.test_environment.Item;
+import com.github.grzesiek_galezowski.test_environment.buffer.implementation.MismatchException;
+import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.Buffer;
 import lombok.val;
 import org.assertj.core.api.Assertions;
 import org.awaitility.core.ConditionTimeoutException;
@@ -24,7 +26,7 @@ public class PollingSpecification {
   @Test
   public void shouldAllowPollingForItemExistence() throws ExecutionException, InterruptedException { //bug
     //GIVEN
-    ReceivedObjectBuffer<Integer> buffer = ReceivedObjectBuffer.createDefault();
+    Buffer buffer = ReceivedObjectBuffer.createDefault();
     val storedValue = Any.intValue();
 
     //WHEN - THEN
@@ -39,7 +41,7 @@ public class PollingSpecification {
   @Test
   public void shouldThrowExceptionWhenPollingForItemExistenceFails() throws ExecutionException, InterruptedException { //bug
     //GIVEN
-    ReceivedObjectBuffer<Integer> buffer = ReceivedObjectBuffer.createDefault();
+    Buffer buffer = ReceivedObjectBuffer.createDefault();
     val storedValue3 = Any.intValue();
 
     //WHEN - THEN
@@ -52,7 +54,7 @@ public class PollingSpecification {
   @Test
   public void shouldAllowPollingForItemNonExistence() throws ExecutionException, InterruptedException { //bug
     //GIVEN
-    ReceivedObjectBuffer<Integer> buffer = ReceivedObjectBuffer.createDefault();
+    Buffer buffer = ReceivedObjectBuffer.createDefault();
 
     //WHEN - THEN
     assertThatCode(() ->
@@ -64,7 +66,7 @@ public class PollingSpecification {
   @Test
   public void shouldFailWhenPollingForItemExistenceFindsTheItem() throws ExecutionException, InterruptedException { //bug
     //GIVEN
-    ReceivedObjectBuffer<Integer> buffer = ReceivedObjectBuffer.createDefault();
+    Buffer buffer = ReceivedObjectBuffer.createDefault();
     val storedValue = Any.intValue();
 
     //WHEN - THEN
@@ -79,7 +81,7 @@ public class PollingSpecification {
   }
 
   private CompletableFuture<Void> insertAfter1Second(final Integer storedValue3,
-                                                     final ReceivedObjectBuffer<Integer> buffer) {
+                                                     final Buffer buffer) {
     Assertions.assertThat(buffer.isEmpty()).isTrue();
     return CompletableFuture.runAsync(() -> {
       try {

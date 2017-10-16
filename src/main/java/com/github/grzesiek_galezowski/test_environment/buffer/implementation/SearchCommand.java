@@ -1,4 +1,4 @@
-package com.github.grzesiek_galezowski.test_environment.buffer;
+package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
 
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ExceptionRaisedByConditionException;

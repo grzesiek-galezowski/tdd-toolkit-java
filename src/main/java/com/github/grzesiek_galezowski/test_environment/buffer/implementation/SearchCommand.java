@@ -1,7 +1,7 @@
 package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
 
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.BufferObserver;
-import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.ExceptionRaisedByConditionException;
+import com.github.grzesiek_galezowski.test_environment.buffer.exceptions.ExceptionRaisedByConditionException;
 import lombok.val;
 import org.assertj.core.api.Condition;
 

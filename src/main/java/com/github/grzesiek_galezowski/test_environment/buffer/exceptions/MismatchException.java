@@ -1,5 +1,6 @@
-package com.github.grzesiek_galezowski.test_environment.buffer.implementation;
+package com.github.grzesiek_galezowski.test_environment.buffer.exceptions;
 
+import com.github.grzesiek_galezowski.test_environment.buffer.exceptions.implementation.MessageFormat;
 import com.github.grzesiek_galezowski.test_environment.buffer.interfaces.MatchCountCondition;
 import org.assertj.core.api.Condition;
 

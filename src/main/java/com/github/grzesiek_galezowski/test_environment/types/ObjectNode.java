@@ -6,19 +6,16 @@ public class ObjectNode implements ObjectGraphNode {
   private final Object fieldValue;
   private final String fieldName;
   private final Class<?> type;
-  private int nestingLevel;
   private final List<ObjectGraphNode> childNodes;
 
   public ObjectNode(
       final Class<?> type,
       final String fieldName,
       final Object fieldValue,
-      final int nestingLevel,
       final List<ObjectGraphNode> childNodes) {
     this.fieldName = fieldName;
     this.fieldValue = fieldValue;
     this.type = type;
-    this.nestingLevel = nestingLevel;
     this.childNodes = childNodes;
   }
 
@@ -28,14 +25,9 @@ public class ObjectNode implements ObjectGraphNode {
     if (pattern.matches(this)) {
       pattern.matchFound(fieldName);
 
-      if (pattern.isMatchedCompletely()) {
-        return true;
-      }
-
       if (pattern.isMatchedByAnyOf(childNodes)) {
+        System.out.println("not matched completely, but returning true");
         return true;
-      } else {
-        pattern.rewindOneMatch();
       }
     }
     return false;

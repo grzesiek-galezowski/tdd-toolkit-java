@@ -82,9 +82,9 @@ public class SubscriptionSpecification {
     buffer.subscribeForItems(subscriber2);
     buffer.subscribeForItems(subscriber3);
 
-    doThrow(Throwable.class).when(subscriber1).itemStored(value);
-    doThrow(Throwable.class).when(subscriber2).itemStored(value);
-    doThrow(Throwable.class).when(subscriber3).itemStored(value);
+    doThrow(RuntimeException.class).when(subscriber1).itemStored(value);
+    doThrow(RuntimeException.class).when(subscriber2).itemStored(value);
+    doThrow(RuntimeException.class).when(subscriber3).itemStored(value);
 
     //WHEN
     buffer.store(value);

@@ -3,17 +3,12 @@ package com.github.grzesiek_galezowski.test_environment.types;
 import java.util.List;
 
 public interface MatchPattern {
-  boolean matches(ObjectNode objectNode);
+  String mismatchDescription();
+
+  boolean matches(ObjectGraphNode objectNode);
 
   void matchFound(String fieldName);
 
-  boolean isMatchedCompletely();
-
-  String getPatternString();
-
-  String getBestMatchesString();
-
-  void rewindOneMatch();
-
   boolean isMatchedByAnyOf(List<ObjectGraphNode> childNodes);
+
 }

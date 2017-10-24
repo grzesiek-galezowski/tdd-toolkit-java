@@ -23,6 +23,16 @@ public class LinearTypePatternsSpecification {
         PersonNameParser.class,
         FirstnameParser.class));
 
+    assertThat(personParser).has(typePath(
+        PersonParser.class,
+        PersonNameParser.class,
+        SurnameParser.class));
+
+    assertThat(personParser).has(typePath(
+        PersonParser.class,
+        PersonNameParser.class));
+
+    assertThat(personParser).has(typePath(PersonParser.class));
   }
 
   @Test

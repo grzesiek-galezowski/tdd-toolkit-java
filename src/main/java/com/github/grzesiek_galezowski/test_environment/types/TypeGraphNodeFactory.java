@@ -11,13 +11,11 @@ public class TypeGraphNodeFactory {
   public static ObjectNode create(
       final String fieldName,
       final Object fieldValue,
-      final int nestingLevel,
       final List<ObjectGraphNode> fieldNodes) throws IllegalAccessException {
     return new ObjectNode(
         fieldValue.getClass(),
         fieldName,
         fieldValue,
-        nestingLevel,
         fieldNodes);
   }
 
@@ -25,7 +23,7 @@ public class TypeGraphNodeFactory {
       final String fieldName,
       final Object fieldValue, final int nestingLevel) {
     try {
-      return create(fieldName, fieldValue, nestingLevel,
+      return create(fieldName, fieldValue,
           extractFieldsNodesFrom(fieldValue, nestingLevel+1));
     } catch (IllegalAccessException e) {
       throw new RuntimeException(e);
@@ -47,7 +45,7 @@ public class TypeGraphNodeFactory {
       field.setAccessible(true);
       Object fieldValue = field.get(o);
       if (fieldValue != null) {
-        return create(field.getName(), fieldValue, nestingLevel, createNodesFromFieldsOf(fieldValue, nestingLevel + 1));
+        return create(field.getName(), fieldValue, createNodesFromFieldsOf(fieldValue, nestingLevel + 1));
       } else {
         return NullNode.create(field, nestingLevel);
       }

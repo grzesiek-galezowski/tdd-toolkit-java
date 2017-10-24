@@ -5,6 +5,8 @@ import org.assertj.core.api.Condition;
 
 import java.util.Arrays;
 
+import static java.util.stream.Collectors.toList;
+
 public class TypePathCondition<T> extends Condition<T> {
 
   private MatchPattern matchPattern;
@@ -25,11 +27,11 @@ public class TypePathCondition<T> extends Condition<T> {
   }
 
   public void describeError() {
-    describedAs("the following dependency chain: "
-      + matchPattern.getPatternString()
-      + " but the closest matches were : "
-        + System.lineSeparator()
-        + matchPattern.getBestMatchesString());
+    describedAs(matchPattern.mismatchDescription());
+  }
+
+  public static <T> Condition<T> subgraphContaining(final TreePattern patternElement) {
+    return new TypePathCondition<>(new SubtreeMatchPatternAdapter(patternElement));
   }
 
   public static TypePathCondition typePath(
@@ -38,9 +40,10 @@ public class TypePathCondition<T> extends Condition<T> {
         LinearMatchPattern.forTypes(typePath));
   }
 
-  static Condition<Object> valuePath(final Object... args) {
+  public static Condition<Object> valuePath(final Object... args) {
     return new TypePathCondition<>(new LinearMatchPattern(
-        Arrays.stream(args).map(o -> new PatternValueElement(o)).toArray(PatternElement[]::new)));
+        Arrays.stream(args).map(o -> new PatternValueElement(o))
+            .collect(toList()), MatchResult.createMatchResult()));
 
   }
 }

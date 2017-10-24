@@ -13,7 +13,7 @@ public class PatternValueElement implements PatternElement {
   }
 
   @Override
-  public boolean isMatchedBy(final ObjectNode objectNode) {
+  public boolean isMatchedBy(final ObjectGraphNode objectNode) {
     return objectNode.hasValue(o);
   }
 }

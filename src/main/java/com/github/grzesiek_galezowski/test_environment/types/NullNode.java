@@ -32,4 +32,5 @@ public class NullNode implements ObjectGraphNode {
   public boolean hasValue(final Object o) {
     return o == null;
   }
+
 }

@@ -1,7 +1,5 @@
 package com.github.grzesiek_galezowski.test_environment.types;
 
-public interface PatternElement {
+public interface PatternElement extends MatchableByNode {
   String getName();
-
-  boolean isMatchedBy(ObjectNode objectNode);
 }

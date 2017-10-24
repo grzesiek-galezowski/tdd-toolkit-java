@@ -1,16 +1,11 @@
-package com.github.grzesiek_galezowski.test_environment.implementation_details.fixtures;
+package com.github.grzesiek_galezowski.test_environment.implementation_details;
 
-import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertions;
-import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForMonitor;
-import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantLock;
-import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantReadLock;
-import com.github.grzesiek_galezowski.test_environment.implementation_details.LockAssertionsForReentrantWriteLock;
 import lombok.val;
 
 import java.util.concurrent.locks.ReentrantLock;
 import java.util.concurrent.locks.ReentrantReadWriteLock;
 
-import static com.github.grzesiek_galezowski.test_environment.XAssert.assertThatNotThrownBy;
+import static org.assertj.core.api.Assertions.assertThatCode;
 import static org.assertj.core.api.AssertionsForClassTypes.assertThatThrownBy;
 
 public class LockAssertionsFixture<T, U extends LockAssertions> {
@@ -45,11 +40,11 @@ public class LockAssertionsFixture<T, U extends LockAssertions> {
   }
 
   public void assertThatLockedAssertionPasses() {
-    assertThatNotThrownBy(() -> assertLocked());
+    assertThatCode(() -> assertLocked()).doesNotThrowAnyException();
   }
 
   public void assertThatUnlockedAssertionPasses() {
-    assertThatNotThrownBy(() -> assertUnlocked());
+    assertThatCode(() -> assertUnlocked()).doesNotThrowAnyException();
   }
 
 

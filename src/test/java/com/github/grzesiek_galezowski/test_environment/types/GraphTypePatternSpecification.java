@@ -7,7 +7,7 @@ import edu.umd.cs.findbugs.annotations.SuppressFBWarnings;
 import org.testng.annotations.Test;
 
 import static com.github.grzesiek_galezowski.test_environment.types.TreePattern.type;
-import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.subgraphContaining;
+import static com.github.grzesiek_galezowski.test_environment.types.TypePathCondition.subtree;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
@@ -20,7 +20,7 @@ public class GraphTypePatternSpecification {
 
     PersonParser personParser = new PersonParser(null, null);
 
-    assertThat(personParser).has(subgraphContaining(
+    assertThat(personParser).has(subtree(
         type(PersonParser.class)));
   }
 
@@ -32,7 +32,7 @@ public class GraphTypePatternSpecification {
         new FirstnameParser(),
         null);
 
-    assertThat(personParser).has(subgraphContaining(
+    assertThat(personParser).has(subtree(
         type(PersonParser.class, type(FirstnameParser.class))));
   }
 
@@ -44,7 +44,7 @@ public class GraphTypePatternSpecification {
         new FirstnameParser(),
         new PersonAddressParser());
 
-    assertThat(personParser).has(subgraphContaining(
+    assertThat(personParser).has(subtree(
         type(PersonParser.class,
             type(FirstnameParser.class),
             type(PersonAddressParser.class))));
@@ -63,7 +63,7 @@ public class GraphTypePatternSpecification {
             null));
 
     assertThatThrownBy(() ->
-      assertThat(personParser).has(subgraphContaining(
+      assertThat(personParser).has(subtree(
           type(PersonParser.class,
               type(PersonParser.class,
                   type(Integer.class)))))

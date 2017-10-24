@@ -30,7 +30,7 @@ public class TypePathCondition<T> extends Condition<T> {
     describedAs(matchPattern.mismatchDescription());
   }
 
-  public static <T> Condition<T> subgraphContaining(final TreePattern patternElement) {
+  public static <T> Condition<T> subtree(final TreePattern patternElement) {
     return new TypePathCondition<>(new SubtreeMatchPatternAdapter(patternElement));
   }
 

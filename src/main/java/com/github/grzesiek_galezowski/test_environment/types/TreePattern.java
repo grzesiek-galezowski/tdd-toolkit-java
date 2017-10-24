@@ -8,24 +8,35 @@ import java.util.List;
 import static java.lang.System.out;
 
 public class TreePattern implements MatchableByNode {
-  private Class<?> c;
+  private final TreePatternElement patternElement;
   private TreePattern[] dependencies;
   private boolean matched = false;
   private boolean visited = false;
   private NodePrinter nodePrinter;
 
   public TreePattern(
-      final Class<?> c, final NodePrinter nodePrinter,
+      final NodePrinter nodePrinter,
+      final TreePatternElement patternElement,
       final TreePattern... dependencies) {
-    this.c = c;
     this.dependencies = dependencies;
     this.nodePrinter = nodePrinter;
+    this.patternElement = patternElement;
   }
 
   public static TreePattern type(
       final Class<?> c,
       final TreePattern... dependencies) {
-    return new TreePattern(c, new AsciiNodePrinter(), dependencies);
+    return new TreePattern(
+        new AsciiNodePrinter(),
+        new TypeTreePatternElement(c),
+        dependencies);
+  }
+
+  public static TreePattern object(final Object expected, final TreePattern... dependencies) {
+    return new TreePattern(
+        new AsciiNodePrinter(),
+        new ValueTreePatternElement(expected),
+        dependencies);
   }
 
   public boolean isMatchedByAnyOf(final List<ObjectGraphNode> childNodes) {
@@ -51,7 +62,7 @@ public class TreePattern implements MatchableByNode {
 
   @Override
   public boolean isMatchedBy(final ObjectGraphNode objectNode) {
-    return objectNode.hasType(c);
+    return patternElement.isMatchedBy(objectNode);
   }
 
   public void markAsMatched() {
@@ -90,7 +101,7 @@ public class TreePattern implements MatchableByNode {
   }
 
   public String currentNodeString(final NodePrinter nodePrinter, final int nestingLevel) {
-    return nodePrinter.typeString(c, matched, nestingLevel);
+    return patternElement.toStringUsing(nodePrinter, matched, nestingLevel);
   }
 
 }

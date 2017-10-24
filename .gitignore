@@ -97,3 +97,4 @@ test-output/*
 .idea/modules/test-output/junitreports/TEST-com.github.grzesiek_galezowski.test_environment.buffer.ReceivedObjectBufferSpecification.xml
 *.xml
 .idea/sonarlint/*
+.idea/workspace.xml

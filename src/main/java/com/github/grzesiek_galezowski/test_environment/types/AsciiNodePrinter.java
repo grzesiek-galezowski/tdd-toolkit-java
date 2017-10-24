@@ -24,8 +24,11 @@ public class AsciiNodePrinter implements NodePrinter {
   }
 
   @Override
-  public String typeString(final Class<?> c, final boolean matched, final int i) {
-    return repeat("   ", i) + "|->" + c.getSimpleName() + AsciiNodePrinter.matchMark(matched);
+  public String typeString(final Class<?> c, final boolean matched, final int nestingLevel) {
+    return repeat("   ", nestingLevel)
+        + "|->"
+        + c.getSimpleName()
+        + AsciiNodePrinter.markerIf(matched);
   }
 
   @Override
@@ -33,7 +36,7 @@ public class AsciiNodePrinter implements NodePrinter {
     return lineSeparator() + asString(0, node, children);
   }
 
-  private static String matchMark(final boolean matched) {
+  private static String markerIf(final boolean matched) {
     if (matched) {
       return "*";
     } else {

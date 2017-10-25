@@ -4,7 +4,6 @@ public class ValueTreePatternElement implements TreePatternElement {
   private Object expected;
 
   public ValueTreePatternElement(final Object expected) {
-
     this.expected = expected;
   }
 

@@ -14,7 +14,6 @@ import static java.util.stream.Collectors.toSet;
 public class MatchResult {
   private final MatchPath currentPath;
   private Set<MatchPath> matchPaths;
-  private boolean lastAttemptedBranchInvalid = false;
 
   public MatchResult(
       final Set<MatchPath> matchPaths, final MatchPath currentMatchedFields1) {

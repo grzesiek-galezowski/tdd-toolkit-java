@@ -2,16 +2,12 @@ package com.github.grzesiek_galezowski.test_environment.types;
 
 import lombok.val;
 
-import java.util.Arrays;
 import java.util.List;
-
-import static java.lang.System.out;
 
 public class TreePattern implements MatchableByNode {
   private final TreePatternElement patternElement;
   private TreePattern[] dependencies;
   private boolean matched = false;
-  private boolean visited = false;
   private NodePrinter nodePrinter;
 
   public TreePattern(
@@ -40,7 +36,6 @@ public class TreePattern implements MatchableByNode {
   }
 
   public boolean isMatchedByAnyOf(final List<ObjectGraphNode> childNodes) {
-    System.out.println("Current children size: " + children().length);
     for(val child : children()) {
       val matches =
           childNodes.stream().anyMatch(
@@ -50,10 +45,6 @@ public class TreePattern implements MatchableByNode {
       }
     }
     return true;
-  }
-
-  public boolean isMatchedCompletely() {
-    return hasReachedMatchesCountOf(treeElementsCount());
   }
 
   public String subtreeString(final NodePrinter nodePrinter, final int i) {
@@ -67,29 +58,6 @@ public class TreePattern implements MatchableByNode {
 
   public void markAsMatched() {
     matched = true;
-  }
-
-  public void markAsVisited() {
-    visited = true;
-  }
-
-  private int treeElementsCount() {
-    return 1 + Arrays.stream(dependencies).mapToInt(d -> d.treeElementsCount()).sum();
-  }
-
-  private boolean hasReachedMatchesCountOf(final int numberOfElementsToMatch) {
-    int matchedNodesCount = matchedNodeCount();
-    out.println("matched nodes: " + matchedNodesCount + ", numberOfElementsToMatch: " + numberOfElementsToMatch);
-    return matchedNodesCount == numberOfElementsToMatch;
-  }
-
-  private int matchedNodeCount() {
-    if(matched) {
-      return 1 + Arrays.stream(children()).mapToInt(c -> c.matchedNodeCount()).sum();
-    } else {
-      return 0;
-    }
-
   }
 
   public TreePattern[] children() {

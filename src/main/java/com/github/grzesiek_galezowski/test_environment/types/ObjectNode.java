@@ -26,7 +26,6 @@ public class ObjectNode implements ObjectGraphNode {
       pattern.matchFound(fieldName);
 
       if (pattern.isMatchedByAnyOf(childNodes)) {
-        System.out.println("not matched completely, but returning true");
         return true;
       }
     }

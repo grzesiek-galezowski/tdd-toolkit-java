@@ -11,7 +11,6 @@ public class TypePathCondition<T> extends Condition<T> {
 
   private MatchPattern matchPattern;
 
-  //todo finish from typePath to matchPattern
   public TypePathCondition(final MatchPattern matchPattern) {
     this.matchPattern = matchPattern;
   }

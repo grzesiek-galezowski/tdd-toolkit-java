@@ -17,7 +17,6 @@ public class SubtreeMatchPatternAdapter implements MatchPattern {
   @Override
   public void matchFound(final String fieldName) {
     tree.markAsMatched();
-    tree.markAsVisited();
   }
 
   @Override

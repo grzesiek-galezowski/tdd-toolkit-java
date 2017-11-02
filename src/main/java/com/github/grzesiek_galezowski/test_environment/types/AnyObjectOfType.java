@@ -24,7 +24,11 @@ public class AnyObjectOfType {
 
   @Override
   public int hashCode() {
-    return clazz != null ? clazz.hashCode() : 0;
+    if (clazz != null) {
+      return clazz.hashCode();
+    } else {
+      return 0;
+    }
   }
 
   @Override

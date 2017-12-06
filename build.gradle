@@ -12,7 +12,7 @@ buildscript {
 plugins {
     id 'net.researchgate.release' version "2.6.0"
     id 'com.github.ben-manes.versions' version "0.17.0"
-    id 'io.franzbecker.gradle-lombok' version '1.10'
+    id 'io.franzbecker.gradle-lombok' version '1.11'
     id 'com.github.johnrengelman.shadow' version '2.0.1'
     id "de.obqo.gradle.degraph" version "0.1.4.0"
 }
@@ -85,7 +85,7 @@ test {
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
     outputFormats = ['XML', 'HTML']
-    pitestVersion = "1.2.4"
+    pitestVersion = "1.2.5"
 }
 
 checkstyle {
@@ -116,12 +116,12 @@ lombok {
 }
 
 dependencies {
-    compile "nl.jqno.equalsverifier:equalsverifier:2.3.3"
+    compile "nl.jqno.equalsverifier:equalsverifier:2.4"
     compile 'com.google.code.findbugs:annotations:3.0.1'
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
-    compile 'uk.com.robust-it:cloning:1.9.6'
+    compile 'uk.com.robust-it:cloning:1.9.8'
     compile 'org.awaitility:awaitility:3.0.0'
     compile 'net.bramp.objectgraph:objectgraph:1.1.0'
 
@@ -131,9 +131,9 @@ dependencies {
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies
     compile "org.assertj:assertj-core:3.8.0"
-    compile "org.testng:testng:6.12"
-    compile "org.mockito:mockito-core:2.11.0"
-    compile "com.github.autofixture:autofixturegenerator:2.0.0"
+    compile "org.testng:testng:6.13.1"
+    compile "org.mockito:mockito-core:2.12.0"
+    compile "com.github.autofixture:autofixturegenerator:2.1.5"
 }
 
 artifacts {

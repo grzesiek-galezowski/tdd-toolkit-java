@@ -13,7 +13,7 @@ plugins {
     id 'net.researchgate.release' version "2.6.0"
     id 'com.github.ben-manes.versions' version "0.17.0"
     id 'io.franzbecker.gradle-lombok' version '1.11'
-    id 'com.github.johnrengelman.shadow' version '2.0.1'
+    id 'com.github.johnrengelman.shadow' version '2.0.2'
     id "de.obqo.gradle.degraph" version "0.1.4.0"
 }
 
@@ -121,7 +121,7 @@ dependencies {
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.9.6'
-    compile 'uk.com.robust-it:cloning:1.9.8'
+    compile 'uk.com.robust-it:cloning:1.9.9'
     compile 'org.awaitility:awaitility:3.0.0'
     compile 'net.bramp.objectgraph:objectgraph:1.1.0'
 
@@ -132,8 +132,8 @@ dependencies {
     findbugs configurations.findbugsPlugins.dependencies
     compile "org.assertj:assertj-core:3.8.0"
     compile "org.testng:testng:6.13.1"
-    compile "org.mockito:mockito-core:2.12.0"
-    compile "com.github.autofixture:autofixturegenerator:2.1.6"
+    compile "org.mockito:mockito-core:2.13.0"
+    compile "com.github.autofixture:autofixturegenerator:2.1.7"
 }
 
 artifacts {

@@ -4,7 +4,12 @@
     <bookmark url="file://$PROJECT_DIR$/src/test/java/integration/AutoFixtureIntegrationSpecification.java" line="14" mnemonic="2" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="" />
+    <list default="true" id="449dd0d6-6e4d-489d-9408-cbc37b61154a" name="Default" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" afterPath="$PROJECT_DIR$/build.gradle" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java" afterPath="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java" />
+    </list>
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -18,9 +23,6 @@
   <component name="CheckTestsConfiguration">
     <option name="CHECK_FOR_TESTS_BEFORE_PROJECT_COMMIT" value="true" />
     <option name="LEVELS_TO_CHECK_FOR_TESTS" value="0" />
-  </component>
-  <component name="CodeInsightWorkspaceSettings">
-    <option name="optimizeImportsOnTheFly" value="true" />
   </component>
   <component name="CompilerWorkspaceConfiguration">
     <option name="MAKE_PROJECT_ON_SAVE" value="true" />
@@ -134,8 +136,8 @@
       <file leaf-file-name="build.gradle" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/build.gradle">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3375">
-              <caret line="135" column="62" lean-forward="false" selection-start-line="135" selection-start-column="62" selection-end-line="135" selection-end-column="62" />
+            <state relative-caret-position="219">
+              <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
               <folding />
             </state>
           </provider>
@@ -144,8 +146,8 @@
       <file leaf-file-name="report.txt" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/build/dependencyUpdates/report.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="725">
-              <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+            <state relative-caret-position="650">
+              <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
               <folding />
             </state>
           </provider>
@@ -154,8 +156,8 @@
       <file leaf-file-name="GraphTypePatternSpecification.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1750">
-              <caret line="70" column="3" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="70" selection-end-column="3" />
+            <state relative-caret-position="238">
+              <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -194,7 +196,7 @@
       <file leaf-file-name="Objects.java" pinned="false" current-in-tab="false">
         <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1425">
+            <state relative-caret-position="850">
               <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
               <folding />
             </state>
@@ -270,9 +272,9 @@
       <find>println</find>
       <find>versi</find>
       <find>lombok</find>
-      <find>pitest</find>
       <find>shadow</find>
       <find>mockito</find>
+      <find>pitest</find>
     </findStrings>
     <replaceStrings>
       <replace />
@@ -644,9 +646,9 @@
     <option name="modificationStamps">
       <map>
         <entry key="$PROJECT_DIR$/../AutoFixtureGenerator" value="2976815844183" />
-        <entry key="$PROJECT_DIR$" value="6012438051297" />
-        <entry key="$PROJECT_DIR$/build.gradle" value="1631814568" />
-        <entry key="$PROJECT_DIR$/gradle.properties" value="3159469344" />
+        <entry key="$PROJECT_DIR$" value="6017462728695" />
+        <entry key="$PROJECT_DIR$/build.gradle" value="2159039155" />
+        <entry key="$PROJECT_DIR$/gradle.properties" value="3411451318" />
         <entry key="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" value="1502267862" />
         <entry key="$PROJECT_DIR$/settings.gradle" value="846632393" />
       </map>
@@ -850,7 +852,6 @@
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/typess/LinearTypePatternsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/typess/LinearValuePatternsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/ExpectedErrorMessages.java" />
-        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphValuePatternSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearTypePatternsSpecification.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/LinearValuePatternsSpecification.java" />
@@ -866,15 +867,16 @@
         <option value="$PROJECT_DIR$/build/dependencyUpdates/report.txt" />
         <option value="$PROJECT_DIR$/src/main/java/com/github/grzesiek_galezowski/test_environment/types/AnyObjectOfType.java" />
         <option value="$PROJECT_DIR$/gradle.properties" />
+        <option value="$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java" />
         <option value="$PROJECT_DIR$/build.gradle" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="56" />
-    <option name="y" value="-8" />
-    <option name="width" value="1612" />
-    <option name="height" value="1055" />
+    <option name="x" value="-7" />
+    <option name="y" value="375" />
+    <option name="width" value="1632" />
+    <option name="height" value="1066" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -945,9 +947,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -1035,30 +1034,39 @@
             </path>
             <path>
               <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
+              <item name="tdd-toolkit-java" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="test_environment" type="462c0819:PsiDirectoryNode" />
+              <item name="types" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
               <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.autofixture:autofixturegenerator:2.1.7" type="70bed36:NamedLibraryElementNode" />
-            </path>
-            <path>
-              <item name="tdd-toolkit-java" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-              <item name="Gradle: com.github.autofixture:autofixturegenerator:2.1.7" type="70bed36:NamedLibraryElementNode" />
-              <item name="autofixturegenerator-2.1.7.jar" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="editor.preferences.import" />
     <property name="SearchEverywhereHistoryKey" value="shouldFailWhenFunctionIsNotCalledAtAll &#9;PSI&#9;JAVA://com.github.grzesiek_galezowski.test_environment.LockingFunctionsAssertionsSpecification#shouldFailWhenFunctionIsNotCalledAtAll" />
     <property name="extract.method.default.visibility" value="public" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../vavr" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TrainingExamples/Java/spring-boot-manual-composition-root" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -1112,7 +1120,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Gradle.tdd-toolkit-java [release]">
+  <component name="RunManager" selected="Gradle.tdd-toolkit-java [build]">
     <configuration default="true" type="Applet" factoryName="Applet">
       <option name="HTML_USED" value="false" />
       <option name="WIDTH" value="400" />
@@ -1377,7 +1385,7 @@
     </recent_temporary>
   </component>
   <component name="SbtLocalSettings">
-    <option name="lastUpdateTimestamp" value="1513714177828" />
+    <option name="lastUpdateTimestamp" value="1517863075114" />
     <option name="externalProjectsViewState">
       <projects_view />
     </option>
@@ -1437,16 +1445,16 @@
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4449198" sideWeight="0.6010165" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4449198" sideWeight="0.39898348" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="tdd-toolkit-java" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4449198" sideWeight="0.6048285" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4449198" sideWeight="0.39517152" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="CheckStyle" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3294979" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27700126" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.108005084" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Problems" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Docker" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32834226" sideWeight="0.3068615" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="SonarLint" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3272727" sideWeight="0.3068615" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.4974587" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20711564" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1808,17 +1816,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1750">
-          <caret line="70" column="3" lean-forward="false" selection-start-line="52" selection-start-column="2" selection-end-line="70" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_121/src.zip!/java/util/Objects.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1425">
+        <state relative-caret-position="850">
           <caret line="57" column="26" lean-forward="false" selection-start-line="57" selection-start-column="26" selection-end-line="57" selection-end-column="26" />
           <folding />
         </state>
@@ -1874,16 +1874,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/build/dependencyUpdates/report.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="725">
-          <caret line="29" column="2" lean-forward="false" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        <state relative-caret-position="650">
+          <caret line="26" column="2" lean-forward="false" selection-start-line="26" selection-start-column="2" selection-end-line="26" selection-end-column="2" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/github/grzesiek_galezowski/test_environment/types/GraphTypePatternSpecification.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="71" column="0" lean-forward="false" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3375">
-          <caret line="135" column="62" lean-forward="false" selection-start-line="135" selection-start-column="62" selection-end-line="135" selection-end-column="62" />
+        <state relative-caret-position="219">
+          <caret line="87" column="26" lean-forward="false" selection-start-line="87" selection-start-column="26" selection-end-line="87" selection-end-column="26" />
           <folding />
         </state>
       </provider>

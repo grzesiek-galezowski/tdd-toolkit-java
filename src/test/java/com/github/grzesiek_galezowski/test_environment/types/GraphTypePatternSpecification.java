@@ -68,6 +68,7 @@ public class GraphTypePatternSpecification {
               type(PersonParser.class,
                   type(Integer.class)))))
     ).isInstanceOf(Throwable.class); //todo better exception
+
   }
 
   //TODO expected chain is longer than actual (e.g. actual is abc and expected is abcd)

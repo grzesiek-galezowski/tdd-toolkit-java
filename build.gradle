@@ -14,7 +14,7 @@ plugins {
     id 'com.github.ben-manes.versions' version "0.17.0"
     id 'io.franzbecker.gradle-lombok' version '1.14'
     id 'com.github.johnrengelman.shadow' version '2.0.4'
-    id "de.obqo.gradle.degraph" version "0.1.4.1"
+    id "de.obqo.gradle.degraph" version "0.1.4.0"
 }
 
 apply plugin: "info.solidsoft.pitest"

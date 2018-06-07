@@ -26,7 +26,7 @@ public class XAssertJConditions {
     return new ImmutableCondition(matchers, areEffectivelyImmutable());
   }
 
-  public static Condition<? super Class<?>> corectlyImplementedEquality() {
+  public static Condition<? super Class<?>> correctlyImplementedEquality() {
     return new EqualityImplementedCondition();
   }
 }

@@ -25,7 +25,7 @@ public class XAssert {
   }
 
   public static <T> void assertValueObject(final Class<T> clazz) {
-    assertThat(clazz).has(XAssertJConditions.corectlyImplementedEquality());
+    assertThat(clazz).has(XAssertJConditions.correctlyImplementedEquality());
     assertThat(clazz).is(immutable());
   }
 

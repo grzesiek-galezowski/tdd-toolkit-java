@@ -11,8 +11,7 @@ buildscript {
 
 plugins {
     id 'net.researchgate.release' version "2.7.0"
-    id 'com.github.ben-manes.versions' version "0.17.0"
-    id 'io.franzbecker.gradle-lombok' version '1.14'
+    id 'com.github.ben-manes.versions' version "0.20.0"
     id 'com.github.johnrengelman.shadow' version '2.0.4'
     id "de.obqo.gradle.degraph" version "0.1.4.0"
 }
@@ -65,7 +64,7 @@ repositories {
 }
 
 task wrapper(type: Wrapper) {
-    gradleVersion = '3.5'
+    gradleVersion = '4.10'
 }
 
 task javadocJar(type: Jar, dependsOn: javadoc) {
@@ -85,7 +84,7 @@ test {
 pitest {
     targetClasses = ['com.github.grzesiek_galezowski.test_environment.*']  //by default "${project.group}.*"
     outputFormats = ['XML', 'HTML']
-    pitestVersion = "1.4.0"
+    pitestVersion = "1.4.2"
 }
 
 checkstyle {
@@ -111,28 +110,27 @@ shadowJar {
     relocate('org.awaitility', "shadow" + UUID.randomUUID() + ".org.awaitility")
 }
 
-lombok {
-    version = "1.18.0"
-}
-
 dependencies {
-    compile "nl.jqno.equalsverifier:equalsverifier:2.4.6"
+    compile "nl.jqno.equalsverifier:equalsverifier:2.5.2"
     compile 'com.google.code.findbugs:annotations:3.0.1'
     compile 'com.google.code.findbugs:jsr305:3.0.2'
     compile 'org.reflections:reflections:0.9.11'
     compile 'org.mutabilitydetector:MutabilityDetector:0.10.1'
     compile 'uk.com.robust-it:cloning:1.9.10'
-    compile 'org.awaitility:awaitility:3.1.0'
+    compile 'org.awaitility:awaitility:3.1.2'
     compile 'net.bramp.objectgraph:objectgraph:1.1.0'
 
-    compileOnly 'org.projectlombok:lombok:1.16.20'
+    compileOnly 'org.projectlombok:lombok:1.18.2'
+    testCompileOnly 'org.projectlombok:lombok:1.18.2'
+    annotationProcessor "org.projectlombok:lombok:1.18.2"
+
     compileOnly 'com.sharneng:jsr305defaults:2.0.3'
 
     findbugs 'com.google.code.findbugs:findbugs:3.0.1'
     findbugs configurations.findbugsPlugins.dependencies
-    compile "org.assertj:assertj-core:3.10.0"
+    compile "org.assertj:assertj-core:3.11.1"
     compile "org.testng:testng:6.14.3"
-    compile "org.mockito:mockito-core:2.18.3"
+    compile "org.mockito:mockito-core:2.21.0"
     compile "com.github.autofixture:autofixturegenerator:2.1.10"
 }
 
